@@ -26,7 +26,21 @@
     <div id="main-wrapper">
     </div>
 
+    <div id="score">
+      <h3>0</h3>
+    </div>
+
     <script>
+
+      var calculateScore = function(){
+        RESCU.scores[RESCU.currPage] = 0;
+
+        $.each($("input:checked"), function(idx, val){
+          RESCU.scores[RESCU.currPage] += parseInt($(val).val());
+        });
+
+        RESCU.scores.calculateTotal();
+      };
 
       $(document).ready(function(){
         
@@ -35,8 +49,10 @@
               $this = $(this),
               file = $this.data("file");
 
+          RESCU.currPage = file.substr(0, file.indexOf("."));
+
           $("ul#structure-buttons li").removeClass("current");
-          $this.closest("li").addClass("current");
+          $("#" + RESCU.currPage).closest("li").addClass("current");
 
           $main.slideUp("fast", function(){
             $.get("app/views/building_score/" + file, function(data){
@@ -44,15 +60,18 @@
               $main.delay(250).slideDown("fast");
             }, "text");
           });
+
+          calculateScore();
         });
 
         $("#main-wrapper").delegate("#previous-page", "click", function(){
           var $main = $("#main-wrapper"),
-              file = $(this).data("file"),
-              current = file.substr(0, file.indexOf("."));
+              file = $(this).data("file");
+              
+          RESCU.currPage = file.substr(0, file.indexOf("."));
 
           $("ul#structure-buttons li").removeClass("current");
-          $("#" + current).closest("li").addClass("current");
+          $("#" + RESCU.currPage).closest("li").addClass("current");
 
           $main.slideUp("fast", function(){
             $.get("app/views/building_score/" + file, function(data){
@@ -60,15 +79,18 @@
               $main.delay(250).slideDown("fast");
             }, "text");
           });
+
+          calculateScore();
         });
 
         $("#main-wrapper").delegate("#next-page", "click", function(){
           var $main = $("#main-wrapper"),
-              file = $(this).data("file"),
-              current = file.substr(0, file.indexOf("."));
+              file = $(this).data("file");
+          
+          RESCU.currPage = file.substr(0, file.indexOf("."));
 
           $("ul#structure-buttons li").removeClass("current");
-          $("#" + current).closest("li").addClass("current");
+          $("#" + RESCU.currPage).closest("li").addClass("current");
 
           $main.slideUp("fast", function(){
             $.get("app/views/building_score/" + file, function(data){
@@ -76,6 +98,8 @@
               $main.delay(250).slideDown("fast");
             }, "text");
           });
+
+          calculateScore();
         });
 
         $("#foundation").click();
