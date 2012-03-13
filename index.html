@@ -24,10 +24,12 @@
     </header>
 
     <div id="main-wrapper">
-    </div>
+      <div id="main">
+      </div>
 
-    <div id="score">
-      <h3>0</h3>
+      <div id="score">
+        <h3>0</h3>
+      </div>
     </div>
 
     <script>
@@ -45,7 +47,7 @@
       $(document).ready(function(){
         
         $(".structure").click(function(){
-          var $main = $("#main-wrapper"),
+          var $main = $("#main"),
               $this = $(this),
               file = $this.data("file");
 
@@ -65,7 +67,7 @@
         });
 
         $("#main-wrapper").delegate("#previous-page", "click", function(){
-          var $main = $("#main-wrapper"),
+          var $main = $("#main"),
               file = $(this).data("file");
               
           RESCU.currPage = file.substr(0, file.indexOf("."));
@@ -84,7 +86,7 @@
         });
 
         $("#main-wrapper").delegate("#next-page", "click", function(){
-          var $main = $("#main-wrapper"),
+          var $main = $("#main"),
               file = $(this).data("file");
           
           RESCU.currPage = file.substr(0, file.indexOf("."));
