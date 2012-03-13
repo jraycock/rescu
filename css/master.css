@@ -1,3 +1,38 @@
+/*
+ * Clear Float
+ *
+ * Add class "group" to the wrapping container that you wish to clear.
+ */
+
+.group:before, .group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/*
+ * Header
+ *
+ * Styles for the main header on the structure page.
+ */
+
 header#structure-buttons-header {
   width: 100%;
   background: #87a1de;
@@ -5,16 +40,63 @@ header#structure-buttons-header {
 }
 
 ul#structure-buttons {
-  text-align: center;
+  width: 977px;
   margin: 0px auto;
 }
 
 ul#structure-buttons li {
+  float: left;
+  width: 128px;
+  padding: 6px;
+  margin: 0px;
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+ul#structure-buttons li:last-child {
+  width: 125px;
+}
+
+/*
+ * Structure QA
+ *
+ * Styles for the structure pages
+ */
+
+#main-wrapper {
+  margin: 25px auto;
+  width: 977px;
+}
+
+#main-wrapper h1 {
+  font-size: 30px;
+  color: #272727;
+  text-shadow: 1px 1px 0px #fff;
+  margin-bottom: 15px;
+}
+
+#main-wrapper section {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #efefef;
+  border-bottom: 1px solid #272727;
+  box-shadow: 0px 1px 0px #fff;
+}
+
+#main-wrapper section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 7px;
+}
+
+#main-wrapper section input {
   display: inline-block;
-  padding: 7px;
-  background: #1e4091;
-  margin-right: 4px;
-  cursor: pointer;
-  color: #fff;
-  text-shadow: 1px 1px 0px #272727;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+#main-wrapper section label {
+  font-size: 14px;
+  line-height: 20px;
 }
