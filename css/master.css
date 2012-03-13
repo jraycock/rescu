@@ -25,6 +25,7 @@
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #ccc;
 }
 
 /*
@@ -35,7 +36,7 @@ body {
 
 header#structure-buttons-header {
   width: 100%;
-  background: #87a1de;
+  background: #535a60;
   border-bottom: 1px solid #272727;
 }
 
@@ -49,13 +50,13 @@ ul#structure-buttons li {
   width: 128px;
   padding: 6px;
   margin: 0px;
-  background: rgba(0, 0, 0, 0.25);
+  background: #3e454a;
   text-align: center;
   cursor: pointer;
 }
 
 ul#structure-buttons li a {
-  color: #fff;
+  color: #d5dbe1;
   text-shadow: 1px 2px 0px #272727;
 }
 
@@ -78,11 +79,20 @@ ul#structure-buttons li:last-child {
   width: 977px;
 }
 
-#main-wrapper h1 {
-  font-size: 30px;
-  color: #272727;
-  text-shadow: 1px 1px 0px #fff;
+#main-wrapper header {
+  width: 947px;
+  height: 36px;
+  padding: 0px 15px;
+  background: transparent url('../image/header_background.png');
+  border: 1px solid #21251b;
   margin-bottom: 15px;
+}
+
+#main-wrapper h1 {
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 0px #272727;
+  line-height: 36px;
 }
 
 #main-wrapper section {
@@ -117,8 +127,16 @@ ul#structure-buttons li:last-child {
 
 #main-wrapper footer #previous-page {
   float: left;
+  text-indent: -9999px;
+  background: transparent url('../image/button_previous.png');
+  width: 63px;
+  height: 24px;
 }
 
 #main-wrapper footer #next-page {
   float: right;
+  text-indent: -9999px;
+  background: transparent url('../image/button_next.png');
+  width: 63px;
+  height: 24px;
 }
