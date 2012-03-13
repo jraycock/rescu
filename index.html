@@ -110,7 +110,11 @@
           calculateScore();
         });
 
-        $("#foundation").click();
+
+        // Start at Home
+        $.get("app/views/building_score/home.html", function(data){
+          $("#main").html(data);
+        }, "text");
         
       });
 
