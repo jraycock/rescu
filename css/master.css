@@ -51,6 +51,16 @@ ul#structure-buttons li {
   margin: 0px;
   background: rgba(0, 0, 0, 0.25);
   text-align: center;
+  cursor: pointer;
+}
+
+ul#structure-buttons li a {
+  color: #fff;
+  text-shadow: 1px 2px 0px #272727;
+}
+
+ul#structure-buttons li.current {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 ul#structure-buttons li:last-child {
@@ -99,4 +109,16 @@ ul#structure-buttons li:last-child {
 #main-wrapper section label {
   font-size: 14px;
   line-height: 20px;
+}
+
+#main-wrapper footer {
+  margin-top: 25px;
+}
+
+#main-wrapper footer #previous-page {
+  float: left;
+}
+
+#main-wrapper footer #next-page {
+  float: right;
 }
