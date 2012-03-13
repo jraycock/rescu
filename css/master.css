@@ -1,0 +1,20 @@
+header#structure-buttons-header {
+  width: 100%;
+  background: #87a1de;
+  border-bottom: 1px solid #272727;
+}
+
+ul#structure-buttons {
+  text-align: center;
+  margin: 0px auto;
+}
+
+ul#structure-buttons li {
+  display: inline-block;
+  padding: 7px;
+  background: #1e4091;
+  margin-right: 4px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 0px #272727;
+}
