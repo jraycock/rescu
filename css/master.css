@@ -187,3 +187,30 @@ ul#structure-buttons li:last-child {
   width: 63px;
   height: 24px;
 }
+
+#summary {
+  padding: 15px;
+  width: 947px;
+  background: #3a78b6;
+  border: 1px solid #21251b;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+#summary h2 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#summary h2 span {
+  font-weight: bold;
+}
+
+#summary h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}

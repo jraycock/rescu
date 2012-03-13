@@ -91,6 +91,12 @@
           
           RESCU.currPage = file.substr(0, file.indexOf("."));
 
+          if (RESCU.currPage === "summary"){
+            $("#score").hide();
+          } else {
+            $("#score:not(:visible)").show();
+          }
+
           $("ul#structure-buttons li").removeClass("current");
           $("#" + RESCU.currPage).closest("li").addClass("current");
 
