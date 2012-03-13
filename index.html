@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/master.css" />
     <script src="js/libs/jquery-1.7.1.min.js"></script>
+    <script src="js/libs/jquery-ui-1.8.18.custom.min.js"></script>
     <script src="js/rescu.js"></script>
   </head>
   <body>
@@ -28,12 +29,53 @@
     <script>
 
       $(document).ready(function(){
-
+        
         $(".structure").click(function(){
-          var file = $(this).data("file");
-          $.get("app/views/building_score/" + file, function(data){
-            $("#main-wrapper").html(data);
-          }, "text");
+          var $main = $("#main-wrapper"),
+              $this = $(this),
+              file = $this.data("file");
+
+          $("ul#structure-buttons li").removeClass("current");
+          $this.closest("li").addClass("current");
+
+          $main.slideUp("fast", function(){
+            $.get("app/views/building_score/" + file, function(data){
+              $main.html(data);
+              $main.delay(250).slideDown("fast");
+            }, "text");
+          });
+        });
+
+        $("#main-wrapper").delegate("#previous-page", "click", function(){
+          var $main = $("#main-wrapper"),
+              file = $(this).data("file"),
+              current = file.substr(0, file.indexOf("."));
+
+          $("ul#structure-buttons li").removeClass("current");
+          $("#" + current).closest("li").addClass("current");
+
+          $main.slideUp("fast", function(){
+            $.get("app/views/building_score/" + file, function(data){
+              $main.html(data);
+              $main.delay(250).slideDown("fast");
+            }, "text");
+          });
+        });
+
+        $("#main-wrapper").delegate("#next-page", "click", function(){
+          var $main = $("#main-wrapper"),
+              file = $(this).data("file"),
+              current = file.substr(0, file.indexOf("."));
+
+          $("ul#structure-buttons li").removeClass("current");
+          $("#" + current).closest("li").addClass("current");
+
+          $main.slideUp("fast", function(){
+            $.get("app/views/building_score/" + file, function(data){
+              $main.html(data);
+              $main.delay(250).slideDown("fast");
+            }, "text");
+          });
         });
 
         $("#foundation").click();
