@@ -1,0 +1,23 @@
+[
+  {
+    question: "What is the roof class of your home?",
+    code: "wf",
+    type: "text",
+    view: "roof",
+    answers: [ { answer: "Class A", points: 1 }, { answer: "Class B", points: 5 }, { answer: "Class C", points: 10 } ]
+  },
+  {
+    questions: "Do the valleys meet ICC 504.2.1?",
+    code: "wf",
+    type: "checkbox",
+    view: "roof",
+    answers: [ { answer: "Yes.", points: 10 } ]
+  },
+  {
+    question: "Does the chimney have a spark arrester?",
+    code: "wf",
+    type: "checkbox",
+    view: "chimney",
+    answers: [ { answer: "Yes, it has a spark arrester with 1/4 inch mesh.", points: 5 } ]
+  }
+]
