@@ -1,45 +1,96 @@
 [
   {
-    "question": "What is the roof class of your home?",
+    "question": "What is the foundation class of your home?",
     "code": "wf",
-    "type": "text",
-    "view": "roof",
+    "view": "foundation",
     "answers": [
       {
+        "id": "class-a",
+        "type": "radio",
+        "name": "foundation-class",
         "answer": "Class A",
         "points": 1
       },
       {
+        "id": "class-b",
+        "type": "radio",
+        "name": "foundation-class",
         "answer": "Class B",
         "points": 5
       },
       {
+        "id": "class-c",
+        "type": "radio",
+        "name": "foundation-class",
         "answer": "Class C",
         "points": 10
       }
-    ]
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
   },
   {
-    "questions": "Do the valleys meet ICC 504.2.1?",
+    "question": "What is the foundation type of your home?",
     "code": "wf",
-    "type": "checkbox",
-    "view": "roof",
+    "view": "foundation",
     "answers": [
       {
-        "answer": "Yes.",
+        "id": "type-open",
+        "type": "radio",
+        "name": "foundation-type",
+        "answer": "Open Foundation",
+        "points": 5
+      },
+      {
+        "id": "type-closed",
+        "type": "radio",
+        "name": "foundation-type",
+        "answer": "Closed Foundation",
         "points": 10
       }
     ]
   },
   {
-    "question": "Does the chimney have a spark arrester?",
+    "question": "If you have an open foundation, is it protected from combustion?",
     "code": "wf",
-    "type": "checkbox",
-    "view": "chimney",
+    "view": "foundation",
     "answers": [
       {
-        "answer": "Yes, it has a spark arrester with 1/4 inch mesh.",
-        "points": 5
+        "id": "protected-from-combustion",
+        "type": "checkbox",
+        "name": "open-options",
+        "answer": "Yes",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "If you have a closed foundation, do the vents meet criteria?",
+    "code": "wf",
+    "view": "foundation",
+    "answers": [
+      {
+        "id": "vents-meet-criteria",
+        "type": "checkbox",
+        "name": "closed-options",
+        "answer": "Yes",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "Are your walls combustible?",
+    "code": "wf",
+    "view": "walls",
+    "answers": [
+      {
+        "id": "walls-combustible",
+        "name": "combustion",
+        "type": "checkbox",
+        "answer": "Yes, they are combustible.",
+        "points": 25
       }
     ]
   }

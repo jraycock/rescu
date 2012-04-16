@@ -48,6 +48,10 @@ a:hover {
   text-decoration: underline;
 }
 
+strong {
+  font-weight: bold;
+}
+
 fieldset {
   background: rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -187,6 +191,28 @@ ul#structure-buttons li:last-child {
   width: 63px;
   height: 24px;
 }
+
+/*
+ * Page Specific Views
+ */
+#main-wrapper .home h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 44px;
+  color: #555;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  margin-bottom: 25px;
+}
+
+#main-wrapper .home h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #555;
+}
+
+/*
+ * Summary Screen
+ */
 
 #summary {
   padding: 15px;

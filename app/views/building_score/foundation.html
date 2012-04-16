@@ -2,49 +2,13 @@
   <h1>Foundation</h1>
 </header>
 
-<section>
-  <h2>What is the foundation class of your home?</h2>
+<div class="questions">
 
-  <fieldset>
-    <input id="class-a" name="class" value="1" type="radio" /><label for="class-a">Class A</label></a><br />
-    <input id="class-b" name="class" value="5" type="radio" /><label for="class-b">Class B</label></a><br />
-    <input id="class-c" name="class" value="10" type="radio" /><label for="class-c">Class C</label></a><br />
-  </fieldset>
-
-  <a href="http://flash.org" target="_blank">FLASH</a>
-</section>
-
-<section>
-  <h2>What is the foundation type of your home?</h2>
-
-  <fieldset>
-    <input id="type-open" name="type" value="5" type="radio" /><label for="type-open">Open Foundation</label></a><br />
-    <input id="type-closed" name="type" value="10" type="radio" /><label for="type-closed">Closed Foundation</label></a><br />
-  </fieldset>
-  
-  <div id="open-options" class="hidden margin-top">
-    <fieldset>
-      <input id="open-combustion" value="10" type="checkbox" /><label for="open-combustion">The foundation is <a href="http://flash.org" target="_blank">protected from combustion</a>.</label>
-    </fieldset>
-  </div>
-
-  <div id="closed-options" class="hidden margin-top">
-    <fieldset>
-      <input id="closed-vent-criteria" value="10" type="checkbox" /><label for="closed-vent-criteria">The vents <a href="http://flash.org" target="_blank">meet criteria</a>.</label>
-    </fieldset>
-  </div>
-</section>
+</div>
 
 <script>
-  $("#type-open").click(function(){
-    $("#closed-options").hide();
-    $("#open-options").show();
-  });
-
-  $("#type-closed").click(function(){
-    $("#open-options").hide();
-    $("#closed-options").show();
-  });
+  var questions = RESCU.filterQuestions("foundation");
+  RESCU.displayQuestions(questions);
 </script>
 
 <footer class="group">
