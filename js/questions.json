@@ -89,7 +89,7 @@
         "id": "walls-combustible",
         "name": "combustion",
         "type": "checkbox",
-        "answer": "Yes, they are combustible.",
+        "answer": "No, they are not combustible.",
         "points": 25
       }
     ]
