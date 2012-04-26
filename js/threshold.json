@@ -1,0 +1,296 @@
+[
+  {
+    "question": "Choose the level that best describes the history of wildfire occurrences or warnings in your area?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "None",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "None",
+        "points": 10
+      },
+      {
+        "id": "Moderate",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "Moderate",
+        "points": 5
+      },
+      {
+        "id": "High",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "High",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "The house is setback _ feet from the slope?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "setback-flat",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "Flat land/no setback",
+        "points": 0
+      },
+      {
+        "id": "setback-below-30",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "Less than 30 feet",
+        "points": 10
+      },
+      {
+        "id": "setback-over-30",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "More than 30 feet",
+        "points": 5
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "Does your typical weather include dry/windy conditions?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "type-yes",
+        "type": "radio",
+        "name": "dry-windy-weather",
+        "answer": "Yes",
+        "points": 10
+      },
+      {
+        "id": "type-no",
+        "type": "radio",
+        "name": "dry-windy-weather",
+        "answer": "No",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "question": "What is the proximity of your house to other ignitable structures (including your neighbors house)?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "ingnitable-structure-0-30-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "ignitable-structure-30-50-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "ignitable-structure-50-100-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "ignitable-structure-over-100-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to grass fields or other light fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "grass-0-30-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "grass-30-50-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "grass-50-100-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "grass-over-100-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to brush, small trees or other medium fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "brush-0-30-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "brush-30-50-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "brush-50-100-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "brush-over-100-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to brush, large trees or other large fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "large-tree-0-30-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "large-tree-30-50-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "large-tree-50-100-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "large-tree-over-100-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+    {
+    "question": "What is the proximity of your house to slash timber residue?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "slash-0-30-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "slash-30-50-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "slash-50-100-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "slash-over-100-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+   {
+    "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "unusual-weather",
+        "type": "checkbox",
+        "name": "proximity-options",
+        "answer": "Yes",
+        "points": 10
+      }
+    ]
+  }
+]

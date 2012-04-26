@@ -93,6 +93,8 @@
         $("#main-wrapper").delegate("#next-page", "click", function(){
           var $main = $("#main"),
               file = $(this).data("file");
+
+          calculateScore();
           
           RESCU.currPage = file.substr(0, file.indexOf("."));
 
@@ -111,8 +113,6 @@
               $main.delay(250).slideDown("fast");
             }, "text");
           });
-
-          calculateScore();
         });
 
 

@@ -2,29 +2,14 @@
   <h1>Windows</h1>
 </header>
 
-  <section>
-  <h2> What type of window glazing?</h2>
+ <div class="questions">
 
-  <fieldset>
-    <input id="single-pane" name="class" value="1" type="radio" /><label for="single-pane">Single pane </label></a><br />
-    <input id="multi-pane" name="class" value="5" type="radio" /><label for="multi-pane">Multi pane</label></a><br />
-    <input id="tempered" name="class" value="10" type="radio" /><label for="tempered">At least one tempered pane</label></a><br />
-  </fieldset>
+</div>
 
-  <a href="http://flash.org" target="_blank">FLASH</a>
-</section>
-
-<section>
-  <h2>Do the windows have non combustible screens?</h2>
-  <fieldset>
-    <input id="Screens-exist" value="10" type="checkbox" /><label for="screens-exist">Yes, the windows have non combustible screens .</label>
-  </fieldset>
-
-  <h2>Do the windows have functional, fire rated shutters</h2>
-  <fieldset>
-    <input id="shutters-functional" value="10" type="checkbox" /><label for="shutters-functional">Yes, the windows have functional, fire rated shutters.</label>
-  </fieldset>
-</section>
+<script>
+  var questions = RESCU.filterQuestions("windows");
+  RESCU.displayQuestions(questions);
+</script>
 
 <footer class="group">
   <a id="previous-page" href="#" data-file="walls.html">Walls</a>

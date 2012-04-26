@@ -31,7 +31,7 @@
       "text": "FLASH"
     }
   },
-  {
+    {
     "question": "What is the foundation type of your home?",
     "code": "wf",
     "view": "foundation",
@@ -81,6 +81,112 @@
     ]
   },
   {
+    "question": "What type of window glazing?",
+    "code": "wf",
+    "view": "windows",
+    "answers": [
+      {
+        "id": "single-pane",
+        "type": "radio",
+        "name": "window-glazing",
+        "answer": "Single pane",
+        "points": 1
+      },
+      {
+        "id": "multi-pane",
+        "type": "radio",
+        "name": "window-glazing",
+        "answer": "Multi pane",
+        "points": 5
+      },
+      {
+        "id": "tempered-pane",
+        "type": "radio",
+        "name": "window-glazing",
+        "answer": "At least one tempered pane",
+        "points": 10
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "Do the windows have non combustible screens?",
+    "code": "wf",
+    "view": "windows",
+    "answers": [
+      {
+        "id": "non-combustible-screens",
+        "type": "checkbox",
+        "name": "open-options",
+        "answer": "Yes, the windows have non combustible screens.",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "Do the windows have functional, fire rated shutters?",
+    "code": "wf",
+    "view": "windows",
+    "answers": [
+      {
+        "id": "window-shutters",
+        "type": "checkbox",
+        "name": "closed-options",
+        "answer": "Yes, the windows have functional, fire rated shutters.",
+        "points": 10
+      }
+    ]
+  },
+  {
+    "question": "What is the roof class of your home?",
+    "code": "wf",
+    "view": "roof",
+    "answers": [
+      {
+        "id": "class-a",
+        "type": "radio",
+        "name": "roof-class",
+        "answer": "Class A",
+        "points": 1
+      },
+      {
+        "id": "class-b",
+        "type": "radio",
+        "name": "roof-class",
+        "answer": "Class B",
+        "points": 5
+      },
+      {
+        "id": "class-c",
+        "type": "radio",
+        "name": "roof-class",
+        "answer": "Class C",
+        "points": 10
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "Do the valleys meet ICC 504.2.1?",
+    "code": "wf",
+    "view": "roof",
+    "answers": [
+      {
+        "id": "roof-valleys",
+        "name": "roof-valleys-icc",
+        "type": "checkbox",
+        "answer": "yes, they meet requirements.",
+        "points": 25
+      }
+     ]
+    },
+  {
     "question": "Are your walls combustible?",
     "code": "wf",
     "view": "walls",
@@ -91,6 +197,62 @@
         "type": "checkbox",
         "answer": "No, they are not combustible.",
         "points": 25
+      }
+     ]
+    },
+    {
+    "question": "Does the chimney have a spark arrester?",
+    "code": "wf",
+    "view": "chimney",
+    "answers": [
+      {
+        "id": "chimney-spark",
+        "name": "spark-arrester",
+        "type": "checkbox",
+        "answer": "Yes, it has a spark arrester with 1/4 inch mesh.",
+        "points": 5
+      }
+     ]
+    },
+    {
+    "question": "Are the vents covered with non-corrosive/ non combustible screens with openings not exceeding 1/4 inch?",
+    "code": "wf",
+    "view": "vents",
+    "answers": [
+      {
+        "id": "vents-covered",
+        "name": "vents-covered",
+        "type": "checkbox",
+        "answer": "Yes, covered with at least 1/4 inch mesh.",
+        "points": 5
+      }
+     ]
+    },
+    {
+    "question": "Are the gutters non combustible?",
+    "code": "wf",
+    "view": "gutters",
+    "answers": [
+      {
+        "id": "gutters-noncombustible",
+        "name": "gutters-noncombustible",
+        "type": "checkbox",
+        "answer": "Yes, they are made of non-combustible materials",
+        "points": 5
+      }
+     ]
+    },
+    {
+    "question": "Are the gutters free of combustible materials?",
+    "code": "wf",
+    "view": "gutters",
+    "answers": [
+      {
+        "id": "gutters-combustible",
+        "name": "free-combustible",
+        "type": "checkbox",
+        "answer": "Gutters are free of combustible materials?",
+        "points": 5
       }
     ]
   }
