@@ -1,0 +1,29 @@
+/*
+ * Clear Float
+ *
+ * Add class "group" to the wrapping container that you wish to clear.
+ */
+
+.group:before, .group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
+

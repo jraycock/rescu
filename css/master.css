@@ -1,25 +1,4 @@
 /*
- * Clear Float
- *
- * Add class "group" to the wrapping container that you wish to clear.
- */
-
-.group:before, .group:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  visibility: hidden;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  zoom: 1;
-}
-
-/*
  * Globals
  */
 
@@ -27,14 +6,6 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: #ccc;
   font-size: 14px;
-}
-
-.hidden {
-  display: none;
-}
-
-.margin-top {
-  margin-top: 15px;
 }
 
 a {
@@ -100,16 +71,122 @@ ul#structure-buttons li:last-child {
 }
 
 /*
- * Structure QA
+ * Main Layout
  *
- * Styles for the structure pages
+ * Styles for the main layout framework
  */
 
 #main-wrapper {
   position: relative;
-  margin: 25px auto;
-  width: 977px;
+  overflow: hidden;
 }
+
+#main-wrapper #main {
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto 0px;
+  width: 1024px;
+  height: 768px;
+  background: transparent url('../image/main_bg.png') 0px 0px no-repeat;
+  border: 25px solid #000;
+
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+}
+
+#main-wrapper .splash h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  margin-top: 270px;
+  margin-bottom: 15px;
+}
+
+#main-wrapper .splash a {
+  position: relative;
+  margin: 0px auto;
+  display: block;
+  width: 200px;
+  color: #fff;
+  text-shadow: 0px 0px 0px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+#main-wrapper .splash a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#main-wrapper .splash a .arrow {
+  position: absolute;
+  right: 10px;
+}
+
+#main-wrapper .splash footer {
+  position: absolute;
+  bottom: 0px;
+  width: 924px;
+  padding: 25px 50px;
+  background: #dedede;
+  background: rgba(255, 255, 255, 0.5);
+
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#main-wrapper .splash footer .tab {
+  position: absolute;
+  top: -40px;
+  height: 40px;
+  width: 200px;
+  right: 5px;
+
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  background: #dedede;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#main-wrapper .splash footer .tab p {
+  color: #272727;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  position: relative;
+  top: 10px;
+  left: 22px;
+}
+
+#main-wrapper .splash footer.hidden {
+  bottom: -160px;
+  opacity: 1;
+  display: block;
+}
+
+#main-wrapper .splash footer #disclaimer {
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  color: #272727;
+  line-height: 18px;
+}
+
+/*
+ * Structure QA
+ *
+ * Styles for the structure pages
+ */
 
 #main-wrapper #score {
   position: absolute;

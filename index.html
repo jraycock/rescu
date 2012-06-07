@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>ReScU Framework</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/utils.css" />
     <link rel="stylesheet" type="text/css" href="css/master.css" />
     <script src="js/libs/jquery-1.7.1.min.js"></script>
     <script src="js/libs/jquery-ui-1.8.18.custom.min.js"></script>
@@ -13,12 +14,24 @@
   <body>
 
     <div id="main-wrapper">
-      <div id="main">
+      <div id="main" class="splash">
 
-        <a href="questions.html">Begin</a>
+        <h1>Welcome to the resilient scoring utility</h1>
 
+        <a href="index.html">Click here to begin <span class="arrow">&rarr;</span></a>
+
+        <footer class="hidden">
+          <div class="tab"><p>Disclaimer</p></div>
+          <p id="disclaimer">The Resilient Scoring Utility (ReScU) framework is a tool that allows homeowners to measure the strength of their home to withstand natural disaster perils.  First, the inspector will perform an assessment of the threat for each type of natural disaster relevant to your location and determine a threshold score.  Next the inspector will perform an assessment of your home to ascertain the strength to which your home was built to withstand the threat.  Finally, a report will be generated that provides specific action items the homeowner can take to increase the strength of their home against prevalent threats.  If your area has incentives, such as insurance discounts or tax credits, that apply to these home hardening measures, the ReScU score can be used as a measurement for obtaining these incentives.</p>
+        </footer>
       </div>
     </div>
+
+    <script>
+      $(".tab").click(function(){
+        $("footer").toggleClass("hidden");
+      });
+    </script>
 
   </body>
 </html>
