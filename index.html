@@ -12,118 +12,13 @@
   </head>
   <body>
 
-    <header id="structure-buttons-header">
-      <ul id="structure-buttons" class="group">
-        <li><a id="foundation" class="structure" data-file="foundation.html">Foundation</a></li>
-        <li><a id="walls" class="structure" data-file="walls.html">Walls</a></li>
-        <li><a id="windows" class="structure" data-file="windows.html">Windows</a></li>
-        <li><a id="roof" class="structure" data-file="roof.html">Roof</a></li>
-        <li><a id="chimney" class="structure" data-file="chimney.html">Chimney</a></li>
-        <li><a id="vents" class="structure" data-file="vents.html">Vents</a></li>
-        <li><a id="gutters" class="structure" data-file="gutters.html">Gutters</a></li>
-      </ul>
-    </header>
-
     <div id="main-wrapper">
       <div id="main">
-      </div>
 
-      <div id="score">
-        <h3>0</h3>
+        <a href="questions.html">Begin</a>
+
       </div>
     </div>
-
-    <script>
-
-      var calculateScore = function(){
-        RESCU.scores[RESCU.currPage] = 0;
-
-        $.each($("input:checked"), function(idx, val){
-          RESCU.scores[RESCU.currPage] += parseInt($(val).val());
-        });
-
-        RESCU.scores.calculateTotal();
-      };
-
-      $(document).ready(function(){
-
-        $.get("js/questions.json", function(data){
-          RESCU.questions = data;
-        }, "json");
-        
-        $(".structure").click(function(){
-          var $main = $("#main"),
-              $this = $(this),
-              file = $this.data("file");
-
-          RESCU.currPage = file.substr(0, file.indexOf("."));
-
-          $("ul#structure-buttons li").removeClass("current");
-          $("#" + RESCU.currPage).closest("li").addClass("current");
-
-          $main.slideUp("fast", function(){
-            $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
-            }, "text");
-          });
-
-          calculateScore();
-        });
-
-        $("#main-wrapper").delegate("#previous-page", "click", function(){
-          var $main = $("#main"),
-              file = $(this).data("file");
-              
-          RESCU.currPage = file.substr(0, file.indexOf("."));
-
-          $("ul#structure-buttons li").removeClass("current");
-          $("#" + RESCU.currPage).closest("li").addClass("current");
-
-          $main.slideUp("fast", function(){
-            $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
-            }, "text");
-          });
-
-          calculateScore();
-        });
-
-        $("#main-wrapper").delegate("#next-page", "click", function(){
-          var $main = $("#main"),
-              file = $(this).data("file");
-
-          calculateScore();
-          
-          RESCU.currPage = file.substr(0, file.indexOf("."));
-
-          if (RESCU.currPage === "summary"){
-            $("#score").hide();
-          } else {
-            $("#score:not(:visible)").show();
-          }
-
-          $("ul#structure-buttons li").removeClass("current");
-          $("#" + RESCU.currPage).closest("li").addClass("current");
-
-          $main.slideUp("fast", function(){
-            $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
-            }, "text");
-          });
-        });
-
-
-        // Start at Home
-        $.get("app/views/building_score/home.html", function(data){
-          $("#main").html(data);
-        }, "text");
-        
-      });
-
-    </script>
 
   </body>
 </html>
