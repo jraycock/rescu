@@ -1,28 +1,35 @@
 [
   {
-    "question": "What is the foundation class of your home?",
+    "question": "Choose the answer that best descries how the foundation of the home is constructed.",
     "code": "wf",
     "view": "foundation",
     "answers": [
       {
-        "id": "class-a",
+        "id": "foundation construction",
         "type": "radio",
-        "name": "foundation-class",
-        "answer": "Class A",
+        "name": "foundation-construction",
+        "answer": "The foundation is an open pier or pile foundation, the floor framing is not fire rated and is exposed to the outside of the house.",
         "points": 1
       },
       {
-        "id": "class-b",
+        "id": "foundation construction",
         "type": "radio",
         "name": "foundation-class",
-        "answer": "Class B",
+        "answer": "The foundation is closed and continuous with open vents not protected by screens",
+        "points": 1
+      },
+      {
+        "id": "foundation construction",
+        "type": "radio",
+        "name": "foundation-construction",
+        "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
         "points": 5
       },
       {
-        "id": "class-c",
+        "id": "foundation construction",
         "type": "radio",
-        "name": "foundation-class",
-        "answer": "Class C",
+        "name": "foundation-construction",
+        "answer": "Completely closed or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
         "points": 10
       }
     ],
@@ -32,56 +39,134 @@
     }
   },
     {
-    "question": "What is the foundation type of your home?",
+    "question": "Are there any attachments to the home including decks, patios or fences? If so, choose the answer that best describes how they are constructed.",
     "code": "wf",
-    "view": "foundation",
+    "view": "walls",
     "answers": [
       {
-        "id": "type-open",
+        "id": "wall attachments",
         "type": "radio",
-        "name": "foundation-type",
-        "answer": "Open Foundation",
+        "name": "wall-attachments",
+        "answer": "There are no attachments, decks, patios or fences.",
+        "points": 10
+      },
+      {
+        "id": "wall attachments",
+        "type": "radio",
+        "name": "wall-attachments",
+        "answer": "Attachment(s) is/are built for a 1-hour fire resitive rating.",
+        "points": 8
+      },
+      {
+        "id": "wall attachments",
+        "type": "radio",
+        "name": "wall-attachments",
+        "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
+        "points": 3
+      },
+      {
+        "id": "wall attachments",
+        "type": "radio",
+        "name": "wall-attachments",
+        "answer": "Attachment(s) is/are built with non-combustible materials",
+        "points": 8
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+    {
+    "question": "Which of the following best describes the material on the exterior walls of the home? Note: If multiple materials, choose the most vulnerable.",
+    "code": "wf",
+    "view": "walls",
+    "answers": [
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Siding is not fire rated.",
+        "points": 0
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Siding is vinyl",
         "points": 5
       },
       {
-        "id": "type-closed",
+        "id": "wall materials",
         "type": "radio",
-        "name": "foundation-type",
-        "answer": "Closed Foundation",
-        "points": 10
-      }
-    ]
-  },
-  {
-    "question": "If you have an open foundation, is it protected from combustion?",
-    "code": "wf",
-    "view": "foundation",
-    "answers": [
+        "name": "wall-materials",
+        "answer": "Siding is a wood or wood-based composite product",
+        "points": 5
+      },
       {
-        "id": "protected-from-combustion",
-        "type": "checkbox",
-        "name": "open-options",
-        "answer": "Yes",
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Siding is a fiber-cement board product",
         "points": 10
-      }
-    ]
-  },
-  {
-    "question": "If you have a closed foundation, do the vents meet criteria?",
-    "code": "wf",
-    "view": "foundation",
-    "answers": [
+      },
       {
-        "id": "vents-meet-criteria",
-        "type": "checkbox",
-        "name": "closed-options",
-        "answer": "Yes",
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Siding is aluminum",
+        "points": 10
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Siding is steel",
+        "points": 10
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Exterior wall finish is Fire Retardant Treated wood",
+        "points": 9
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish",
+        "points": 10
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches",
+        "points": 10
+      },
+      {
+        "id": "wall materials",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Brick siding",
+        "points": 10
+      },
+      {
+        "id": "wall attachments",
+        "type": "radio",
+        "name": "wall-materials",
+        "answer": "Concrete siding",
         "points": 10
       }
-    ]
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
   },
-  {
-    "question": "What type of window glazing?",
+   {
+    "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the  answer that best describes large glass surfaces.",
     "code": "wf",
     "view": "windows",
     "answers": [
@@ -107,64 +192,72 @@
         "points": 10
       }
     ],
+    
     "moreInfo": {
       "link":  "http://www.google.com/",
       "text": "FLASH"
     }
   },
   {
-    "question": "Do the windows have non combustible screens?",
+    "question": "Do the windows have screens? If so choose the answer that best describes the screen. ",
     "code": "wf",
     "view": "windows",
     "answers": [
       {
-        "id": "non-combustible-screens",
-        "type": "checkbox",
-        "name": "open-options",
-        "answer": "Yes, the windows have non combustible screens.",
-        "points": 10
-      }
-    ]
-  },
-  {
-    "question": "Do the windows have functional, fire rated shutters?",
-    "code": "wf",
-    "view": "windows",
-    "answers": [
+        "id": "screens",
+        "type": "radio",
+        "name": "screens",
+        "answer": "No screen",
+        "points": 0
+      },
       {
-        "id": "window-shutters",
-        "type": "checkbox",
-        "name": "closed-options",
-        "answer": "Yes, the windows have functional, fire rated shutters.",
-        "points": 10
+        "id": "screens",
+        "type": "radio",
+        "name": "screens",
+        "answer": "Vinyl screen",
+        "points": 0
+      },
+      {
+        "id": "screens",
+        "type": "radio",
+        "name": "screens",
+        "answer": "Corrosion resistant metal screen",
+        "points": 1
       }
     ]
   },
   {
-    "question": "What is the roof class of your home?",
+    "question": "What material best describes the outside covering on the eaves?",
     "code": "wf",
     "view": "roof",
     "answers": [
       {
-        "id": "class-a",
+        "id": "eaves",
         "type": "radio",
-        "name": "roof-class",
-        "answer": "Class A",
-        "points": 1
+        "name": "eaves",
+        "answer": "The eave covering is wood, less than 3/4 inch thick",
+        "points": 0
       },
       {
-        "id": "class-b",
+        "id": "eaves",
         "type": "radio",
-        "name": "roof-class",
-        "answer": "Class B",
+        "name": "eaves",
+        "answer": "The eave covering is vinyl",
+        "points": 3
+      },
+      {
+        "id": "eaves",
+        "type": "radio",
+        "name": "eaves",
+        "answer": "The eave covering is aluminum",
+        "points": 7
+      },
+      {
+        "id": "eaves",
+        "type": "radio",
+        "name": "eaves",
+        "answer": "The eave covering is cement fiber board",
         "points": 5
-      },
-      {
-        "id": "class-c",
-        "type": "radio",
-        "name": "roof-class",
-        "answer": "Class C",
-        "points": 10
       }
     ],
     "moreInfo": {
@@ -173,86 +266,181 @@
     }
   },
   {
-    "question": "Do the valleys meet ICC 504.2.1?",
+    "question": "What material best describes the roof covering of the home?",
     "code": "wf",
     "view": "roof",
     "answers": [
       {
-        "id": "roof-valleys",
-        "name": "roof-valleys-icc",
-        "type": "checkbox",
-        "answer": "yes, they meet requirements.",
-        "points": 25
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is wood shake",
+        "points": 0
+      },
+      {
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is organic felt asphalt shingles, not fire rated",
+        "points": 3
+      },
+      {
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is organic felt asphalt shingles, fire rated",
+        "points": 9
+      },
+      {
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is aluminum shingle",
+        "points": 9
+      },
+      {
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is steel shingle or standing seam panel",
+        "points": 9
+      },
+      {
+        "id": "roof covering",
+        "type": "radio",
+        "name": "roof-covering",
+        "answer": "The roof covering is clay or cement tile",
+        "points": 10
       }
-     ]
-    },
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+      {
+    "question": "Does the chimney have a spark arrester with 1/4 inch mesh or smaller?",
+    "code": "wf",
+    "view": "roof",
+    "answers": [
+      {
+        "id": "chimney",
+        "type": "radio",
+        "name": "chimney",
+        "answer": "No chimney",
+        "points": 10
+      },
+      {
+        "id": "chimney",
+        "type": "radio",
+        "name": "chimney",
+        "answer": "Chimney without spark arrester",
+        "points": 8
+      },
+            {
+        "id": "chimney",
+        "type": "radio",
+        "name": "chimney",
+        "answer": "Chimney with spark arrester",
+        "points": 10
+      }
+    ]
+  },
   {
-    "question": "Are your walls combustible?",
+    "question": "Examine the complexity of the roof, eaves, valleys and areas where embers could be trapped. Rate the roof based on its complexity. Hint: a hip roof is the least complex.",
     "code": "wf",
-    "view": "walls",
+    "view": "roof",
     "answers": [
       {
-        "id": "walls-combustible",
-        "name": "combustion",
-        "type": "checkbox",
-        "answer": "No, they are not combustible.",
-        "points": 25
+        "id": "complexity",
+        "type": "radio",
+        "name": "complexity",
+        "answer": "Simple roof with no valleys",
+        "points": 10
+      },
+      {
+        "id": "complexity",
+        "type": "radio",
+        "name": "complexity",
+        "answer": "Low complexity",
+        "points": 8
+      },
+      {
+        "id": "complexity",
+        "type": "radio",
+        "name": "complexity",
+        "answer": "Moderate complexity",
+        "points": 8
+      },
+      {
+        "id": "complexity",
+        "type": "radio",
+        "name": "complexity",
+        "answer": "High complexity",
+        "points": 10
       }
-     ]
-    },
-    {
-    "question": "Does the chimney have a spark arrester?",
+    ]
+  },
+     {
+    "question": "Describe the amount of debris on the roof by carefully examining all gutters, corners, valleys, etc.",
     "code": "wf",
-    "view": "chimney",
+    "view": "roof",
     "answers": [
       {
-        "id": "chimney-spark",
-        "name": "spark-arrester",
-        "type": "checkbox",
-        "answer": "Yes, it has a spark arrester with 1/4 inch mesh.",
-        "points": 5
+        "id": "debris",
+        "type": "radio",
+        "name": "debris",
+        "answer": "None",
+        "points": 10
+      },
+      {
+        "id": "debris",
+        "type": "radio",
+        "name": "debris",
+        "answer": "Low",
+        "points": 8
+      },
+      {
+        "id": "debris",
+        "type": "radio",
+        "name": "deb",
+        "answer": "Moderate",
+        "points": 8
+      },
+      {
+        "id": "complexity",
+        "type": "radio",
+        "name": "debri",
+        "answer": "High",
+        "points": 10
       }
-     ]
-    },
+    ]
+  },
     {
-    "question": "Are the vents covered with non-corrosive/ non combustible screens with openings not exceeding 1/4 inch?",
+    "question": "Choose the answer that best describes the vents on the roof",
     "code": "wf",
-    "view": "vents",
+    "view": "roof",
     "answers": [
       {
-        "id": "vents-covered",
-        "name": "vents-covered",
-        "type": "checkbox",
-        "answer": "Yes, covered with at least 1/4 inch mesh.",
-        "points": 5
-      }
-     ]
-    },
-    {
-    "question": "Are the gutters non combustible?",
-    "code": "wf",
-    "view": "gutters",
-    "answers": [
+        "id": "vents",
+        "type": "radio",
+        "name": "vents",
+        "answer": "No vents",
+        "points": 10
+      },
       {
-        "id": "gutters-noncombustible",
-        "name": "gutters-noncombustible",
-        "type": "checkbox",
-        "answer": "Yes, they are made of non-combustible materials",
-        "points": 5
-      }
-     ]
-    },
-    {
-    "question": "Are the gutters free of combustible materials?",
-    "code": "wf",
-    "view": "gutters",
-    "answers": [
-      {
-        "id": "gutters-combustible",
-        "name": "free-combustible",
-        "type": "checkbox",
-        "answer": "Gutters are free of combustible materials?",
-        "points": 5
+        "id": "vents",
+        "type": "radio",
+        "name": "vents",
+        "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch",
+        "points": 8
+      },
+            {
+        "id": "vents",
+        "type": "radio",
+        "name": "vents",
+        "answer": "Open vents",
+        "points": 10
       }
     ]
   }
