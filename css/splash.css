@@ -152,7 +152,7 @@
 
 @-moz-keyframes slideright {
   0% { right: 100%; width: 300% }
-  55% { right: -2%; width: 100%; }
+  80% { right: -2%; width: 100%; }
   100% { right: 0%; width: 100%; }
 }
 
@@ -167,7 +167,7 @@
   position: absolute;
   top: 375px;
   -webkit-animation: slideright 0.5s ease, fadein 1s ease;
-  -moz-animation: slideright 0.5s ease fadein 1s ease;
+  -moz-animation: slideright 0.5s ease, fadein 1s ease;
 }
 
 .splash a {
