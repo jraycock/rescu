@@ -1,0 +1,117 @@
+/*
+ * Structure QA
+ *
+ * Styles for the structure pages
+ */
+
+#main-wrapper #score {
+  position: absolute;
+  left: 992px;
+  top: 0px;
+  padding: 0px 15px;
+  height: 36px;
+  background: #3a78b6 url('../image/score_background.png') repeat-x;
+  border: 1px solid #21251b;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+#main-wrapper #score h3 {
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#main-wrapper header {
+  width: 945px;
+  height: 36px;
+  padding: 0px 15px;
+  background: transparent url('../image/header_background.png');
+  border: 1px solid #21251b;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+}
+
+#main-wrapper h1 {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+  line-height: 36px;
+}
+
+#main-wrapper section {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #efefef;
+  border-bottom: 1px solid #272727;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+}
+
+#main-wrapper section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 7px;
+}
+
+#main-wrapper section input {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+#main-wrapper section label {
+  line-height: 20px;
+}
+
+#main-wrapper footer {
+  margin-top: 25px;
+}
+
+#main-wrapper footer #previous-page {
+  float: left;
+  text-indent: -9999px;
+  background: transparent url('../image/button_previous.png');
+  width: 63px;
+  height: 24px;
+}
+
+#main-wrapper footer #next-page {
+  float: right;
+  text-indent: -9999px;
+  background: transparent url('../image/button_next.png');
+  width: 63px;
+  height: 24px;
+}
+
+/*
+ * Summary Screen
+ */
+
+#summary {
+  padding: 15px;
+  width: 947px;
+  background: #3a78b6;
+  border: 1px solid #21251b;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+#summary h2 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#summary h2 span {
+  font-weight: bold;
+}
+
+#summary h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
