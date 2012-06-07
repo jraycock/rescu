@@ -132,8 +132,6 @@
   position: absolute;
   top: 125px;
   left: 424px;
-  width: 175px;
-  height: 175px;
   opacity: 1;
 
   -webkit-animation: reset 0.5s linear, fadein 0.5s ease 0.5s, scaleup 0.25s ease 0.5s;
