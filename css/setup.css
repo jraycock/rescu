@@ -1,11 +1,17 @@
+.setup h1 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+
 #personal-information {
   padding: 50px;
 }
 
 #pick-a-peril {
-  width: 100%;
-  height: 250px;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 50px;
+  width: 924px;
+  height: 225px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -19,6 +25,7 @@ label {
 input, textarea {
   display: inline-block;
   width: 400px;
+  border: 0px none;
 }
 
 textarea {
@@ -26,18 +33,111 @@ textarea {
 }
 
 input, textarea {
-  padding: 5px;
+  padding: 10px;
 }
 
-fieldset {
-  width: 46%;
+label {
+  display: inline-block;
+}
+
+select {
+  float: right;
 }
 
 .left {
+  width: 49%;
   float: left;
-  margin-right: 5px;
 }
 
 .right {
+  width: 49%;
   float: right;
+}
+
+#perils li {
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  width: 284px;
+  float: left;
+  opacity: 0.5;
+  text-shadow: 0px 0px 0px transparent;
+  margin-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.5s ease, opacity 0.5s ease;
+  -moz-transition: background 0.5s ease, opacity 0.5s ease;
+  transition: background 0.5s ease, opacity 0.5s ease;
+}
+
+#perils li:last-child {
+  margin-right: 0px;
+  width: 286px;
+}
+
+#perils li.on {
+  opacity: 1;
+  text-shadow: 0px 0px 5px #000;
+}
+
+#perils li.on.wildfire {
+  background: rgb(243,115,58);
+}
+
+#perils li.on.flood {
+  background: rgb(44,104,164);
+}
+
+#perils li.on.wind {
+  background: #dedede;
+  color: #272727;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+.setup .options {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.setup a {
+  z-index: 1;
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  display: block;
+  margin: 0px auto;
+  width: 100px;
+  text-shadow: 0px 0px 0px;
+  padding: 10px;
+
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+
+  background: rgb(44, 104, 164);
+
+  border-bottom: 5px solid rgb(23, 78, 133);
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.setup a:hover {
+  text-decoration: none;
+}
+
+.setup a:active {
+  border-bottom: 2px solid rgb(23, 78, 133);
+  border-top: 2px solid rgb(13, 58, 93);
+}
+
+.setup a .arrow {
+  position: absolute;
+  right: 10px;
 }

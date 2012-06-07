@@ -16,29 +16,123 @@
   <body>
 
     <div id="main-wrapper">
-      <div id="main" class="splash">
+      <div id="main" class="setup">
 
         <section id="personal-information">
-          <h1>Personal Information</h1>
+          <h1>Preliminary Information</h1>
 
-          <form>
-            <div class="group">
-              <fieldset class="left">
+          <form class="group">
+            <div class="left">
+              <fieldset>
                 <input id="name" type="text" placeholder="Full Name" />
               </fieldset>
-              <fieldset class="left">
-                <input id="year" type="text" placeholder="Year" />
-              </fieldset>
-            </div>
-            <div class="group">
-              <fieldset class="left">
+              <fieldset>
                 <textarea id="address" placeholder="Full Address"></textarea>
               </fieldset>
-              <fieldset class="left">
+              <fieldset>
+                <input id="year" type="text" placeholder="Year house was built" />
+              </fieldset>
+              <fieldset>
+                <input id="footage" type="text" placeholder="Square footage of house" />
+              </fieldset>
+            </div>
+            <div class="right">
+              <fieldset>
+                <input id="value" type="text" placeholder="Replacement value (excluding land)" />
+              </fieldset>
+              <fieldset>
+                <label>Code house was built to</label>
                 <select id="code">
                   <option value="none">None</option>
                   <option value="icc-2000">ICC-2000</option>
                   <option value="icc-2012">ICC-2012</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label>Number of Levels</label>
+                <select id="levels">
+                  <option value="1">1 Floor</option>
+                  <option value="1.5">1.5 Floors</option>
+                  <option value="2">2 Floors</option>
+                  <option value="3">3 Floors</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label>Number of Windows</label>
+                <select id="windows">
+                  <option value="1">1 Window</option>
+                  <option value="2">2 Windows</option>
+                  <option value="3">3 Windows</option>
+                  <option value="4">4 Windows</option>
+                  <option value="5">5 Windows</option>
+                  <option value="6">6 Window</option>
+                  <option value="7">7 Windows</option>
+                  <option value="8">8 Windows</option>
+                  <option value="9">9 Windows</option>
+                  <option value="10">10 Windows</option>
+                  <option value="11">11 Windows</option>
+                  <option value="12">12 Windows</option>
+                  <option value="13">13 Windows</option>
+                  <option value="14">14 Windows</option>
+                  <option value="15">15 Windows</option>
+                  <option value="16">16 Windows</option>
+                  <option value="17">17 Windows</option>
+                  <option value="18">18 Windows</option>
+                  <option value="19">19 Windows</option>
+                  <option value="20">20 Windows</option>
+                  <option value="21">21 Windows</option>
+                  <option value="22">22 Windows</option>
+                  <option value="23">23 Windows</option>
+                  <option value="24">24 Windows</option>
+                  <option value="25">25 Windows</option>
+                  <option value="26">26 Windows</option>
+                  <option value="27">27 Windows</option>
+                  <option value="28">28 Windows</option>
+                  <option value="29">29 Windows</option>
+                  <option value="30">30 Windows</option>
+                  <option value="31">31 Windows</option>
+                  <option value="32">32 Windows</option>
+                  <option value="33">33 Windows</option>
+                  <option value="34">34 Windows</option>
+                  <option value="35">35 Windows</option>
+                  <option value="36">36 Windows</option>
+                  <option value="37">37 Windows</option>
+                  <option value="38">38 Windows</option>
+                  <option value="39">39 Windows</option>
+                  <option value="40">40 Windows</option>
+                  <option value="41">41 Windows</option>
+                  <option value="42">42 Windows</option>
+                  <option value="43">43 Windows</option>
+                  <option value="44">44 Windows</option>
+                  <option value="45">45 Windows</option>
+                  <option value="46">46 Windows</option>
+                  <option value="47">47 Windows</option>
+                  <option value="48">48 Windows</option>
+                  <option value="49">49 Windows</option>
+                  <option value="50">50 Windows</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label>Number of Doors</label>
+                <select id="doors">
+                  <option value="1">1 Door</option>
+                  <option value="2">2 Doors</option>
+                  <option value="3">3 Doors</option>
+                  <option value="4">4 Doors</option>
+                  <option value="5">5 Doors</option>
+                  <option value="6">6 Door</option>
+                  <option value="7">7 Doors</option>
+                  <option value="8">8 Doors</option>
+                  <option value="9">9 Doors</option>
+                  <option value="10">10 Doors</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label>Estimated build quality</label>
+                <select id="quality">
+                  <option value="average">Average</option>
+                  <option value="luxury">Luxury</option>
+                  <option value="economy">Economy</option>
                 </select>
               </fieldset>
             </div>
@@ -47,11 +141,27 @@
         </section>
 
         <section id="pick-a-peril">
+          <h1>Pick a Peril</h1>
 
+          <ul id="perils">
+            <li class="peril wildfire">Wildfire</li>
+            <li class="peril wind">Wind</li>
+            <li class="peril flood">Flood</li>
+          </ul>
         </section>
+
+        <div class="options">
+          <a class="button" href="questions.html">Continue <span class="arrow">&rarr;</span></a>
+        </div>
 
       </div>
     </div>
+
+    <script>
+      $("li.peril").click(function(){
+        $(this).toggleClass("on");
+      });
+    </script>
 
   </body>
 </html>
