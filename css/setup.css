@@ -1,0 +1,43 @@
+#personal-information {
+  padding: 50px;
+}
+
+#pick-a-peril {
+  width: 100%;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  display: inline-block;
+  width: 400px;
+}
+
+textarea {
+  height: 75px;
+}
+
+input, textarea {
+  padding: 5px;
+}
+
+fieldset {
+  width: 46%;
+}
+
+.left {
+  float: left;
+  margin-right: 5px;
+}
+
+.right {
+  float: right;
+}
