@@ -6,23 +6,13 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/utils.css" />
     <link rel="stylesheet" type="text/css" href="css/master.css" />
-    <link rel="stylesheet" type="text/css" href="css/splash.css" />
+    <link rel="stylesheet" type="text/css" href="css/questions.css" />
     <script src="js/libs/jquery-1.7.1.min.js"></script>
     <script src="js/libs/jquery-ui-1.8.18.custom.min.js"></script>
     <script src="js/libs/underscore.js"></script>
     <script src="js/rescu.js"></script>
   </head>
   <body>
-
-    <header id="structure-buttons-header">
-      <ul id="structure-buttons" class="group">
-        <li><a id="foundation" class="structure" data-file="foundation.html">Foundation</a></li>
-        <li><a id="walls" class="structure" data-file="walls.html">Walls</a></li>
-        <li><a id="windows" class="structure" data-file="windows.html">Windows</a></li>
-        <li><a id="roof" class="structure" data-file="roof.html">Roof</a></li>
-      </ul>
-    </header>
-
 
     <script>
 
@@ -31,10 +21,22 @@
 
     <div id="main-wrapper">
       <div id="main">
-      </div>
+        <div id="questions">
 
-      <div id="score">
-        <h3>0</h3>
+        </div>
+
+        <footer id="structure-buttons-footer">
+          <ul id="structure-buttons" class="group">
+            <li><a id="foundation" class="structure" data-file="foundation.html">Foundation</a></li>
+            <li><a id="walls" class="structure" data-file="walls.html">Walls</a></li>
+            <li><a id="windows" class="structure" data-file="windows.html">Windows</a></li>
+            <li><a id="roof" class="structure" data-file="roof.html">Roof</a></li>
+          </ul>
+
+          <div id="score">
+            <h3>0</h3>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -57,27 +59,7 @@
         }, "json");
 
         $(".structure").click(function(){
-          var $main = $("#main"),
-              $this = $(this),
-              file = $this.data("file");
-
-          RESCU.currPage = file.substr(0, file.indexOf("."));
-
-          $("ul#structure-buttons li").removeClass("current");
-          $("#" + RESCU.currPage).closest("li").addClass("current");
-
-          $main.slideUp("fast", function(){
-            $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
-            }, "text");
-          });
-
-          calculateScore();
-        });
-
-        $("#main-wrapper").delegate("#previous-page", "click", function(){
-          var $main = $("#main"),
+          var $questions = $("#questions"),
               file = $(this).data("file");
 
           RESCU.currPage = file.substr(0, file.indexOf("."));
@@ -85,10 +67,29 @@
           $("ul#structure-buttons li").removeClass("current");
           $("#" + RESCU.currPage).closest("li").addClass("current");
 
-          $main.slideUp("fast", function(){
+          $questions.slideUp("fast", function(){
             $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
+              $questions.html(data);
+              $questions.delay(250).slideDown("fast");
+            }, "text");
+          });
+
+          calculateScore();
+        });
+
+        $("#main-wrapper").delegate("#previous-page", "click", function(){
+          var $questions = $("#questions"),
+              file = $(this).data("file");
+
+          RESCU.currPage = file.substr(0, file.indexOf("."));
+
+          $("ul#structure-buttons li").removeClass("current");
+          $("#" + RESCU.currPage).closest("li").addClass("current");
+
+          $questions.slideUp("fast", function(){
+            $.get("app/views/building_score/" + file, function(data){
+              $questions.html(data);
+              $questions.delay(250).slideDown("fast");
             }, "text");
           });
 
@@ -96,7 +97,7 @@
         });
 
         $("#main-wrapper").delegate("#next-page", "click", function(){
-          var $main = $("#main"),
+          var $questions = $("#questions"),
               file = $(this).data("file");
 
           calculateScore();
@@ -112,19 +113,20 @@
           $("ul#structure-buttons li").removeClass("current");
           $("#" + RESCU.currPage).closest("li").addClass("current");
 
-          $main.slideUp("fast", function(){
+          $questions.slideUp("fast", function(){
             $.get("app/views/building_score/" + file, function(data){
-              $main.html(data);
-              $main.delay(250).slideDown("fast");
+              $questions.html(data);
+              $questions.delay(250).slideDown("fast");
             }, "text");
           });
         });
 
 
         // Start at Home
-        $.get("app/views/building_score/home.html", function(data){
-          $("#main").html(data);
-          console.log($("h1"));
+        $.get("app/views/building_score/foundation.html", function(data){
+          RESCU.currPage = "foundation";
+          $("#" + RESCU.currPage).closest("li").addClass("current");
+          $("#questions").html(data);
         }, "text");
 
       });

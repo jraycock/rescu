@@ -4,65 +4,51 @@
  * Styles for the structure pages
  */
 
+#main-wrapper #questions {
+  width: 100%;
+  height: 700px;
+  overflow: scroll;
+}
+
+#main-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+#main-wrapper h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#main-wrapper #questions section {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#main-wrapper #questions section a {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  background: #3a78b6;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
 #main-wrapper #score {
   position: absolute;
-  left: 992px;
-  top: 0px;
-  padding: 0px 15px;
-  height: 36px;
-  background: #3a78b6 url('../image/score_background.png') repeat-x;
-  border: 1px solid #21251b;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  right: 0px;
+  bottom: 0px;
+  padding: 0px 20px;
+  height: 46px;
+  background: #3a78b6;
 }
 
 #main-wrapper #score h3 {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 46px;
   color: #fff;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-#main-wrapper header {
-  width: 945px;
-  height: 36px;
-  padding: 0px 15px;
-  background: transparent url('../image/header_background.png');
-  border: 1px solid #21251b;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-  margin-bottom: 15px;
-}
-
-#main-wrapper h1 {
-  font-size: 18px;
-  color: #fff;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-  line-height: 36px;
-}
-
-#main-wrapper section {
-  padding: 15px;
-  margin-bottom: 15px;
-  background: #efefef;
-  border-bottom: 1px solid #272727;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
-}
-
-#main-wrapper section h2 {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 24px;
-  margin-bottom: 7px;
-}
-
-#main-wrapper section input {
-  display: inline-block;
-  margin-bottom: 7px;
-  margin-right: 7px;
-}
-
-#main-wrapper section label {
-  line-height: 20px;
 }
 
 #main-wrapper footer {
@@ -83,6 +69,44 @@
   background: transparent url('../image/button_next.png');
   width: 63px;
   height: 24px;
+}
+
+/*
+ * Questions Footer with Sections
+ */
+
+#main-wrapper #structure-buttons-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+ul#structure-buttons {
+  width: 100%;
+  background: #3e454a;
+}
+
+ul#structure-buttons li {
+  float: left;
+  height: 46px;
+  padding: 0px 6px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 46px;
+}
+
+ul#structure-buttons li a {
+  text-decoration: none;
+  display: block;
+  width: 128px;
+  color: #d5dbe1;
+  text-shadow: 1px 2px 0px #272727;
+}
+
+ul#structure-buttons li.current {
+  background: #3a78b6;
 }
 
 /*

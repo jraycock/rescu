@@ -42,41 +42,6 @@ fieldset {
  * Styles for the main header on the structure page.
  */
 
-header#structure-buttons-header {
-  width: 100%;
-  background: #535a60;
-  border-bottom: 1px solid #272727;
-}
-
-ul#structure-buttons {
-  width: 977px;
-  margin: 0px auto;
-}
-
-ul#structure-buttons li {
-  float: left;
-  padding: 8px 6px;
-  margin: 0px;
-  background: #3e454a;
-  text-align: center;
-  cursor: pointer;
-}
-
-ul#structure-buttons li a {
-  display: block;
-  width: 128px;
-  color: #d5dbe1;
-  text-shadow: 1px 2px 0px #272727;
-}
-
-ul#structure-buttons li.current {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-ul#structure-buttons li:last-child {
-  width: 125px;
-}
-
 /*
  * Main Layout
  *
@@ -89,11 +54,12 @@ ul#structure-buttons li:last-child {
 }
 
 #main-wrapper #main {
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
+  padding: 15px;
   margin: 50px auto 0px;
-  width: 1024px;
-  height: 768px;
+  width: 994px;
+  height: 738px;
   background: transparent url('../image/linen.jpg') 0px 0px no-repeat;
   border: 25px solid #000;
 
