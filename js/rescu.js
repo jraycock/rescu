@@ -34,16 +34,14 @@ RESCU.scores = RESCU.scores || {};
 
 RESCU.scores = {
   total: 0,
+  threshold: 0,
   foundation: 0,
   walls: 0,
   windows: 0,
   roof: 0,
-  chimney: 0,
-  vents: 0,
-  gutters: 0,
 
   calculateTotal: function(){
-    this.total = this.walls + this.foundation + this.windows + this.roof + this.chimney + this.vents + this.gutters;
+    this.total = this.walls + this.foundation + this.threshold + this.windows + this.roof;
 
     var $scoreEl = $("#score h3");
     if ($scoreEl){

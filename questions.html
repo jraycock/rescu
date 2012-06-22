@@ -27,6 +27,7 @@
 
         <footer id="structure-buttons-footer">
           <ul id="structure-buttons" class="group">
+            <li><a id="threshold" class="structure" data-file="threshold.html">Threshold</a></li>
             <li><a id="foundation" class="structure" data-file="foundation.html">Foundation</a></li>
             <li><a id="walls" class="structure" data-file="walls.html">Walls</a></li>
             <li><a id="windows" class="structure" data-file="windows.html">Windows</a></li>
@@ -123,8 +124,8 @@
 
 
         // Start at Home
-        $.get("app/views/building_score/foundation.html", function(data){
-          RESCU.currPage = "foundation";
+        $.get("app/views/building_score/threshold.html", function(data){
+          RESCU.currPage = "threshold";
           $("#" + RESCU.currPage).closest("li").addClass("current");
           $("#questions").html(data);
         }, "text");

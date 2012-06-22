@@ -1,32 +1,333 @@
 [
   {
+    "question": "Choose the level that best describes the history of wildfire occurrences or warnings in your area?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "None",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "None",
+        "points": 10
+      },
+      {
+        "id": "Moderate",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "Moderate",
+        "points": 5
+      },
+      {
+        "id": "High",
+        "type": "radio",
+        "name": "history-risk",
+        "answer": "High",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "The house is setback _ feet from the slope?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "setback-flat",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "Flat land/no setback",
+        "points": 0
+      },
+      {
+        "id": "setback-below-30",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "Less than 30 feet",
+        "points": 10
+      },
+      {
+        "id": "setback-over-30",
+        "type": "radio",
+        "name": "house-setback",
+        "answer": "More than 30 feet",
+        "points": 5
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "Does your typical weather include dry/windy conditions?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "type-yes",
+        "type": "radio",
+        "name": "dry-windy-weather",
+        "answer": "Yes",
+        "points": 10
+      },
+      {
+        "id": "type-no",
+        "type": "radio",
+        "name": "dry-windy-weather",
+        "answer": "No",
+        "points": 0
+      }
+    ]
+  },
+  {
+    "question": "What is the proximity of your house to other ignitable structures (including your neighbors house)?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "ingnitable-structure-0-30-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "ignitable-structure-30-50-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "ignitable-structure-50-100-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "ignitable-structure-over-100-feet",
+        "type": "radio",
+        "name": "structure-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to grass fields or other light fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "grass-0-30-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "grass-30-50-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "grass-50-100-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "grass-over-100-feet",
+        "type": "radio",
+        "name": "grass-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to brush, small trees or other medium fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "brush-0-30-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "brush-30-50-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "brush-50-100-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "brush-over-100-feet",
+        "type": "radio",
+        "name": "small-tree-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "What is the proximity of your house to brush, large trees or other large fuel types?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "large-tree-0-30-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "large-tree-30-50-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "large-tree-50-100-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "large-tree-over-100-feet",
+        "type": "radio",
+        "name": "large-tree-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+   {
+    "question": "What is the proximity of your house to slash timber residue?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "slash-0-30-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "0-30 feet",
+        "points": 10
+      },
+      {
+        "id": "slash-30-50-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "30-50 feet",
+        "points": 7
+      },
+      {
+        "id": "slash-50-100-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "50-100 feet",
+        "points": 4
+      },
+      {
+        "id": "slash-over-100-feet",
+        "type": "radio",
+        "name": "slash-proximity",
+        "answer": "Greater than 100 feet",
+        "points": 1
+      }
+    ],
+    "moreInfo": {
+      "link":  "http://www.google.com/",
+      "text": "FLASH"
+    }
+  },
+  {
+    "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "unusual-weather",
+        "type": "radio",
+        "name": "proximity-options",
+        "answer": "Yes",
+        "points": 10
+      },
+      {
+        "id": "type-no",
+        "type": "radio",
+        "name": "proximity-options",
+        "answer": "No",
+        "points": 0
+      }
+    ]
+  },
+    {
     "question": "Choose the answer that best descries how the foundation of the home is constructed.",
     "code": "wf",
     "view": "foundation",
     "answers": [
       {
-        "id": "foundation construction",
+        "id": "foundation-construction-pile",
         "type": "radio",
         "name": "foundation-construction",
         "answer": "The foundation is an open pier or pile foundation, the floor framing is not fire rated and is exposed to the outside of the house.",
         "points": 1
       },
       {
-        "id": "foundation construction",
+        "id": "foundation-construction-closed",
         "type": "radio",
         "name": "foundation-class",
         "answer": "The foundation is closed and continuous with open vents not protected by screens",
         "points": 1
       },
       {
-        "id": "foundation construction",
+        "id": "foundation-construction-barrier",
         "type": "radio",
         "name": "foundation-construction",
         "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
         "points": 5
       },
       {
-        "id": "foundation construction",
+        "id": "foundation-construction-vents",
         "type": "radio",
         "name": "foundation-construction",
         "answer": "Completely closed or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
@@ -44,28 +345,28 @@
     "view": "walls",
     "answers": [
       {
-        "id": "wall attachments",
+        "id": "wall-attachments-no",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "There are no attachments, decks, patios or fences.",
         "points": 10
       },
       {
-        "id": "wall attachments",
+        "id": "wall-attachments-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built for a 1-hour fire resitive rating.",
         "points": 8
       },
       {
-        "id": "wall attachments",
+        "id": "wall-attachments-not-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
         "points": 3
       },
       {
-        "id": "wall attachments",
+        "id": "wall-attachments-non-combustible",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built with non-combustible materials",
@@ -83,77 +384,77 @@
     "view": "walls",
     "answers": [
       {
-        "id": "wall materials",
+        "id": "wall-materials-not-rated",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is not fire rated.",
         "points": 0
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-vinyl",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is vinyl",
         "points": 5
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-wood",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a wood or wood-based composite product",
         "points": 5
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-hardiplank",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a fiber-cement board product",
         "points": 10
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-aluminum",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is aluminum",
         "points": 10
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-steel",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is steel",
         "points": 10
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-treated",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall finish is Fire Retardant Treated wood",
         "points": 9
       },
       {
-        "id": "wall materials",
+        "id": "wall materials-hour",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish",
         "points": 10
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-log",
         "type": "radio",
         "name": "wall-materials",
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches",
         "points": 10
       },
       {
-        "id": "wall materials",
+        "id": "wall-materials-brick",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Brick siding",
         "points": 10
       },
       {
-        "id": "wall attachments",
+        "id": "wall-materals-concrete",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Concrete siding",
@@ -204,21 +505,21 @@
     "view": "windows",
     "answers": [
       {
-        "id": "screens",
+        "id": "screens-no",
         "type": "radio",
         "name": "screens",
         "answer": "No screen",
         "points": 0
       },
       {
-        "id": "screens",
+        "id": "screens-vinyl",
         "type": "radio",
         "name": "screens",
         "answer": "Vinyl screen",
         "points": 0
       },
       {
-        "id": "screens",
+        "id": "screens-corrosion-resistant",
         "type": "radio",
         "name": "screens",
         "answer": "Corrosion resistant metal screen",
@@ -232,28 +533,28 @@
     "view": "roof",
     "answers": [
       {
-        "id": "eaves",
+        "id": "eaves-wood",
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is wood, less than 3/4 inch thick",
         "points": 0
       },
       {
-        "id": "eaves",
+        "id": "eaves-vinyl",
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is vinyl",
         "points": 3
       },
       {
-        "id": "eaves",
+        "id": "eaves-aluminum",
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is aluminum",
         "points": 7
       },
       {
-        "id": "eaves",
+        "id": "eaves-cementfiberboard",
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is cement fiber board",
@@ -271,42 +572,42 @@
     "view": "roof",
     "answers": [
       {
-        "id": "roof covering",
+        "id": "roof-covering-wood",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is wood shake",
         "points": 0
       },
       {
-        "id": "roof covering",
+        "id": "roof-covering-asphalt",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, not fire rated",
         "points": 3
       },
       {
-        "id": "roof covering",
+        "id": "roof-covering-nonasphalt",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, fire rated",
         "points": 9
       },
       {
-        "id": "roof covering",
+        "id": "roof-covering-aluminum",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is aluminum shingle",
         "points": 9
       },
       {
-        "id": "roof covering",
+        "id": "roof-covering-steel",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is steel shingle or standing seam panel",
         "points": 9
       },
       {
-        "id": "roof covering",
+        "id": "roof-covering-clay",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is clay or cement tile",
@@ -324,21 +625,21 @@
     "view": "roof",
     "answers": [
       {
-        "id": "chimney",
+        "id": "chimney-no",
         "type": "radio",
         "name": "chimney",
         "answer": "No chimney",
         "points": 10
       },
       {
-        "id": "chimney",
+        "id": "chimney-without",
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney without spark arrester",
         "points": 8
       },
             {
-        "id": "chimney",
+        "id": "chimney-with",
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney with spark arrester",
@@ -352,28 +653,28 @@
     "view": "roof",
     "answers": [
       {
-        "id": "complexity",
+        "id": "complexity-simple",
         "type": "radio",
         "name": "complexity",
         "answer": "Simple roof with no valleys",
         "points": 10
       },
       {
-        "id": "complexity",
+        "id": "complexity-low",
         "type": "radio",
         "name": "complexity",
         "answer": "Low complexity",
         "points": 8
       },
       {
-        "id": "complexity",
+        "id": "complexity-moderate",
         "type": "radio",
         "name": "complexity",
         "answer": "Moderate complexity",
         "points": 8
       },
       {
-        "id": "complexity",
+        "id": "complexity-high",
         "type": "radio",
         "name": "complexity",
         "answer": "High complexity",
@@ -387,28 +688,28 @@
     "view": "roof",
     "answers": [
       {
-        "id": "debris",
+        "id": "debris-none",
         "type": "radio",
         "name": "debris",
         "answer": "None",
         "points": 10
       },
       {
-        "id": "debris",
+        "id": "debris-low",
         "type": "radio",
         "name": "debris",
         "answer": "Low",
         "points": 8
       },
       {
-        "id": "debris",
+        "id": "debris-moderate",
         "type": "radio",
         "name": "deb",
         "answer": "Moderate",
         "points": 8
       },
       {
-        "id": "complexity",
+        "id": "complexity-high",
         "type": "radio",
         "name": "debri",
         "answer": "High",
@@ -422,21 +723,21 @@
     "view": "roof",
     "answers": [
       {
-        "id": "vents",
+        "id": "vents-no",
         "type": "radio",
         "name": "vents",
         "answer": "No vents",
         "points": 10
       },
       {
-        "id": "vents",
+        "id": "vents-mesh",
         "type": "radio",
         "name": "vents",
         "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch",
         "points": 8
       },
             {
-        "id": "vents",
+        "id": "vents-open",
         "type": "radio",
         "name": "vents",
         "answer": "Open vents",
