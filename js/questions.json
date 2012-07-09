@@ -315,7 +315,7 @@
       {
         "id": "foundation-construction-closed",
         "type": "radio",
-        "name": "foundation-class",
+        "name": "foundation-construction",
         "answer": "The foundation is closed and continuous with open vents not protected by screens",
         "points": 1
       },

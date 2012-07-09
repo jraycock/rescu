@@ -60,6 +60,8 @@
         }, "json");
 
         $(".structure").click(function(){
+          calculateScore();
+
           var $questions = $("#questions"),
               file = $(this).data("file");
 
@@ -74,11 +76,11 @@
               $questions.delay(250).slideDown("fast");
             }, "text");
           });
-
-          calculateScore();
         });
 
         $("#main-wrapper").delegate("#previous-page", "click", function(){
+          calculateScore();
+
           var $questions = $("#questions"),
               file = $(this).data("file");
 
@@ -93,15 +95,13 @@
               $questions.delay(250).slideDown("fast");
             }, "text");
           });
-
-          calculateScore();
         });
 
         $("#main-wrapper").delegate("#next-page", "click", function(){
+          calculateScore();
+
           var $questions = $("#questions"),
               file = $(this).data("file");
-
-          calculateScore();
 
           RESCU.currPage = file.substr(0, file.indexOf("."));
 
