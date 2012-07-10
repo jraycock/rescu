@@ -1,25 +1,26 @@
 [
   {
     "question": "Choose the level that best describes the history of wildfire occurrences or warnings in your area?",
+    "id" : "threshold-history-risk-id" ,
     "code": "wf",
     "view": "threshold",
     "answers": [
       {
-        "id": "None",
+        "id": "threshold-history-none",
         "type": "radio",
         "name": "history-risk",
         "answer": "None",
         "points": 60
       },
       {
-        "id": "Moderate",
+        "id": "threshold-history-moderate",
         "type": "radio",
         "name": "history-risk",
         "answer": "Moderate",
         "points": 30
       },
       {
-        "id": "High",
+        "id": "threshold-history-high",
         "type": "radio",
         "name": "history-risk",
         "answer": "High",
@@ -29,6 +30,7 @@
   },
   {
     "question": "The house is setback _ feet from the slope?",
+    "id" : "house-setback-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -57,18 +59,19 @@
   },
   {
     "question": "Does your typical weather include dry/windy conditions?",
+    "id" : "dry-windy-conditions",
     "code": "wf",
     "view": "threshold",
     "answers": [
       {
-        "id": "type-yes",
+        "id": "dry-windy-yes",
         "type": "radio",
         "name": "dry-windy-weather",
         "answer": "Yes",
         "points": 60
       },
       {
-        "id": "type-no",
+        "id": "dry-windy-no",
         "type": "radio",
         "name": "dry-windy-weather",
         "answer": "No",
@@ -78,6 +81,7 @@
   },
   {
     "question": "What is the proximity of your house to other ignitable structures (including your neighbors house)?",
+    "id" : "structure-proximity-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -113,6 +117,7 @@
   },
   {
     "question": "What is the proximity of your house to grass fields or other light fuel types?",
+    "id" : "grass-proximity-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -148,6 +153,7 @@
   },
   {
     "question": "What is the proximity of your house to brush, small trees or other medium fuel types?",
+    "id" : "brush-proximity-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -183,6 +189,7 @@
   },
   {
     "question": "What is the proximity of your house to brush, large trees or other large fuel types?",
+    "id" : "large-tree-proximity-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -218,6 +225,7 @@
   },
    {
     "question": "What is the proximity of your house to slash timber residue?",
+    "id" : "slash-proximity-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -253,18 +261,19 @@
   },
   {
     "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
+    "id" : "house-setback-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
       {
-        "id": "unusual-weather",
+        "id": "unusual-weather-yes",
         "type": "radio",
         "name": "proximity-options",
         "answer": "Yes",
         "points": 60
       },
       {
-        "id": "type-no",
+        "id": "unusual-weather-no",
         "type": "radio",
         "name": "proximity-options",
         "answer": "No",
@@ -274,6 +283,7 @@
   },
     {
     "question": "Choose the answer that best descries how the foundation of the home is constructed.",
+    "id" : "foundation-construction-id",
     "code": "wf",
     "view": "foundation",
     "answers": [
@@ -309,6 +319,7 @@
   },
     {
     "question": "Are there any attachments to the home including decks, patios or fences? If so, choose the answer that best describes how they are constructed.",
+    "id" : "wall-attachments-id",
     "code": "wf",
     "view": "walls",
     "answers": [
@@ -344,6 +355,7 @@
   },
     {
     "question": "Which of the following best describes the material on the exterior walls of the home? Note: If multiple materials, choose the most vulnerable.",
+    "id" : "wall-materials-id",
     "code": "wf",
     "view": "walls",
     "answers": [
@@ -397,7 +409,7 @@
         "points": 54
       },
       {
-        "id": "wall materials-hour",
+        "id": "wall-materials-hour",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish",
@@ -428,25 +440,26 @@
   },
    {
     "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the  answer that best describes large glass surfaces.",
+    "id" : "window-glazing-id",
     "code": "wf",
     "view": "windows",
     "answers": [
       {
-        "id": "single-pane",
+        "id": "window-single-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "Single pane",
         "points": 8
       },
       {
-        "id": "multi-pane",
+        "id": "window-multi-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "Multi pane",
         "points": 40
       },
       {
-        "id": "tempered-pane",
+        "id": "window-tempered-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "At least one tempered pane",
@@ -456,6 +469,7 @@
   },
   {
     "question": "Do the windows have screens? If so choose the answer that best describes the screen. ",
+    "id" : "window-screen-id",
     "code": "wf",
     "view": "windows",
     "answers": [
@@ -484,6 +498,7 @@
   },
   {
     "question": "What material best describes the outside covering on the eaves?",
+    "id" : "eaves-id",
     "code": "wf",
     "view": "roof",
     "answers": [
@@ -519,6 +534,7 @@
   },
   {
     "question": "What material best describes the roof covering of the home?",
+    "id" : "roof-covering-id",
     "code": "wf",
     "view": "roof",
     "answers": [
@@ -568,25 +584,26 @@
   },
       {
     "question": "Does the chimney have a spark arrester with 1/4 inch mesh or smaller?",
+    "id" : "roof-chimney-id",
     "code": "wf",
     "view": "roof",
     "answers": [
       {
-        "id": "chimney-no",
+        "id": "roof-chimney-no",
         "type": "radio",
         "name": "chimney",
         "answer": "No chimney",
         "points": 0
       },
       {
-        "id": "chimney-without",
+        "id": "roof-chimney-without",
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney without spark arrester",
         "points": 0
       },
             {
-        "id": "chimney-with",
+        "id": "roof-chimney-with",
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney with spark arrester",
@@ -596,32 +613,33 @@
   },
   {
     "question": "Examine the complexity of the roof, eaves, valleys and areas where embers could be trapped. Rate the roof based on its complexity. Hint: a hip roof is the least complex.",
+    "id" : "roof-complexity-id",
     "code": "wf",
     "view": "roof",
     "answers": [
       {
-        "id": "complexity-simple",
+        "id": "roof-complexity-simple",
         "type": "radio",
         "name": "complexity",
         "answer": "Simple roof with no valleys",
         "points": 10
       },
       {
-        "id": "complexity-low",
+        "id": "roof-complexity-low",
         "type": "radio",
         "name": "complexity",
         "answer": "Low complexity",
         "points": 8
       },
       {
-        "id": "complexity-moderate",
+        "id": "roof-complexity-moderate",
         "type": "radio",
         "name": "complexity",
         "answer": "Moderate complexity",
         "points": 8
       },
       {
-        "id": "complexity-high",
+        "id": "roof-complexity-high",
         "type": "radio",
         "name": "complexity",
         "answer": "High complexity",
@@ -631,6 +649,7 @@
   },
      {
     "question": "Describe the amount of debris on the roof by carefully examining all gutters, corners, valleys, etc.",
+    "id" : "debris-id",
     "code": "wf",
     "view": "roof",
     "answers": [
@@ -656,7 +675,7 @@
         "points": 8
       },
       {
-        "id": "complexity-high",
+        "id": "debris-high",
         "type": "radio",
         "name": "debri",
         "answer": "High",
@@ -666,25 +685,26 @@
   },
     {
     "question": "Choose the answer that best describes the vents on the roof",
+    "id" : "roof-vents-id",
     "code": "wf",
     "view": "roof",
     "answers": [
       {
-        "id": "vents-no",
+        "id": "roof-vents-no",
         "type": "radio",
         "name": "vents",
         "answer": "No vents",
         "points": 60
       },
       {
-        "id": "vents-mesh",
+        "id": "roof-vents-mesh",
         "type": "radio",
         "name": "vents",
         "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch",
         "points": 60
       },
             {
-        "id": "vents-open",
+        "id": "roof-vents-open",
         "type": "radio",
         "name": "vents",
         "answer": "Open vents",
