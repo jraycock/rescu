@@ -25,11 +25,7 @@
         "answer": "High",
         "points": 6
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "The house is setback _ feet from the slope?",
@@ -57,11 +53,7 @@
         "answer": "More than 30 feet",
         "points": 35
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "Does your typical weather include dry/windy conditions?",
@@ -117,11 +109,7 @@
         "answer": "Greater than 100 feet",
         "points": 7
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "What is the proximity of your house to grass fields or other light fuel types?",
@@ -156,11 +144,7 @@
         "answer": "Greater than 100 feet",
         "points": 6
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "What is the proximity of your house to brush, small trees or other medium fuel types?",
@@ -195,11 +179,7 @@
         "answer": "Greater than 100 feet",
         "points": 7
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "What is the proximity of your house to brush, large trees or other large fuel types?",
@@ -234,11 +214,7 @@
         "answer": "Greater than 100 feet",
         "points": 7
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
    {
     "question": "What is the proximity of your house to slash timber residue?",
@@ -273,11 +249,7 @@
         "answer": "Greater than 100 feet",
         "points": 6
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
@@ -333,11 +305,7 @@
         "answer": "Completely closed or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
         "points": 70
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
     {
     "question": "Are there any attachments to the home including decks, patios or fences? If so, choose the answer that best describes how they are constructed.",
@@ -372,11 +340,7 @@
         "answer": "Attachment(s) is/are built with non-combustible materials",
         "points": 56
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
     {
     "question": "Which of the following best describes the material on the exterior walls of the home? Note: If multiple materials, choose the most vulnerable.",
@@ -460,11 +424,7 @@
         "answer": "Concrete siding",
         "points": 60
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
    {
     "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the  answer that best describes large glass surfaces.",
@@ -492,12 +452,7 @@
         "answer": "At least one tempered pane",
         "points": 80
       }
-    ],
-
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "Do the windows have screens? If so choose the answer that best describes the screen. ",
@@ -560,11 +515,7 @@
         "answer": "The eave covering is cement fiber board",
         "points": 5
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
   {
     "question": "What material best describes the roof covering of the home?",
@@ -613,11 +564,7 @@
         "answer": "The roof covering is clay or cement tile",
         "points": 80
       }
-    ],
-    "moreInfo": {
-      "link":  "http://www.google.com/",
-      "text": "FLASH"
-    }
+    ]
   },
       {
     "question": "Does the chimney have a spark arrester with 1/4 inch mesh or smaller?",
