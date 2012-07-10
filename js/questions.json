@@ -9,21 +9,21 @@
         "type": "radio",
         "name": "history-risk",
         "answer": "None",
-        "points": 10
+        "points": 60
       },
       {
         "id": "Moderate",
         "type": "radio",
         "name": "history-risk",
         "answer": "Moderate",
-        "points": 5
+        "points": 30
       },
       {
         "id": "High",
         "type": "radio",
         "name": "history-risk",
         "answer": "High",
-        "points": 1
+        "points": 6
       }
     ],
     "moreInfo": {
@@ -48,14 +48,14 @@
         "type": "radio",
         "name": "house-setback",
         "answer": "Less than 30 feet",
-        "points": 10
+        "points": 70
       },
       {
         "id": "setback-over-30",
         "type": "radio",
         "name": "house-setback",
         "answer": "More than 30 feet",
-        "points": 5
+        "points": 35
       }
     ],
     "moreInfo": {
@@ -73,7 +73,7 @@
         "type": "radio",
         "name": "dry-windy-weather",
         "answer": "Yes",
-        "points": 10
+        "points": 60
       },
       {
         "id": "type-no",
@@ -94,28 +94,28 @@
         "type": "radio",
         "name": "structure-proximity",
         "answer": "0-30 feet",
-        "points": 10
+        "points": 70
       },
       {
         "id": "ignitable-structure-30-50-feet",
         "type": "radio",
         "name": "structure-proximity",
         "answer": "30-50 feet",
-        "points": 7
+        "points": 49
       },
       {
         "id": "ignitable-structure-50-100-feet",
         "type": "radio",
         "name": "structure-proximity",
         "answer": "50-100 feet",
-        "points": 4
+        "points": 28
       },
       {
         "id": "ignitable-structure-over-100-feet",
         "type": "radio",
         "name": "structure-proximity",
         "answer": "Greater than 100 feet",
-        "points": 1
+        "points": 7
       }
     ],
     "moreInfo": {
@@ -133,28 +133,28 @@
         "type": "radio",
         "name": "grass-proximity",
         "answer": "0-30 feet",
-        "points": 10
+        "points": 60
       },
       {
         "id": "grass-30-50-feet",
         "type": "radio",
         "name": "grass-proximity",
         "answer": "30-50 feet",
-        "points": 7
+        "points": 42
       },
       {
         "id": "grass-50-100-feet",
         "type": "radio",
         "name": "grass-proximity",
         "answer": "50-100 feet",
-        "points": 4
+        "points": 24
       },
       {
         "id": "grass-over-100-feet",
         "type": "radio",
         "name": "grass-proximity",
         "answer": "Greater than 100 feet",
-        "points": 1
+        "points": 6
       }
     ],
     "moreInfo": {
@@ -172,28 +172,28 @@
         "type": "radio",
         "name": "small-tree-proximity",
         "answer": "0-30 feet",
-        "points": 10
+        "points": 70
       },
       {
         "id": "brush-30-50-feet",
         "type": "radio",
         "name": "small-tree-proximity",
         "answer": "30-50 feet",
-        "points": 7
+        "points": 49
       },
       {
         "id": "brush-50-100-feet",
         "type": "radio",
         "name": "small-tree-proximity",
         "answer": "50-100 feet",
-        "points": 4
+        "points": 28
       },
       {
         "id": "brush-over-100-feet",
         "type": "radio",
         "name": "small-tree-proximity",
         "answer": "Greater than 100 feet",
-        "points": 1
+        "points": 7
       }
     ],
     "moreInfo": {
@@ -211,28 +211,28 @@
         "type": "radio",
         "name": "large-tree-proximity",
         "answer": "0-30 feet",
-        "points": 10
+        "points": 70
       },
       {
         "id": "large-tree-30-50-feet",
         "type": "radio",
         "name": "large-tree-proximity",
         "answer": "30-50 feet",
-        "points": 7
+        "points": 49
       },
       {
         "id": "large-tree-50-100-feet",
         "type": "radio",
         "name": "large-tree-proximity",
         "answer": "50-100 feet",
-        "points": 4
+        "points": 28
       },
       {
         "id": "large-tree-over-100-feet",
         "type": "radio",
         "name": "large-tree-proximity",
         "answer": "Greater than 100 feet",
-        "points": 1
+        "points": 7
       }
     ],
     "moreInfo": {
@@ -250,28 +250,28 @@
         "type": "radio",
         "name": "slash-proximity",
         "answer": "0-30 feet",
-        "points": 10
+        "points": 60
       },
       {
         "id": "slash-30-50-feet",
         "type": "radio",
         "name": "slash-proximity",
         "answer": "30-50 feet",
-        "points": 7
+        "points": 42
       },
       {
         "id": "slash-50-100-feet",
         "type": "radio",
         "name": "slash-proximity",
         "answer": "50-100 feet",
-        "points": 4
+        "points": 24
       },
       {
         "id": "slash-over-100-feet",
         "type": "radio",
         "name": "slash-proximity",
         "answer": "Greater than 100 feet",
-        "points": 1
+        "points": 6
       }
     ],
     "moreInfo": {
@@ -289,7 +289,7 @@
         "type": "radio",
         "name": "proximity-options",
         "answer": "Yes",
-        "points": 10
+        "points": 60
       },
       {
         "id": "type-no",
@@ -310,28 +310,28 @@
         "type": "radio",
         "name": "foundation-construction",
         "answer": "The foundation is an open pier or pile foundation, the floor framing is not fire rated and is exposed to the outside of the house.",
-        "points": 1
+        "points": 0
       },
       {
         "id": "foundation-construction-closed",
         "type": "radio",
         "name": "foundation-class",
         "answer": "The foundation is closed and continuous with open vents not protected by screens",
-        "points": 1
+        "points": 21
       },
       {
         "id": "foundation-construction-barrier",
         "type": "radio",
         "name": "foundation-construction",
         "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
-        "points": 5
+        "points": 49
       },
       {
         "id": "foundation-construction-vents",
         "type": "radio",
         "name": "foundation-construction",
         "answer": "Completely closed or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
-        "points": 10
+        "points": 70
       }
     ],
     "moreInfo": {
@@ -349,28 +349,28 @@
         "type": "radio",
         "name": "wall-attachments",
         "answer": "There are no attachments, decks, patios or fences.",
-        "points": 10
+        "points": 70
       },
       {
         "id": "wall-attachments-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built for a 1-hour fire resitive rating.",
-        "points": 8
+        "points": 56
       },
       {
         "id": "wall-attachments-not-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
-        "points": 3
+        "points": 21
       },
       {
         "id": "wall-attachments-non-combustible",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built with non-combustible materials",
-        "points": 8
+        "points": 56
       }
     ],
     "moreInfo": {
@@ -395,70 +395,70 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is vinyl",
-        "points": 5
+        "points": 30
       },
       {
         "id": "wall-materials-wood",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a wood or wood-based composite product",
-        "points": 5
+        "points": 30
       },
       {
         "id": "wall-materials-hardiplank",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a fiber-cement board product",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materials-aluminum",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is aluminum",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materials-steel",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is steel",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materials-treated",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall finish is Fire Retardant Treated wood",
-        "points": 9
+        "points": 54
       },
       {
         "id": "wall materials-hour",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materials-log",
         "type": "radio",
         "name": "wall-materials",
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materials-brick",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Brick siding",
-        "points": 10
+        "points": 60
       },
       {
         "id": "wall-materals-concrete",
         "type": "radio",
         "name": "wall-materials",
         "answer": "Concrete siding",
-        "points": 10
+        "points": 60
       }
     ],
     "moreInfo": {
@@ -476,21 +476,21 @@
         "type": "radio",
         "name": "window-glazing",
         "answer": "Single pane",
-        "points": 1
+        "points": 8
       },
       {
         "id": "multi-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "Multi pane",
-        "points": 5
+        "points": 40
       },
       {
         "id": "tempered-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "At least one tempered pane",
-        "points": 10
+        "points": 80
       }
     ],
 
@@ -516,14 +516,14 @@
         "type": "radio",
         "name": "screens",
         "answer": "Vinyl screen",
-        "points": 0
+        "points": 5
       },
       {
         "id": "screens-corrosion-resistant",
         "type": "radio",
         "name": "screens",
         "answer": "Corrosion resistant metal screen",
-        "points": 1
+        "points": 10
       }
     ]
   },
@@ -583,35 +583,35 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, not fire rated",
-        "points": 3
+        "points": 24
       },
       {
         "id": "roof-covering-nonasphalt",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, fire rated",
-        "points": 9
+        "points": 72
       },
       {
         "id": "roof-covering-aluminum",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is aluminum shingle",
-        "points": 9
+        "points": 72
       },
       {
         "id": "roof-covering-steel",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is steel shingle or standing seam panel",
-        "points": 9
+        "points": 72
       },
       {
         "id": "roof-covering-clay",
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is clay or cement tile",
-        "points": 10
+        "points": 80
       }
     ],
     "moreInfo": {
@@ -629,14 +629,14 @@
         "type": "radio",
         "name": "chimney",
         "answer": "No chimney",
-        "points": 10
+        "points": 0
       },
       {
         "id": "chimney-without",
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney without spark arrester",
-        "points": 8
+        "points": 0
       },
             {
         "id": "chimney-with",
@@ -727,21 +727,21 @@
         "type": "radio",
         "name": "vents",
         "answer": "No vents",
-        "points": 10
+        "points": 60
       },
       {
         "id": "vents-mesh",
         "type": "radio",
         "name": "vents",
         "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch",
-        "points": 8
+        "points": 60
       },
             {
         "id": "vents-open",
         "type": "radio",
         "name": "vents",
         "answer": "Open vents",
-        "points": 10
+        "points": 30
       }
     ]
   }
