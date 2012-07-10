@@ -9,6 +9,13 @@
 <script>
   var questions = RESCU.filterQuestions("roof");
   RESCU.displayQuestions(questions);
+
+  $("input").change(function(e){
+    var answer = $(e.currentTarget).attr("id"),
+        question = $(e.currentTarget).closest("fieldset").prev().text();
+
+    RESCU.persistAnswer(question, answer);
+  });
 </script>
 
 
