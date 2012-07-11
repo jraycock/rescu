@@ -121,7 +121,7 @@ RESCU.scores = {
   roof: 0,
 
   calculateTotal: function(){
-    this.total = this.walls + this.foundation + this.threshold + this.windows + this.roof;
+    this.total = this.walls + this.foundation + this.windows + this.roof;
 
     var $scoreEl = $("#score h3");
     if ($scoreEl){
