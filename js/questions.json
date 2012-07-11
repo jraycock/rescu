@@ -470,6 +470,8 @@
   {
     "question": "Do the windows have screens? If so choose the answer that best describes the screen. ",
     "id" : "window-screen-id",
+    "multiplicative": true,
+    "multiplier-id" : "window-glazing-id",
     "code": "wf",
     "view": "windows",
     "answers": [
@@ -614,6 +616,8 @@
   {
     "question": "Examine the complexity of the roof, eaves, valleys and areas where embers could be trapped. Rate the roof based on its complexity. Hint: a hip roof is the least complex.",
     "id" : "roof-complexity-id",
+    "multiplicative": true,
+    "multiplier-id" : "roof-covering-id",
     "code": "wf",
     "view": "roof",
     "answers": [
@@ -650,6 +654,8 @@
      {
     "question": "Describe the amount of debris on the roof by carefully examining all gutters, corners, valleys, etc.",
     "id" : "debris-id",
+    "multiplicative": true,
+    "multiplier-id" : "roof-covering-id",
     "code": "wf",
     "view": "roof",
     "answers": [
