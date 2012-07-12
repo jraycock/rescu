@@ -10,6 +10,7 @@
   var questions = RESCU.filterQuestions("threshold");
   RESCU.displayQuestions(questions);
 
+
   $("input").change(function(e){
     var answer = $(e.currentTarget).attr("id"),
         question = $(e.currentTarget).closest("fieldset").prev().attr("id");

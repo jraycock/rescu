@@ -28,6 +28,42 @@
       }
     ]
   },
+    {
+    "question": "Choose the answer that best represents the topography of your area?",
+    "id" : "topography-id",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "topography-flat",
+        "type": "radio",
+        "name": "topography",
+        "answer": "Flat (less than 8% slope)",
+        "points": "0.7"
+      },
+      {
+        "id": "topography-rolling",
+        "type": "radio",
+        "name": "topography",
+        "answer": "Rolling Hills (8-20% slope)",
+        "points": "2.8"
+      },
+      {
+        "id": "topography-moderate",
+        "type": "radio",
+        "name": "topography",
+        "answer": "Moderate Hills (20-30% slope)",
+        "points": "4.9"
+      },
+      {
+        "id": "topography-steep",
+        "type": "radio",
+        "name": "topography",
+        "answer": "Steep Hills (greater than 30% slope)",
+        "points": "7"
+      }
+    ]
+  },
   {
     "question": "The house is setback _ feet from the slope?",
     "id" : "house-setback-id",
@@ -298,7 +334,7 @@
         "id": "foundation-construction-closed",
         "type": "radio",
         "name": "foundation-construction",
-        "answer": "The foundation is closed and continuous with open vents not protected by screens",
+        "answer": "The foundation is closed and continuous with open vents not protected by screens.",
         "points": "2.1"
       },
       {
@@ -348,7 +384,7 @@
         "id": "wall-attachments-non-combustible",
         "type": "radio",
         "name": "wall-attachments",
-        "answer": "Attachment(s) is/are built with non-combustible materials",
+        "answer": "Attachment(s) is/are built with non-combustible materials.",
         "points": "5.6"
       }
     ]
@@ -370,76 +406,76 @@
         "id": "wall-materials-vinyl",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Siding is vinyl",
+        "answer": "Siding is vinyl.",
         "points": "3.0"
       },
       {
         "id": "wall-materials-wood",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Siding is a wood or wood-based composite product",
+        "answer": "Siding is a wood or wood-based composite product.",
         "points": "3.0"
       },
       {
         "id": "wall-materials-hardiplank",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Siding is a fiber-cement board product",
+        "answer": "Siding is a fiber-cement board product.",
         "points": "6"
       },
       {
         "id": "wall-materials-aluminum",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Siding is aluminum",
+        "answer": "Siding is aluminum.",
         "points": "6.0"
       },
       {
         "id": "wall-materials-steel",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Siding is steel",
+        "answer": "Siding is steel.",
         "points": "6.0"
       },
       {
         "id": "wall-materials-treated",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Exterior wall finish is Fire Retardant Treated wood",
+        "answer": "Exterior wall finish is Fire Retardant Treated wood.",
         "points": "5.4"
       },
       {
         "id": "wall-materials-hour",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish",
-        "points": "6.0"
+        "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish.",
+        "points": "6"
       },
       {
         "id": "wall-materials-log",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches",
-        "points": "6.0"
+        "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches.",
+        "points": "6"
       },
       {
         "id": "wall-materials-brick",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Brick siding",
-        "points": "6.0"
+        "answer": "The siding is brick.",
+        "points": "6"
       },
       {
         "id": "wall-materals-concrete",
         "type": "radio",
         "name": "wall-materials",
-        "answer": "Concrete siding",
-        "points": "6.0"
+        "answer": "The siding is concrete.",
+        "points": "6"
       }
     ]
   },
    {
-    "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the  answer that best describes large glass surfaces.",
+    "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the answer that best describes large glass surfaces.",
     "id" : "window-glazing-id",
     "code": "wf",
     "view": "windows",
@@ -456,14 +492,14 @@
         "type": "radio",
         "name": "window-glazing",
         "answer": "Multi pane",
-        "points": "4.0"
+        "points": "4"
       },
       {
         "id": "window-tempered-pane",
         "type": "radio",
         "name": "window-glazing",
         "answer": "At least one tempered pane",
-        "points": "8.0"
+        "points": "8"
       }
     ]
   },
@@ -508,28 +544,28 @@
         "id": "eaves-wood",
         "type": "radio",
         "name": "eaves",
-        "answer": "The eave covering is wood, less than 3/4 inch thick",
+        "answer": "The eave covering is wood, less than 3/4 inch thick.",
         "points": "0"
       },
       {
         "id": "eaves-vinyl",
         "type": "radio",
         "name": "eaves",
-        "answer": "The eave covering is vinyl",
+        "answer": "The eave covering is vinyl.",
         "points": "3.0"
       },
       {
         "id": "eaves-aluminum",
         "type": "radio",
         "name": "eaves",
-        "answer": "The eave covering is aluminum",
+        "answer": "The eave covering is aluminum.",
         "points": "7"
       },
       {
         "id": "eaves-cementfiberboard",
         "type": "radio",
         "name": "eaves",
-        "answer": "The eave covering is cement fiber board",
+        "answer": "The eave covering is cement fiber board.",
         "points": "5"
       }
     ]
@@ -544,42 +580,42 @@
         "id": "roof-covering-wood",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is wood shake",
+        "answer": "The roof covering is wood shake.",
         "points": "0"
       },
       {
         "id": "roof-covering-asphalt",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is organic felt asphalt shingles, not fire rated",
+        "answer": "The roof covering is organic felt asphalt shingles, not fire rated.",
         "points": "2.4"
       },
       {
         "id": "roof-covering-nonasphalt",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is organic felt asphalt shingles, fire rated",
+        "answer": "The roof covering is organic felt asphalt shingles, fire rated.",
         "points": "7.2"
       },
       {
         "id": "roof-covering-aluminum",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is aluminum shingle",
+        "answer": "The roof covering is aluminum shingle.",
         "points": "7.2"
       },
       {
         "id": "roof-covering-steel",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is steel shingle or standing seam panel",
+        "answer": "The roof covering is steel shingle or standing seam panel.",
         "points": "7.2"
       },
       {
         "id": "roof-covering-clay",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is clay or cement tile",
+        "answer": "The roof covering is clay or cement tile.",
         "points": "8.0"
       }
     ]
@@ -706,7 +742,7 @@
         "id": "roof-vents-mesh",
         "type": "radio",
         "name": "vents",
-        "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch",
+        "answer": "Vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "points": "6"
       },
             {
