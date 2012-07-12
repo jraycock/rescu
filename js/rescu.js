@@ -144,7 +144,7 @@ RESCU.scores = {
 
     var $scoreEl = $("#score h3");
     if ($scoreEl){
-      $scoreEl.html(this.total);
+      $scoreEl.html(this.total.toFixed(1));
     }
   }
 };
