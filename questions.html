@@ -47,7 +47,13 @@
         RESCU.scores[RESCU.currPage] = 0;
 
         $.each($("input:checked"), function(idx, val){
-          RESCU.scores[RESCU.currPage] += parseInt($(val).val());
+          if ($(val).data("multiplicative") === true){
+            var multiplierID = $(val).data("multiplier-id"),
+                $multiplier = $("#" + localStorage.getItem(multiplierID));
+            RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10) * parseFloat($multiplier.val(), 10);
+          } else {
+            RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10);
+          }
         });
 
         RESCU.scores.calculateTotal();

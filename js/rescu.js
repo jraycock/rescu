@@ -1,3 +1,18 @@
+/**
+ * RESCU.js magic
+ *
+ * In order to understand this file, there are a few helper methods you need.
+ * From underscore.js (http://underscorejs.org/)
+ *    - _.filter (filter a collection) http://underscorejs.org/#filter
+ *    - _.each (iterate over a collection) http://underscorejs.org/#each
+ *
+ * From jquery.js
+ *    - $.append (insert content) http://api.jquery.com/append/
+ *    - $.attr (get/set an attribute) http://api.jquery.com/attr/
+ *
+ * @author Andrew Thorp
+ */
+
 var RESCU = RESCU || {};
 
 // Default Questions
@@ -23,29 +38,33 @@ RESCU.filterQuestions = function(view){
 RESCU.displayQuestions = function(questions){
   _.each(questions, function(question){
     var $section = $("<section></section>"),
-        $fieldset = $("<fieldset></fieldset>");
+        $fieldset = $("<fieldset></fieldset>"),
+        options = {
+          multiplicative: question.multiplicative === undefined ? false : true,
+          multiplierID: question["multiplier-id"] === undefined ? "" : question["multiplier-id"]
+        };
 
-    var answerID = localStorage.getItem(question.question);
-    if (answerID !== undefined){
-      $section.append($("<h2>" + question.question + "</h2>"));
-      _.each(question.answers, function(answer){
-        if (answerID === answer.id){
-          $fieldset.append("<input id='"+answer.id+"' name='"+answer.name+"' value='"+answer.points+"' type='"+answer.type+"' checked='true' />");
-        } else {
-          $fieldset.append("<input id='"+answer.id+"' name='"+answer.name+"' value='"+answer.points+"' type='"+answer.type+"' />");
-        }
-        $fieldset.append("<label for='"+answer.id+"'>"+answer.answer+"</label><br />");
-        $section.append($fieldset);
-      });
-    } else {
-      $section.append($("<h2>" + question.question + "</h2>"));
-      _.each(question.answers, function(answer){
-        $fieldset.append("<input id='"+answer.id+"' name='"+answer.name+"' value='"+answer.points+"' type='"+answer.type+"' />");
-        $fieldset.append("<label for='"+answer.id+"'>"+answer.answer+"</label><br />");
-        $section.append($fieldset);
-      });
-    }
+    // Add the question to the screen
+    $section.append($("<h2 id='"+question.id+"'>" + question.question + "</h2>"));
 
+    // Loop through each answer
+    _.each(question.answers, function(answer){
+
+      // Setup Input Question
+      var $input = $("<input id='"+answer.id+"' name='"+answer.name+"' value='"+answer.points+"' type='"+answer.type+"' data-multiplicative='"+options.multiplicative+"' data-multiplier-id='"+options.multiplierID+"' />");
+
+      // Decide if it was previously answered
+      if (localStorage.getItem(question.id) === answer.id){
+        $input.attr("checked", true);
+      }
+
+      // Append input (radio button) and label (answer text) to fieldset
+      $fieldset.append($input);
+      $fieldset.append("<label for='"+answer.id+"'>"+answer.answer+"</label><br />");
+
+      // Add the fieldset to the screen
+      $section.append($fieldset);
+    });
 
     if (question.moreInfo !== undefined){
       $section.append("<a href='"+question.moreInfo.link+"' target='_blank'>"+question.moreInfo.text+"</a>")

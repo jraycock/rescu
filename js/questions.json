@@ -676,14 +676,14 @@
       {
         "id": "debris-moderate",
         "type": "radio",
-        "name": "deb",
+        "name": "debris",
         "answer": "Moderate",
         "points": "0.94"
       },
       {
         "id": "debris-high",
         "type": "radio",
-        "name": "debri",
+        "name": "debris",
         "answer": "High",
         "points": "0.9"
       }
