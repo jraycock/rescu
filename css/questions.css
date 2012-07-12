@@ -21,6 +21,7 @@
 }
 
 #main-wrapper #questions section {
+  width: 933px;
   background: rgba(255, 255, 255, 0.25);
   padding: 15px;
   margin-bottom: 15px;
@@ -53,6 +54,7 @@
 }
 
 #main-wrapper footer {
+  width: 963px;
   margin-top: 25px;
 }
 
@@ -115,28 +117,63 @@ ul#structure-buttons li.current {
  */
 
 #summary {
-  padding: 15px;
-  width: 947px;
-  background: #3a78b6;
-  border: 1px solid #21251b;
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  width: 963px;
+  padding-top: 75px;
+}
+
+#summary .scores {
+  display: block;
+  margin-bottom: 55px;
+}
+
+#summary p, #summary ul {
+  margin-bottom: 25px;
+  padding: 0px 45px;
+  line-height: 1.45;
 }
 
 #summary h2 {
-  font-size: 40px;
-  color: #fff;
-  text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-#summary h2 span {
+  padding: 0px 45px;
+  color: #ddd;
   font-weight: bold;
-}
-
-#summary h3 {
   font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+#summary .scores .score {
+  width: 45%;
+}
+
+#summary .scores #threshold-score {
+  float: left;
+}
+
+#summary .scores #building-score {
+  float: right;
+}
+
+#summary .scores #threshold-score span, #summary .scores #building-score span {
+  display: block;
+  background: #3a78b6;
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  padding: 30px 0px;
+  margin: 0px 45px;
+
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#summary .scores #threshold-score span {
+  background: #f3733a;
+}
+
+#summary h1 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }

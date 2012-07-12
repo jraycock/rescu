@@ -1,12 +1,29 @@
-<header>
-  <h1>Summary</h1>
-</header>
 <div id="summary">
-  <h2>Your Building Score is: <span></span></h2>
 
-  <h3>This score takes into account the vulnerability of the features of your home to protect against the threat</h3>
+  <div class="scores group">
+    <div id="threshold-score" class="score">
+      <h1>Threshold Score</h1>
+      <span></span>
+    </div>
+    <div id="building-score" class="score">
+      <h1>Building Score</h1>
+      <span></span>
+    </div>
+  </div>
+
+  <h2>What does this mean?</h2>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+  <h2>Some suggestions for you:</h2>
+  <ul>
+    <li>Suggestion 1</li>
+    <li>Suggestion 2</li>
+    <li>Suggestion 3</li>
+  </ul>
+
 </div>
 
 <script>
-  $("#summary h2 span").html(RESCU.scores.total);
+  $("#threshold-score span").html(RESCU.scores.threshold);
+  $("#building-score span").html(RESCU.scores.total);
 </script>

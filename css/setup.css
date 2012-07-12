@@ -91,7 +91,7 @@ select {
 }
 
 #perils li.on.flood {
-  background: rgb(44,104,164);
+  background: #3a78b6;
 }
 
 #perils li.on.wind {
