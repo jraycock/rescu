@@ -55,6 +55,7 @@ fieldset {
 
 #main-wrapper #main {
   overflow: scroll;
+  overflow: hidden;
   position: relative;
   padding: 15px;
   margin: 50px auto 0px;

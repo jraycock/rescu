@@ -214,6 +214,7 @@
   z-index: 10;
   position: absolute;
   bottom: 0px;
+  left: 0px;
   width: 924px;
   padding: 25px 50px;
   background: #dedede;
