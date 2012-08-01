@@ -475,7 +475,7 @@
     ]
   },
    {
-    "question": "Let's examine the windows, doors, and skylights. Examine the layers of glass. Choose the answer that best describes large glass surfaces.",
+    "question": "Choose the answer that best describes the most vulnerable window panes.",
     "id" : "window-glazing-id",
     "code": "wf",
     "view": "windows",
@@ -726,7 +726,7 @@
     ]
   },
     {
-    "question": "Choose the answer that best describes the vents on the roof",
+    "question": "Choose the answer that best describes the vents on the roof.",
     "id" : "roof-vents-id",
     "code": "wf",
     "view": "roof",
