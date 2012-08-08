@@ -38,54 +38,10 @@
     }());
   </script>
 
-  <table>
+  <table id="questions-table">
     <tr>
       <th>Question</th>
       <th>Answer</th>
-    </tr>
-    <tr>
-      <td>Foundation Construction</td>
-      <td id="q-foundation"></td>
-    </tr>
-    <tr>
-      <td>Attachments Include</td>
-      <td id="q-attachments"></td>
-    </tr>
-    <tr>
-      <td>Exterior Siding Material</td>
-      <td id="q-siding-material"></td>
-    </tr>
-    <tr>
-      <td>Window Style</td>
-      <td id="q-window-style"></td>
-    </tr>
-    <tr>
-      <td>Window Screen Material</td>
-      <td id="q-screen-material"></td>
-    </tr>
-    <tr>
-      <td>Soffit and Eave Material</td>
-      <td id="q-soffit-material"></td>
-    </tr>
-    <tr>
-      <td>Spark Arrestor on the Chimney</td>
-      <td id="q-spark"></td>
-    </tr>
-    <tr>
-      <td>Roof Covering Material</td>
-      <td id="q-roof-material"></td>
-    </tr>
-    <tr>
-      <td>Complexity of the Roof Design</td>
-      <td id="q-roof-complexity"></td>
-    </tr>
-    <tr>
-      <td>Amount of Debris on the Roof</td>
-      <td id="q-debris"></td>
-    </tr>
-    <tr>
-      <td>Type of Vents</td>
-      <td id="q-vents"></td>
     </tr>
   </table>
 
@@ -223,6 +179,20 @@
     setTimeout(function(){
       $("#questions").scrollTop(1);
     }, 500);
+  }());
+</script>
+
+<script>
+  (function(){
+    // LOOPING THROUGH EACH QUESTION
+    _.each(RESCU.questions, function(q){
+      var answerID = localStorage.getItem(q.id);
+      _.each(q.answers, function(a){
+        if (answerID === a.id){
+          $("#questions-table").append("<tr><td>" + q.question + "</td><td>" + a.answer + "</td></tr>");
+        }
+      });
+    });
   }());
 </script>
 

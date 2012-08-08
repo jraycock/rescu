@@ -182,7 +182,11 @@ ul#structure-buttons li.current {
 }
 
 #summary table th:first-child, #summary table td:first-child {
-  width: 80%;
+  width: 70%;
+  text-align: left;
+}
+
+#summary table#questions-table th, #summary table#questions-table td {
   text-align: left;
 }
 
