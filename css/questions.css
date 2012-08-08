@@ -118,7 +118,12 @@ ul#structure-buttons li.current {
 
 #summary {
   width: 963px;
-  padding-top: 75px;
+  padding-top: 25px;
+  z-index: 100;
+}
+
+#summary #personal-information {
+  text-decoration: underline;
 }
 
 #summary .scores {
@@ -132,6 +137,18 @@ ul#structure-buttons li.current {
   line-height: 1.45;
 }
 
+#summary ul li ul {
+  padding: 0px;
+}
+
+#summary ul li ul li {
+  margin-bottom: 10px;
+}
+
+#summary ul li h3 {
+  padding: 0px;
+}
+
 #summary h2 {
   padding: 0px 45px;
   color: #ddd;
@@ -140,6 +157,38 @@ ul#structure-buttons li.current {
   line-height: 1.5;
   font-style: italic;
   margin-bottom: 5px;
+}
+
+#summary h3 {
+  padding: 0px 45px;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+#summary table {
+  margin: 0px auto 25px;
+  width: 90%;
+}
+
+#summary table, #summary table th, #summary table td {
+  padding: 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+
+  -webkit-box-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  -moz-box-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  box-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+#summary table th:first-child, #summary table td:first-child {
+  width: 80%;
+  text-align: left;
+}
+
+#summary table th {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 #summary .scores .score {
@@ -154,7 +203,12 @@ ul#structure-buttons li.current {
   float: right;
 }
 
-#summary .scores #threshold-score span, #summary .scores #building-score span {
+#summary #rescu-score {
+  width: 45%;
+  margin: 0px auto 25px;
+}
+
+#summary .scores #threshold-score span, #summary .scores #building-score span, #summary #rescu-score span {
   display: block;
   background: #3a78b6;
   text-align: center;
@@ -170,6 +224,10 @@ ul#structure-buttons li.current {
 
 #summary .scores #threshold-score span {
   background: #f3733a;
+}
+
+#summary #rescu-score span {
+  background: rgb(140, 180, 118);
 }
 
 #summary h1 {

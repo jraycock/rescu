@@ -128,6 +128,24 @@ RESCU.persistAnswer = function(question, answer){
   localStorage.setItem(question, answer);
 }
 
+/**
+ * Get the user information from localStorage.
+ *
+ * Optional paramter, whether or not to deserialize.
+ * Defaults to true.
+ *
+ * @author Andrew Thorp
+ */
+RESCU.user = function(deserialize){
+  deserialize = typeof deserialize === 'undefined' ? true : deserialize
+
+  if (deserialize){
+    return JSON.parse(localStorage.getItem("userInfo"));
+  } else {
+    return localStorage.getItem("userInfo");
+  }
+};
+
 // Default Scores
 RESCU.scores = RESCU.scores || {};
 

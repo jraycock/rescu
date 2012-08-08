@@ -4,6 +4,12 @@
 
 <div id="summary">
 
+  <div class="personal">
+    <p id="personal-information"></p>
+  </div>
+
+  <p>The Resilient Scroing Utility (ReScU) is intended to help you determine where hardening techniques may increase your home's chance for survival during a natural disaster. The scores indicated for your threat level and home's hardness within this report do not relate to any other systems or metrics available.</p>
+
   <div class="scores group">
     <div id="threshold-score" class="score">
       <h1>ReScU Threat Level</h1>
@@ -14,61 +20,185 @@
       <span></span>
     </div>
   </div>
-   <ul>
-  <li>What does this mean?</li>
-    <ul>
-    <li>ReScU Threat Level – The likelihood and severity of the threat based on your surroundings</li>
-    <p></p>
-    <li>Building Score – The vulnerability of the features of your home to protect against the threat</li>
-    <p></p>
-    <p>The ReScU Score is an indication of the relative strength of your against the threat.  It is essentially the Building Score minus the Threat Level.  A home with a positive score indicates the strength of the home is sufficient to withstand the threat level.  A negative score indicates that there are measures the homeowner can take to improve their home against the threat.  These measures are outlined in the next section of this report.  Shown with each hardening option is an approximate cost of implementation, a return on investment if the disaster were to occur and the increase in building score that would be achieved by implementing the option.</p>
-    <p></p>
-  </u
 
-  <h2>Some suggestions for you:</h2>
+  <div id="rescu-score" class="score">
+    <h1>RESCU SCORE</h1>
+    <span></span>
+  </div>
+
+  <h3>Home Information and Overview</h3>
+
+  <p><span class="name"></span>, you have provided the following basic information regarding the construction of your home.</p>
+
+  <script>
+    (function(){
+      var info = RESCU.user();
+      $("#personal-information").html(info.fullName + "<br />" + info.address);
+      $("span.name").html(info.fullName);
+    }());
+  </script>
+
+  <table>
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+    </tr>
+    <tr>
+      <td>Foundation Construction</td>
+      <td id="q-foundation"></td>
+    </tr>
+    <tr>
+      <td>Attachments Include</td>
+      <td id="q-attachments"></td>
+    </tr>
+    <tr>
+      <td>Exterior Siding Material</td>
+      <td id="q-siding-material"></td>
+    </tr>
+    <tr>
+      <td>Window Style</td>
+      <td id="q-window-style"></td>
+    </tr>
+    <tr>
+      <td>Window Screen Material</td>
+      <td id="q-screen-material"></td>
+    </tr>
+    <tr>
+      <td>Soffit and Eave Material</td>
+      <td id="q-soffit-material"></td>
+    </tr>
+    <tr>
+      <td>Spark Arrestor on the Chimney</td>
+      <td id="q-spark"></td>
+    </tr>
+    <tr>
+      <td>Roof Covering Material</td>
+      <td id="q-roof-material"></td>
+    </tr>
+    <tr>
+      <td>Complexity of the Roof Design</td>
+      <td id="q-roof-complexity"></td>
+    </tr>
+    <tr>
+      <td>Amount of Debris on the Roof</td>
+      <td id="q-debris"></td>
+    </tr>
+    <tr>
+      <td>Type of Vents</td>
+      <td id="q-vents"></td>
+    </tr>
+  </table>
+
+  <script>
+    // Add question values inside of this function
+    (function(){
+
+    }());
+  </script>
+
+  <table>
+    <tr>
+      <th>Requested Input</th>
+      <th>Value Provided</th>
+    </tr>
+    <tr>
+      <td>Square Footage of the first floor</td>
+      <td id="footage"></td>
+    </tr>
+    <tr>
+      <td>Perimeter of the foundation (ft)</td>
+      <td id="perimeter"></td>
+    </tr>
+    <tr>
+      <td>Number of stories of livable space</td>
+      <td id="stories"></td>
+    </tr>
+    <tr>
+      <td>Number of Doors</td>
+      <td id="doors"></td>
+    </tr>
+    <tr>
+      <td>Number of Windows</td>
+      <td id="windows"></td>
+    </tr>
+    <tr>
+      <td>Roof Pitch</td>
+      <td id="pitch"></td>
+    </tr>
+    <tr>
+      <td>Appraised value of the home excluding land</td>
+      <td id="value"></td>
+    </tr>
+  </table>
+
+  <script>
+    // Add Requested Input Values inside of
+    // this function
+    (function(){
+      var info = RESCU.user();
+      $("#footage").html(info.footage);
+      $("#perimeter").html(info.footage);
+      $("#stories").html(info.levels);
+      $("#doors").html(info.doors);
+      $("#windows").html(info.windows);
+      $("#pitch").html(info.pitch);
+      $("#value").html(info.replacementValue);
+    }());
+  </script>
+
   <ul>
-    <li>To reduce your ReScU Threat Level:</li>
-    <li>Move all ignitable materials as far away as possible or to the nearest 100 feet.</li>
-    <li>Trim or prune dead material from trees, shrubs and other landscaping.</li>
-    <li>Replace landscaping ground cover made of combustible materials with non combustible materails. (For example: Replace pine straw ground covering with rock). </li>
-    <li>Move gas tanks, wood piles and any other fuels away from the home.</li>
-    <p></p>
-    <li>To improve your Building Score: </li>
-    <li>Enclose foundation members with at least a 1 hour fire resistive barrier if exposed. </li>
-    <li>Enclose vents with vents with openings not exceeding 1/4 inch.</li>
-    <li>Replace any attachchments including decks, fences, and patios with non combustible materials. or with 1 hour resistive rating. </li>
-    <li>Replace siding with non combustible materials or materials rated for fire resistance.</li>
-    <li>Replace windows with tempered panes and metal screens.</li>
-    <li>Cover eaves in aluminum or fire rated material.</li>
-    <li>Replace roof with non combustible materails or fire rated materials.</li>
-    <li>If a chimney exists, cover opening with an approved spark arrester.</li>
-    <li>Remove any debris from roof valleys, gutters and any other areas where debris collects.</li>
+    <li>
+      <h3>What does this mean?</h3>
+      <ul>
+        <li>ReScU Threat Level – The likelihood and severity of the threat based on your surroundings</li>
+        <li>Building Score – The vulnerability of the features of your home to protect against the threat</li>
+        <li>The ReScU Score is an indication of the relative strength of your against the threat.  It is essentially the Building Score minus the Threat Level.  A home with a positive score indicates the strength of the home is sufficient to withstand the threat level.  A negative score indicates that there are measures the homeowner can take to improve their home against the threat.  These measures are outlined in the next section of this report.  Shown with each hardening option is an approximate cost of implementation, a return on investment if the disaster were to occur and the increase in building score that would be achieved by implementing the option.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <h3>To reduce your ReScU Threat Level:</h3>
+      <ul>
+        <li>Move all ignitable materials as far away as possible or to the nearest 100 feet.</li>
+        <li>Trim or prune dead material from trees, shrubs and other landscaping.</li>
+        <li>Replace landscaping ground cover made of combustible materials with non combustible materails. (For example: Replace pine straw ground covering with rock). </li>
+        <li>Move gas tanks, wood piles and any other fuels away from the home.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <h3>To improve your Building Score:</h3>
+      <ul>
+        <li>Enclose foundation members with at least a 1 hour fire resistive barrier if exposed. </li>
+        <li>Enclose vents with vents with openings not exceeding 1/4 inch.</li>
+        <li>Replace any attachchments including decks, fences, and patios with non combustible materials. or with 1 hour resistive rating. </li>
+        <li>Replace siding with non combustible materials or materials rated for fire resistance.</li>
+        <li>Replace windows with tempered panes and metal screens.</li>
+        <li>Cover eaves in aluminum or fire rated material.</li>
+        <li>Replace roof with non combustible materails or fire rated materials.</li>
+        <li>If a chimney exists, cover opening with an approved spark arrester.</li>
+        <li>Remove any debris from roof valleys, gutters and any other areas where debris collects.</li>
+      </ul>
+    </li>
    </ul>
 
-
-   <li>In order for you to accurately determine the “total cost” of hardening your home against embers from a wildfire.  The following information is provided for calculating a “Return on Investment” , assuming the disaster occurs, for each hardening option: </li>
   <ul>
-    <p></p>
-    <li>Explanation: House Element that you are hardening, Percent of time the house is a total loss if the house element ignites, Return on Investment calculation.</li>
-    <li>Roof Covering,
-80% total loss,
-ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
-    <li>Vents,
-80% total loss,
-ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
-    <li>Windows,
-90% total loss,
-ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-    <li>Wall Covering,
-70% total loss,
-ROI = (0.7)*(cost of option)/(replacement cost of home)</li>
-    <li>Open Foundation,
-90% total loss,
-ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-    <li>Open Foundation,
-90% total loss,
-ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-    
+    <li>
+      <h3>In order for you to accurately determine the “total cost” of hardening your home against embers from a wildfire.  The following information is provided for calculating a “Return on Investment” , assuming the disaster occurs, for each hardening option:</h3>
+      <ul>
+        <li>Explanation: House Element that you are hardening, Percent of time the house is a total loss if the house element ignites, Return on Investment calculation.</li>
+        <li>Roof Covering, 80% total loss, ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
+        <li>Vents, 80% total loss, ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
+        <li>Windows, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
+        <li>Wall Covering, 70% total loss, ROI = (0.7)*(cost of option)/(replacement cost of home)</li>
+        <li>Open Foundation, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
+        <li>Open Foundation, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
+      </ul>
+    </li>
   </ul>
 
 </div>
@@ -76,4 +206,14 @@ ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
 <script>
   $("#threshold-score span").html(RESCU.scores.threshold.toFixed(1));
   $("#building-score span").html(RESCU.scores.total.toFixed(1));
+  $("#rescu-score span").html((RESCU.scores.total.toFixed(1) - RESCU.scores.threshold.toFixed(1)).toFixed(1));
 </script>
+
+<script>
+  (function(){
+    setTimeout(function(){
+      $("#questions").scrollTop(1);
+    }, 500);
+  }());
+</script>
+

@@ -159,22 +159,49 @@
           <h1>Pick a Peril</h1>
 
           <ul id="perils">
-            <li class="peril wildfire">Wildfire</li>
-            <li class="peril wind">Wind</li>
-            <li class="peril flood">Flood</li>
+            <li class="peril wildfire" data-peril="wildfire">Wildfire</li>
+            <li class="peril wind" data-peril="wind">Wind</li>
+            <li class="peril flood" data-peril="flood">Flood</li>
           </ul>
         </section>
 
         <div class="options">
-          <a class="button" href="questions.html">Continue <span class="arrow">&rarr;</span></a>
+          <a id="next-page" class="button" href="questions.html">Continue <span class="arrow">&rarr;</span></a>
         </div>
 
       </div>
     </div>
 
     <script>
-      $("li.peril").click(function(){
-        $(this).toggleClass("on");
+      $(function(){
+        $("li.peril").click(function(){
+          $(this).toggleClass("on");
+        });
+
+        $("#next-page").click(function(e){
+          e.preventDefault();
+
+          var prelim = {
+            "fullName": $("#name").val(),
+            "address": $("#address").val().replace(/\n\r?/g, '<br />'),
+            "year": $("#year").val(),
+            "footage": $("#footage").val(),
+            "replacementValue": $("#value").val(),
+            "code": $("#code option[value='" + $("#code").val() + "']").text(),
+            "levels": $("#levels option[value='" + $("#levels").val() + "']").text(),
+            "windows": $("#windows option[value='" + $("#windows").val() + "']").text(),
+            "doors": $("#doors option[value='" + $("#doors").val() + "']").text(),
+            "pitch": $("#pitch option[value='" + $("#pitch").val() + "']").text(),
+            "perils": []
+          };
+
+          $("li.peril.on").each(function(){
+            prelim.perils.push( $(this).data("peril") );
+          });
+
+          localStorage.setItem("userInfo", JSON.stringify(prelim));
+          window.location = "questions.html";
+        });
       });
     </script>
 
