@@ -204,9 +204,18 @@
 </div>
 
 <script>
-  $("#threshold-score span").html(RESCU.scores.threshold.toFixed(1));
-  $("#building-score span").html(RESCU.scores.total.toFixed(1));
-  $("#rescu-score span").html((RESCU.scores.total.toFixed(1) - RESCU.scores.threshold.toFixed(1)).toFixed(1));
+  (function(){
+    var threshold, building, rescu;
+
+    threshold = ((RESCU.scores.threshold - 51)/(439 * 100) * 10000).toFixed(1);
+    building = (RESCU.scores.total + 37.95)/7.08).toFixed(1);
+    rescu = (building - threshold).toFixed(1);
+
+    $("#threshold-score span").html(threshold);
+    $("#building-score span").html(building);
+    $("#rescu-score span").html(rescu);
+  }());
+
 </script>
 
 <script>
