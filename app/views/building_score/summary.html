@@ -45,13 +45,6 @@
     </tr>
   </table>
 
-  <script>
-    // Add question values inside of this function
-    (function(){
-
-    }());
-  </script>
-
   <table>
     <tr>
       <th>Requested Input</th>
@@ -189,7 +182,97 @@
       var answerID = localStorage.getItem(q.id);
       _.each(q.answers, function(a){
         if (answerID === a.id){
+          // At this point, you are looking at what the user said for the given question.
+          // For instance, q.question will tell you the question text, line 3, 32, etc of questions.json
+          // Also, a.answer will tell you the answer text, line 12, 19, 26, etc of questions.json
           $("#questions-table").append("<tr><td>" + q.question + "</td><td>" + a.answer + "</td></tr>");
+
+          // At this point, you can view any piece of data you add to questions.json for the given question.
+          // Consider adding another field "suggestion" to each answer that has a suggestion.
+          // Using a method similar to line 188, you can append some more information to any piece DOM element.
+
+          // Look at lines 41-46 to see the table, and how I am populating it:
+          // <table> is the tag to declare a table
+          // <tr> is "table row"
+          // <th> is "table header," only the top row should have these (think about it, the HEADERS of each column)
+          // <td> is "table cell," (Why it's not <tc> is beyond me), and each cell has a td.
+          // Each row (<tr>) has to have the same number of td's or th's.
+
+          // You CAN have a row header and a column header, you would do that by filling your first row with nothing but <th>,
+          //    and filling the FIRST cell of every subsequent row with a <th> and every other with a <td>, consider the following:
+
+          /*
+            <table>
+              <tr>
+                <th>Column Header 1</th>
+                <th>Column Header 2</th>
+                <th>Column Header 3</th>
+              </tr>
+              <tr>
+                <th>Row 1 Header</th>
+                <td>Row 1 Data Cell 1</td>
+                <td>Row 1 Data Cell 2</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>Row 2 Data Cell 1</td>
+                <td>Row 2 Data Cell 2</td>
+              </tr>
+            </table>
+          */
+
+          // Now, you will want to add new pieces of data to questions.json, namely the "suggestion" text, and perhaps the "percent" data.
+          // After adding this, you will need to figure out a way to create calculations, and display them on the screen.
+          // You MIGHT do something like this:
+
+          /*
+            (function(){
+              _.each(RESCU.questions, function(q){
+                var answerID = localStorage.getItem(q.id);
+                _.each(q.answers, function(a){
+                  if (answerID === a.id){
+                    $("#suggestions-table").append("<tr><th>Suggestion</th><td>" + a.suggestion + "</td></tr>");
+                  }
+                });
+              });
+            }());
+          */
+
+          // When coming up with your cost model, you might consider looping through the questions/answers the same way, and find your percentages.
+          // You can also do something like cache the answer points, and for each answer, you can see if the points are higher
+          //    then the current highest value. After looping through each of the answers, you will have your 'optimal' answer, which you can then
+          //    show the user somewhere. Consider the following:
+
+          /*
+            (function(){
+              _.each(RESCU.questions, function(q){
+                var answerID = localStorage.getItem(q.id),
+                    selectedAnswer,
+                    optimalAnswer;
+
+                _.each(q.answers, function(a){
+
+                  // This is the answer the user "SELECTED"
+                  if (answerID === a.id){
+                    selectedAnswer = a;
+                  }
+
+                  // Find is the "OPTIMAL" answer
+                  // Basically, if the optimalAnswer hasn't been set yet (undefined), or the current answer is worth
+                  //    more than the optimal answer currently, you want to reset the optimal answer.
+                  if (optimalAnswer === undefined || parseFloat(a.points) > parseFloat(optimalAnswer.points)){
+                    optimalAnswer = a;
+                  }
+
+                });
+
+                // Right here, after you have looped through all of the answers (but before you go to the next question),
+                //    you will have the optimal answer for this question, as well as the answer they selected.
+                // From here, you can do something with the suggestion for the selected answer, the percent for the optimal answer,
+                //    and so on.
+              });
+            }());
+          */
         }
       });
     });
