@@ -26,6 +26,17 @@
     <span></span>
   </div>
 
+  <ul>
+    <li>
+      <h3>What does this mean?</h3>
+      <ul>
+        <li>ReScU Threat Level – The likelihood and severity of the threat based on your surroundings</li>
+        <li>Building Score – The vulnerability of the features of your home to protect against the threat</li>
+        <li>The ReScU Score is an indication of the relative strength of your against the threat.  It is essentially the Building Score minus the Threat Level.  A home with a positive score indicates the strength of the home is sufficient to withstand the threat level.  A negative score indicates that there are measures the homeowner can take to improve their home against the threat.  These measures are outlined in the next section of this report.  Shown with each hardening option is an approximate cost of implementation, a return on investment if the disaster were to occur and the increase in building score that would be achieved by implementing the option.</li>
+      </ul>
+    </li>
+  </ul>
+
   <h3>Home Information and Overview</h3>
 
   <p><span class="name"></span>, you have provided the following basic information regarding the construction of your home.</p>
@@ -42,7 +53,7 @@
     <tr>
       <th>Question</th>
       <th>Answer</th>
-    </tr>
+      </tr>
   </table>
 
   <table>
@@ -86,7 +97,7 @@
     (function(){
       var info = RESCU.user();
       $("#footage").html(info.footage);
-      $("#perimeter").html(info.footage);
+      $("#perimeter").html(info.perimeter);
       $("#stories").html(info.levels);
       $("#doors").html(info.doors);
       $("#windows").html(info.windows);
@@ -95,16 +106,28 @@
     }());
   </script>
 
-  <ul>
-    <li>
-      <h3>What does this mean?</h3>
-      <ul>
-        <li>ReScU Threat Level – The likelihood and severity of the threat based on your surroundings</li>
-        <li>Building Score – The vulnerability of the features of your home to protect against the threat</li>
-        <li>The ReScU Score is an indication of the relative strength of your against the threat.  It is essentially the Building Score minus the Threat Level.  A home with a positive score indicates the strength of the home is sufficient to withstand the threat level.  A negative score indicates that there are measures the homeowner can take to improve their home against the threat.  These measures are outlined in the next section of this report.  Shown with each hardening option is an approximate cost of implementation, a return on investment if the disaster were to occur and the increase in building score that would be achieved by implementing the option.</li>
-      </ul>
-    </li>
-  </ul>
+<table id="suggestions-table">
+    <tr>
+      <th>Answer</th>
+      <th>Suggestions</th>
+      <th>Vulnerability</th>
+      <th>Estimate</th>
+      <th>Return on Investment</th>
+      </tr>
+  </table>
+
+<script>
+  (function(){
+        _.each(RESCU.questions, function(q){
+      var answerID = localStorage.getItem(q.id);
+      _.each(q.answers, function(a){
+        if (answerID === a.id){
+          $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td></tr>");
+        }
+      });
+    });
+  }());
+</script>
 
   <ul>
     <li>

@@ -41,12 +41,7 @@
                 <input id="value" type="text" placeholder="Replacement value (excluding land)" />
               </fieldset>
               <fieldset>
-                <label>Code house was built to</label>
-                <select id="code">
-                  <option value="none">None</option>
-                  <option value="icc-2000">ICC-2000</option>
-                  <option value="icc-2012">ICC-2012</option>
-                </select>
+                <input id="perimeter" type="text" placeholder="Perimeter of the foundation (ft)" />
               </fieldset>
               <fieldset>
                 <label>Number of Levels</label>
@@ -186,8 +181,8 @@
             "address": $("#address").val().replace(/\n\r?/g, '<br />'),
             "year": $("#year").val(),
             "footage": $("#footage").val(),
+            "perimeter": $("#perimeter").val(),
             "replacementValue": $("#value").val(),
-            "code": $("#code option[value='" + $("#code").val() + "']").text(),
             "levels": $("#levels option[value='" + $("#levels").val() + "']").text(),
             "windows": $("#windows option[value='" + $("#windows").val() + "']").text(),
             "doors": $("#doors option[value='" + $("#doors").val() + "']").text(),
