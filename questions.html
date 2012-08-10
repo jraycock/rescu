@@ -51,6 +51,11 @@
           if ($(val).data("multiplicative") === true){
             var multiplierID = $(val).data("multiplier-id"),
                 $multiplier = $("#" + localStorage.getItem(multiplierID));
+
+            // First Subtract the Value of the Score to be multiplied by
+            RESCU.scores[RESCU.currPage] -= parseFloat($multiplier.val(), 10);
+
+            // Now re-Add the new score (with multiplier)
             RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10) * parseFloat($multiplier.val(), 10);
           } else {
             RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10);
