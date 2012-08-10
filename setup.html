@@ -179,14 +179,14 @@
           var prelim = {
             "fullName": $("#name").val(),
             "address": $("#address").val().replace(/\n\r?/g, '<br />'),
-            "year": $("#year").val(),
-            "footage": $("#footage").val(),
-            "perimeter": $("#perimeter").val(),
-            "replacementValue": $("#value").val(),
-            "levels": $("#levels option[value='" + $("#levels").val() + "']").text(),
-            "windows": $("#windows option[value='" + $("#windows").val() + "']").text(),
-            "doors": $("#doors option[value='" + $("#doors").val() + "']").text(),
-            "pitch": $("#pitch option[value='" + $("#pitch").val() + "']").text(),
+            "year": $("#year").val().replace(/\D/g,''),
+            "footage": $("#footage").val().replace(/\D/g,''),
+            "perimeter": $("#perimeter").val().replace(/\D/g,''),
+            "replacementValue": $("#value").val().replace(/\D/g,''),
+            "levels": $("#levels").val(),
+            "windows": $("#windows").val(),
+            "doors": $("#doors").val(),
+            "pitch": $("#pitch").val(),
             "perils": []
           };
 

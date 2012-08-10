@@ -96,13 +96,13 @@
     // this function
     (function(){
       var info = RESCU.user();
-      $("#footage").html(info.footage);
-      $("#perimeter").html(info.perimeter);
+      $("#footage").html(RESCU.addCommas(info.footage));
+      $("#perimeter").html(RESCU.addCommas(info.perimeter));
       $("#stories").html(info.levels);
       $("#doors").html(info.doors);
       $("#windows").html(info.windows);
       $("#pitch").html(info.pitch);
-      $("#value").html(info.replacementValue);
+      $("#value").html("$" + RESCU.addCommas(info.replacementValue));
     }());
   </script>
 
@@ -118,11 +118,27 @@
 
 <script>
   (function(){
-        _.each(RESCU.questions, function(q){
+      var estimate, ROI;
+
+      // Parse INTS for values, for easy access:
+      var perimeter = parseInt(RESCU.user().perimeter, 10),
+          levels = parseInt(RESCU.user().levels, 10),
+          demoCost = 750,
+          laborCost = 1000;
+
+      _.each(RESCU.questions, function(q){
       var answerID = localStorage.getItem(q.id);
       _.each(q.answers, function(a){
+
         if (answerID === a.id){
-          $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td></tr>");
+
+          // Calculate ESTIMATE here:
+          estimate = (perimeter * levels * 10) * (5) + demoCost + laborCost;
+
+          // Calculate ROI here:
+          roi = 2000;
+
+          $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>$" + RESCU.addCommas(roi) + "</td></tr>");
         }
       });
     });
