@@ -297,7 +297,7 @@
   },
   {
     "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
-    "id" : "house-setback-id",
+    "id" : "unusual-weather-id",
     "code": "wf",
     "view": "threshold",
     "answers": [
@@ -373,6 +373,7 @@
         "name": "wall-attachments",
         "answer": "There are no attachments, decks, patios or fences.",
         "points": "70"
+        
       },
       {
         "id": "wall-attachments-hour",
@@ -387,6 +388,7 @@
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
         "points": "21"
+
       },
       {
         "id": "wall-attachments-non-combustible",
@@ -410,6 +412,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is not fire rated.",
+        "cost" : "10.50",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "0"
       },
@@ -418,6 +421,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is vinyl.",
+        "cost" : "8.50",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "30"
       },
@@ -426,6 +430,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a wood or wood-based composite product.",
+        "cost" : "8.50",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "30"
       },
@@ -434,6 +439,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a fiber-cement board product.",
+        "cost" : "5.50",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -442,6 +448,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is aluminum.",
+        "cost" : "5.50",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -450,6 +457,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is steel.",
+        "cost" : "5.50",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -458,6 +466,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is Fire Retardant Treated wood.",
+        "cost" : "6.50",
         "suggestion": "Replace existing siding with higher fire rated siding.",
         "points": "54"
       },
@@ -466,6 +475,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish.",
+        "cost" : "0",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -474,6 +484,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches.",
+        "cost" : "0",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -482,6 +493,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "The siding is brick.",
+        "cost" : "0",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       },
@@ -490,6 +502,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "The siding is concrete.",
+        "cost" : "0",
         "suggestion": "Your siding is well protected, no suggestion.",
         "points": "60"
       }
