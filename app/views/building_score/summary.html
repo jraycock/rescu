@@ -179,8 +179,8 @@
   (function(){
     var threshold, building, rescu;
 
-    threshold = ((RESCU.scores.threshold - 51)/(439 * 100) * 10000).toFixed(1);
-    building = ((RESCU.scores.total + 37.95)/7.08).toFixed(1);
+    threshold = ((RESCU.scores.threshold + 37.95)/(7.08)).toFixed(1);
+    building = ((RESCU.scores.total - 51)/439 * 100).toFixed(1);
     rescu = (building - threshold).toFixed(1);
 
     $("#threshold-score span").html(threshold);

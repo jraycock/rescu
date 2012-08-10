@@ -339,7 +339,7 @@
         "name": "foundation-construction",
         "answer": "The foundation is closed and continuous with open vents not protected by screens.",
         "suggestion": "Enclose vents with screens with openings not exceeding 1/4 inches.",
-        "points": "2.1"
+        "points": "21"
       },
       {
         "id": "foundation-construction-barrier",
@@ -347,7 +347,7 @@
         "name": "foundation-construction",
         "suggestion": "No suggestion. ",
         "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
-        "points": "4.9"
+        "points": "49"
       },
       {
         "id": "foundation-construction-vents",
@@ -355,7 +355,7 @@
         "name": "foundation-construction",
         "suggestion": "No suggestion.",
         "answer": "Completely closed foundation or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
-        "points": "7.0"
+        "points": "70"
       }
     ]
   },
@@ -372,28 +372,28 @@
         "type": "radio",
         "name": "wall-attachments",
         "answer": "There are no attachments, decks, patios or fences.",
-        "points": "7"
+        "points": "70"
       },
       {
         "id": "wall-attachments-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built for a 1-hour fire resitive rating.",
-        "points": "5.6"
+        "points": "56"
       },
       {
         "id": "wall-attachments-not-hour",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
-        "points": "2.1"
+        "points": "21"
       },
       {
         "id": "wall-attachments-non-combustible",
         "type": "radio",
         "name": "wall-attachments",
         "answer": "Attachment(s) is/are built with non-combustible materials.",
-        "points": "5.6"
+        "points": "56"
       }
     ]
   },
@@ -419,7 +419,7 @@
         "name": "wall-materials",
         "answer": "Siding is vinyl.",
         "suggestion": "Replace existing siding with fire rated material.",
-        "points": "3.0"
+        "points": "30"
       },
       {
         "id": "wall-materials-wood",
@@ -427,7 +427,7 @@
         "name": "wall-materials",
         "answer": "Siding is a wood or wood-based composite product.",
         "suggestion": "Replace existing siding with fire rated material.",
-        "points": "3.0"
+        "points": "30"
       },
       {
         "id": "wall-materials-hardiplank",
@@ -435,7 +435,7 @@
         "name": "wall-materials",
         "answer": "Siding is a fiber-cement board product.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "wall-materials-aluminum",
@@ -443,7 +443,7 @@
         "name": "wall-materials",
         "answer": "Siding is aluminum.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6.0"
+        "points": "60"
       },
       {
         "id": "wall-materials-steel",
@@ -451,7 +451,7 @@
         "name": "wall-materials",
         "answer": "Siding is steel.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6.0"
+        "points": "60"
       },
       {
         "id": "wall-materials-treated",
@@ -459,7 +459,7 @@
         "name": "wall-materials",
         "answer": "Siding is Fire Retardant Treated wood.",
         "suggestion": "Replace existing siding with higher fire rated siding.",
-        "points": "5.4"
+        "points": "54"
       },
       {
         "id": "wall-materials-hour",
@@ -467,7 +467,7 @@
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "wall-materials-log",
@@ -475,7 +475,7 @@
         "name": "wall-materials",
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "wall-materials-brick",
@@ -483,7 +483,7 @@
         "name": "wall-materials",
         "answer": "The siding is brick.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "wall-materals-concrete",
@@ -491,7 +491,7 @@
         "name": "wall-materials",
         "answer": "The siding is concrete.",
         "suggestion": "Your siding is well protected, no suggestion.",
-        "points": "6"
+        "points": "60"
       }
     ]
   },
@@ -509,7 +509,7 @@
         "name": "window-glazing",
         "answer": "Single pane windows",
         "suggestion": "Replace window(s) with multiple panes containing at least one tempered pane.",
-        "points": "0.8"
+        "points": "0"
       },
       {
         "id": "window-multi-pane",
@@ -517,7 +517,7 @@
         "name": "window-glazing",
         "answer": "Multi pane windows",
         "suggestion": "Replace with windows containing at least one tempered pane.",
-        "points": "4"
+        "points": "56"
       },
       {
         "id": "window-tempered-pane",
@@ -525,7 +525,7 @@
         "name": "window-glazing",
         "answer": "Windows have at least one tempered pane.",
         "suggestion": "Your windows are well protected.",
-        "points": "8"
+        "points": "80"
       }
     ]
   },
@@ -545,7 +545,7 @@
         "name": "screens",
         "answer": "Windows have no screens.",
         "suggestion": "no suggestion",
-        "points": "0.9"
+        "points": ".9"
       },
       {
         "id": "screens-vinyl",
@@ -553,7 +553,7 @@
         "name": "screens",
         "answer": "Windows have vinyl screens",
         "suggestion": "Replace with fire rated screen.",
-        "points": "0.95"
+        "points": ".95"
       },
       {
         "id": "screens-corrosion-resistant",
@@ -561,7 +561,7 @@
         "name": "screens",
         "answer": "Windows have corrosion resistant metal screen",
         "suggestion": "Your screens are protected.",
-        "points": "1.0"
+        "points": "1"
       }
     ]
   },
@@ -587,7 +587,7 @@
         "name": "eaves",
         "answer": "The eave covering is vinyl.",
         "suggestion": "Replace eave covering with fire rated material.",
-        "points": "3.0"
+        "points": "21"
       },
       {
         "id": "eaves-aluminum",
@@ -595,7 +595,7 @@
         "name": "eaves",
         "answer": "The eave covering is aluminum.",
         "suggestion": "Your eaves are well protected",
-        "points": "7"
+        "points": "49"
       },
       {
         "id": "eaves-cementfiberboard",
@@ -603,7 +603,7 @@
         "name": "eaves",
         "answer": "The eave covering is cement fiber board.",
         "suggestion": "Replace eave covering with fire rated material.",
-        "points": "5"
+        "points": "70"
       }
     ]
   },
@@ -629,7 +629,7 @@
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, not fire rated.",
         "suggestion": "Replace roof covering with fire rated material.",
-        "points": "2.4"
+        "points": "24"
       },
       {
         "id": "roof-covering-nonasphalt",
@@ -637,7 +637,7 @@
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, fire rated.",
         "suggestion": "Replace roof covering with fire rated material.",
-        "points": "7.2"
+        "points": "72"
       },
       {
         "id": "roof-covering-aluminum",
@@ -645,7 +645,7 @@
         "name": "roof-covering",
         "answer": "The roof covering is aluminum shingle.",
         "suggestion": "Replace roof covering with fire rated material.",
-        "points": "7.2"
+        "points": "72"
       },
       {
         "id": "roof-covering-steel",
@@ -653,7 +653,7 @@
         "name": "roof-covering",
         "answer": "The roof covering is steel shingle or standing seam panel.",
         "suggestion": "Replace roof covering with fire rated material.",
-        "points": "7.2"
+        "points": "72"
       },
       {
         "id": "roof-covering-clay",
@@ -661,7 +661,7 @@
         "name": "roof-covering",
         "answer": "The roof covering is clay or cement tile.",
         "suggestion": "Your roof is well protected",
-        "points": "8.0"
+        "points": "80"
       }
     ]
   },
@@ -760,7 +760,7 @@
         "name": "debris",
         "answer": "Low debris on roof.",
         "suggestion": "Remove debris from roof.",
-        "points": "0.97"
+        "points": "0.9"
       },
       {
         "id": "debris-moderate",
@@ -768,7 +768,7 @@
         "name": "debris",
         "answer": "Moderate debris on roof.",
         "suggestion": "Remove debris from roof.",
-        "points": "0.94"
+        "points": "0.8"
       },
       {
         "id": "debris-high",
@@ -776,7 +776,7 @@
         "name": "debris",
         "answer": "High debris on roof.",
         "suggestion": "Remove debris from roof.",
-        "points": "0.9"
+        "points": "0.7"
       }
     ]
   },
@@ -794,7 +794,7 @@
         "name": "vents",
         "answer": "No roof vents",
         "suggestion": "Your vents are well protected.",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "roof-vents-mesh",
@@ -802,7 +802,7 @@
         "name": "vents",
         "answer": "Roof vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "suggestion": "Your vents are well protected.",
-        "points": "6"
+        "points": "60"
       },
             {
         "id": "roof-vents-open",
@@ -810,7 +810,7 @@
         "name": "vents",
         "answer": "Open roof vents",
         "suggestion": "Enclose vents with corrosion resistant mesh not exceeding 1/4 inch.",
-        "points": "3"
+        "points": "30"
       }
     ]
   }
