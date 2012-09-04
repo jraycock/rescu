@@ -170,7 +170,7 @@
           } else if (q.id == "debris-id") {
             estimate = "N/A";
           } else if (q.id == "roof-vents-id") {
-            estimate = Math.round((a.cost * perimeter));
+            estimate = Math.round((a.cost * 5));
           } else {
             estimate = "N/A"
           }
@@ -183,7 +183,7 @@
             //roi = roi + "%"
           }
           if (q.view != "threshold"){
-            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>X" + RESCU.addCommas(roi) + "</td></tr>");
+            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>" + RESCU.addCommas(roi) + "</td></tr>");
           }
         }
       });

@@ -938,7 +938,7 @@
         "id": "roof-vents-open",
         "type": "radio",
         "name": "vents",
-        "cost" : "300",
+        "cost" : "100",
         "answer": "Open roof vents",
         "suggestion": "Enclose vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "points": "30"
