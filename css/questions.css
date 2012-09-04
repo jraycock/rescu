@@ -170,7 +170,7 @@ ul#structure-buttons li.current {
   width: 90%;
 }
 
-#summary table, #summary table th, #summary table td {
+#summary table, #summary table th, #summary table tr, #summary table td {
   padding: 5px;
   border: 1px solid #fff;
   text-align: center;

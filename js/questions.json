@@ -9,6 +9,8 @@
         "id": "threshold-history-none",
         "type": "radio",
         "name": "history-risk",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "No history risk",
         "points": "6"
       },
@@ -16,15 +18,19 @@
         "id": "threshold-history-moderate",
         "type": "radio",
         "name": "history-risk",
+        "cost": "0",
+        "suggestion" : "No suggestion for history risk",
         "answer": "History risk is moderate",
-        "points": "3"
+        "points": "30"
       },
       {
         "id": "threshold-history-high",
         "type": "radio",
         "name": "history-risk",
+        "cost": "0",
+        "suggestion" : "No suggestion for history risk",
         "answer": "History risk is high",
-        "points": "0.6"
+        "points": "60"
       }
     ]
   },
@@ -38,29 +44,37 @@
         "id": "topography-flat",
         "type": "radio",
         "name": "topography",
+        "cost": "0",
+        "suggestion" : "No suggestion for topography",
         "answer": "Flat topography(less than 8% slope)",
-        "points": "0.7"
+        "points": "7"
       },
       {
         "id": "topography-rolling",
         "type": "radio",
         "name": "topography",
+        "cost": "0",
+        "suggestion" : "No suggestion for topography",
         "answer": "Rolling Hills topography(8-20% slope)",
-        "points": "2.8"
+        "points": "28"
       },
       {
         "id": "topography-moderate",
         "type": "radio",
         "name": "topography",
+        "cost": "0",
+        "suggestion" : "No suggestion for topography",
         "answer": "Moderate Hills topography(20-30% slope)",
-        "points": "4.9"
+        "points": "49"
       },
       {
         "id": "topography-steep",
         "type": "radio",
         "name": "topography",
+        "cost": "0",
+        "suggestion" : "No suggestion for topography",
         "answer": "Steep Hills topography(greater than 30% slope)",
-        "points": "7"
+        "points": "70"
       }
     ]
   },
@@ -74,6 +88,8 @@
         "id": "setback-flat",
         "type": "radio",
         "name": "house-setback",
+        "cost": "0",
+        "suggestion" : "No suggestion for setback",
         "answer": "House setback is flat land/no setback",
         "points": "0"
       },
@@ -81,15 +97,19 @@
         "id": "setback-below-30",
         "type": "radio",
         "name": "house-setback",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "House setback is less than 30 feet",
-        "points": "7"
+        "points": "70"
       },
       {
         "id": "setback-over-30",
         "type": "radio",
         "name": "house-setback",
+        "cost": "0",
+        "suggestion" : "No suggestion",
         "answer": "House setback is more than 30 feet",
-        "points": "3.5"
+        "points": "35"
               }
     ]
   },
@@ -103,13 +123,17 @@
         "id": "dry-windy-yes",
         "type": "radio",
         "name": "dry-windy-weather",
+        "cost": "1000",
+        "suggestion" : "Install lawn irrigation system.",
         "answer": "Yes, there are dry/windy conditions",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "dry-windy-no",
         "type": "radio",
         "name": "dry-windy-weather",
+        "cost": "0",
+        "suggestion" : "No suggestion",
         "answer": "No, there are not dry/windy conditions",
         "points": "0"
       }
@@ -125,29 +149,37 @@
         "id": "ingnitable-structure-0-30-feet",
         "type": "radio",
         "name": "structure-proximity",
+        "cost": "0",
+        "suggestion" : "Move structure if possible",
         "answer": "Ignitable structures 0-30 feet",
-        "points": "7"
+        "points": "70"
       },
       {
         "id": "ignitable-structure-30-50-feet",
         "type": "radio",
         "name": "structure-proximity",
+        "cost": "0",
+        "suggestion" : "Move structure if possible",
         "answer": "Ignitable structures 30-50 feet",
-        "points": "4.9"
+        "points": "49"
       },
       {
         "id": "ignitable-structure-50-100-feet",
         "type": "radio",
         "name": "structure-proximity",
+        "cost": "0",
+        "suggestion" : "Move structure if possible",
         "answer": "Ignitable structures 50-100 feet",
-        "points": "2.8"
+        "points": "28"
       },
       {
         "id": "ignitable-structure-over-100-feet",
         "type": "radio",
         "name": "structure-proximity",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "Ignitable structures greater than 100 feet",
-        "points": "0.7"
+        "points": "7"
       }
     ]
   },
@@ -161,29 +193,37 @@
         "id": "grass-0-30-feet",
         "type": "radio",
         "name": "grass-proximity",
+        "cost": "0",
+        "suggestion" : "Remove light fuels within 100 feet",
         "answer": "Grass or light fuel 0-30 feet",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "grass-30-50-feet",
         "type": "radio",
         "name": "grass-proximity",
+        "cost": "0",
+        "suggestion" : "Remove light fuels within 100 feet",
         "answer": "Grass or light fuel 30-50 feet",
-        "points": "4.2"
+        "points": "42"
       },
       {
         "id": "grass-50-100-feet",
         "type": "radio",
         "name": "grass-proximity",
+        "cost": "0",
+        "suggestion" : "Remove light fuels within 100 feet",
         "answer": "Grass or light fuel 50-100 feet",
-        "points": "2.4"
+        "points": "24"
       },
       {
         "id": "grass-over-100-feet",
         "type": "radio",
         "name": "grass-proximity",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "Grass or light fuel greater than 100 feet",
-        "points": "0.6"
+        "points": "6"
       }
     ]
   },
@@ -197,29 +237,37 @@
         "id": "brush-0-30-feet",
         "type": "radio",
         "name": "small-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all medium fuels within 100 feet",
         "answer": "Medium fuel 0-30 feet",
-        "points": "7"
+        "points": "70"
       },
       {
         "id": "brush-30-50-feet",
         "type": "radio",
         "name": "small-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all medium fuels within 100 feet",
         "answer": "Medium fuel 30-50 feet",
-        "points": "4.9"
+        "points": "49"
       },
       {
         "id": "brush-50-100-feet",
         "type": "radio",
         "name": "small-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all medium fuels within 100 feet",
         "answer": "Medium fuel 50-100 feet",
-        "points": "2.8"
+        "points": "28"
       },
       {
         "id": "brush-over-100-feet",
         "type": "radio",
         "name": "small-tree-proximity",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "Medium fuel greater than 100 feet",
-        "points": "0.7"
+        "points": "7"
       }
     ]
   },
@@ -233,29 +281,37 @@
         "id": "large-tree-0-30-feet",
         "type": "radio",
         "name": "large-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all large fuels within 100 feet",
         "answer": "Large fuel 0-30 feet",
-        "points": "7"
+        "points": "70"
       },
       {
         "id": "large-tree-30-50-feet",
         "type": "radio",
         "name": "large-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all large fuels within 100 feet",
         "answer": "Large fuel 30-50 feet",
-        "points": "4.9"
+        "points": "49"
       },
       {
         "id": "large-tree-50-100-feet",
         "type": "radio",
         "name": "large-tree-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all large fuels within 100 feet",
         "answer": "Large fuel 50-100 feet",
-        "points": "2.8"
+        "points": "28"
       },
       {
         "id": "large-tree-over-100-feet",
         "type": "radio",
         "name": "large-tree-proximity",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "Large fuel greater than 100 feet",
-        "points": "0.7"
+        "points": "7"
       }
     ]
   },
@@ -269,29 +325,37 @@
         "id": "slash-0-30-feet",
         "type": "radio",
         "name": "slash-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all slash timber residue fuels within 100 feet",
         "answer": "Slash timber residue 0-30 feet",
-        "points": "6"
+        "points": "60"
       },
       {
         "id": "slash-30-50-feet",
         "type": "radio",
         "name": "slash-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all slash timber residue fuels within 100 feet",
         "answer": "Slash timber residue 30-50 feet",
-        "points": "4.2"
+        "points": "42"
       },
       {
         "id": "slash-50-100-feet",
         "type": "radio",
         "name": "slash-proximity",
+        "cost": "0",
+        "suggestion" : "Remove all slash timber residue fuels within 100 feet",
         "answer": "Slash timber residue 50-100 feet",
-        "points": "2.4"
+        "points": "24"
       },
       {
         "id": "slash-over-100-feet",
         "type": "radio",
         "name": "slash-proximity",
+        "cost": "0",
+        "suggestion" : "You are well protected",
         "answer": "Slash timber residue greater than 100 feet",
-        "points": "0.6"
+        "points": "6"
       }
     ]
   },
@@ -305,13 +369,17 @@
         "id": "unusual-weather-yes",
         "type": "radio",
         "name": "proximity-options",
+        "cost": "0",
+        "suggestion" : "No suggestion",
         "answer": "Yes, unusual weather does exist.",
-        "points": "6"
+        "points": "70"
       },
       {
         "id": "unusual-weather-no",
         "type": "radio",
         "name": "proximity-options",
+        "cost": "0",
+        "suggestion" : "No suggestion",
         "answer": "No unusual weather",
         "points": "0"
       }
@@ -329,14 +397,16 @@
         "id": "foundation-construction-pile",
         "type": "radio",
         "name": "foundation-construction",
+        "cost": "3.80",
         "answer": "The foundation is an open pier or pile foundation, the floor framing is not fire rated and is exposed to the outside of the house.",
-        "suggestion": "completely enclose foundation with fire rated material",
+        "suggestion": "Completely enclose foundation with fire rated material",
         "points": "0"
       },
       {
         "id": "foundation-construction-closed",
         "type": "radio",
         "name": "foundation-construction",
+        "cost": "0.10",
         "answer": "The foundation is closed and continuous with open vents not protected by screens.",
         "suggestion": "Enclose vents with screens with openings not exceeding 1/4 inches.",
         "points": "21"
@@ -345,7 +415,8 @@
         "id": "foundation-construction-barrier",
         "type": "radio",
         "name": "foundation-construction",
-        "suggestion": "No suggestion. ",
+        "cost": "0",
+        "suggestion": "Your foundation is well protected",
         "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
         "points": "49"
       },
@@ -353,8 +424,9 @@
         "id": "foundation-construction-vents",
         "type": "radio",
         "name": "foundation-construction",
-        "suggestion": "No suggestion.",
-        "answer": "Completely closed foundation or with non corrosive vents with openings not exceeding 1/4 inch mesh.",
+        "cost": "0",
+        "suggestion": "Your foundation is well protected",
+        "answer": "Completely closed foundation or with non corrosive vents with openings not exceeding 1/4 inch mesh or slab on grade foundation.",
         "points": "70"
       }
     ]
@@ -371,6 +443,8 @@
         "id": "wall-attachments-no",
         "type": "radio",
         "name": "wall-attachments",
+        "cost": "0",
+        "suggestion": "You are well protected",             
         "answer": "There are no attachments, decks, patios or fences.",
         "points": "70"
         
@@ -379,14 +453,18 @@
         "id": "wall-attachments-hour",
         "type": "radio",
         "name": "wall-attachments",
-        "answer": "Attachment(s) is/are built for a 1-hour fire resitive rating.",
+        "cost": "14",
+        "suggestion": "Replace fence material with non combustible materials",
+        "answer": "Deck(s) is/are not built for a 1-hour fire resitive rating.",
         "points": "56"
       },
       {
         "id": "wall-attachments-not-hour",
         "type": "radio",
         "name": "wall-attachments",
-        "answer": "Attachment(s) is/are not built for a 1-hour fire resitive rating.",
+        "cost": "13",
+        "suggestion": "Replace fence material with non combustible materials",
+        "answer": "Fence(s) is/are not built for a 1-hour fire resitive rating.",
         "points": "21"
 
       },
@@ -394,6 +472,8 @@
         "id": "wall-attachments-non-combustible",
         "type": "radio",
         "name": "wall-attachments",
+        "cost": "0",
+        "suggestion": "You are well protected",
         "answer": "Attachment(s) is/are built with non-combustible materials.",
         "points": "56"
       }
@@ -412,7 +492,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is not fire rated.",
-        "cost" : "10.50",
+        "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "0"
       },
@@ -421,7 +501,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is vinyl.",
-        "cost" : "8.50",
+        "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "30"
       },
@@ -430,7 +510,7 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a wood or wood-based composite product.",
-        "cost" : "8.50",
+        "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
         "points": "30"
       },
@@ -439,8 +519,8 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is a fiber-cement board product.",
-        "cost" : "5.50",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "cost" : "0",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -448,8 +528,8 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is aluminum.",
-        "cost" : "5.50",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "cost" : "0",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -457,8 +537,8 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is steel.",
-        "cost" : "5.50",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "cost" : "0",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -466,8 +546,8 @@
         "type": "radio",
         "name": "wall-materials",
         "answer": "Siding is Fire Retardant Treated wood.",
-        "cost" : "6.50",
-        "suggestion": "Replace existing siding with higher fire rated siding.",
+        "cost" : "0",
+        "suggestion": "Your siding is well protected",
         "points": "54"
       },
       {
@@ -476,7 +556,7 @@
         "name": "wall-materials",
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish.",
         "cost" : "0",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -485,7 +565,7 @@
         "name": "wall-materials",
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches.",
         "cost" : "0",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -494,7 +574,7 @@
         "name": "wall-materials",
         "answer": "The siding is brick.",
         "cost" : "0",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       },
       {
@@ -503,7 +583,7 @@
         "name": "wall-materials",
         "answer": "The siding is concrete.",
         "cost" : "0",
-        "suggestion": "Your siding is well protected, no suggestion.",
+        "suggestion": "Your siding is well protected",
         "points": "60"
       }
     ]
@@ -521,6 +601,7 @@
         "type": "radio",
         "name": "window-glazing",
         "answer": "Single pane windows",
+        "cost" : "455",
         "suggestion": "Replace window(s) with multiple panes containing at least one tempered pane.",
         "points": "0"
       },
@@ -529,6 +610,7 @@
         "type": "radio",
         "name": "window-glazing",
         "answer": "Multi pane windows",
+        "cost" : "455",
         "suggestion": "Replace with windows containing at least one tempered pane.",
         "points": "56"
       },
@@ -536,7 +618,9 @@
         "id": "window-tempered-pane",
         "type": "radio",
         "name": "window-glazing",
+        "cost" : "0",
         "answer": "Windows have at least one tempered pane.",
+        "cost" : "0",
         "suggestion": "Your windows are well protected.",
         "points": "80"
       }
@@ -557,7 +641,8 @@
         "type": "radio",
         "name": "screens",
         "answer": "Windows have no screens.",
-        "suggestion": "no suggestion",
+        "cost" : "66",
+        "suggestion": "Install fire rated corrsion resistant screens",
         "points": ".9"
       },
       {
@@ -565,7 +650,8 @@
         "type": "radio",
         "name": "screens",
         "answer": "Windows have vinyl screens",
-        "suggestion": "Replace with fire rated screen.",
+        "cost" : "66",
+        "suggestion": "Install fire rated corrsion resistant metal screens",
         "points": ".95"
       },
       {
@@ -573,6 +659,7 @@
         "type": "radio",
         "name": "screens",
         "answer": "Windows have corrosion resistant metal screen",
+        "cost" : "0",
         "suggestion": "Your screens are protected.",
         "points": "1"
       }
@@ -591,6 +678,7 @@
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is wood, less than 3/4 inch thick.",
+        "cost" : "12",
         "suggestion": "Replace eave covering with fire rated material.",
         "points": "0"
       },
@@ -599,6 +687,7 @@
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is vinyl.",
+        "cost" : "12",
         "suggestion": "Replace eave covering with fire rated material.",
         "points": "21"
       },
@@ -607,7 +696,8 @@
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is aluminum.",
-        "suggestion": "Your eaves are well protected",
+        "cost" : "12",
+        "suggestion": "Replace eave covering with fire rated material.",
         "points": "49"
       },
       {
@@ -615,6 +705,7 @@
         "type": "radio",
         "name": "eaves",
         "answer": "The eave covering is cement fiber board.",
+        "cost" : "0",
         "suggestion": "Replace eave covering with fire rated material.",
         "points": "70"
       }
@@ -633,6 +724,7 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is wood shake.",
+        "cost" : "4.00",
         "suggestion": "Replace roof covering with fire rated material.",
         "points": "0"
       },
@@ -641,6 +733,7 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is organic felt asphalt shingles, not fire rated.",
+        "cost" : "4.00",
         "suggestion": "Replace roof covering with fire rated material.",
         "points": "24"
       },
@@ -648,8 +741,9 @@
         "id": "roof-covering-nonasphalt",
         "type": "radio",
         "name": "roof-covering",
-        "answer": "The roof covering is organic felt asphalt shingles, fire rated.",
-        "suggestion": "Replace roof covering with fire rated material.",
+        "answer": "The roof covering is inorganic felt asphalt shingles, fire rated.",
+        "cost" : "0",
+        "suggestion": "Your roof covering is well protected",
         "points": "72"
       },
       {
@@ -657,7 +751,8 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is aluminum shingle.",
-        "suggestion": "Replace roof covering with fire rated material.",
+        "cost" : "0",
+        "suggestion": "Your roof covering is well protected",
         "points": "72"
       },
       {
@@ -665,7 +760,8 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is steel shingle or standing seam panel.",
-        "suggestion": "Replace roof covering with fire rated material.",
+        "cost" : "0",
+        "suggestion": "Your roof covering is well protected",
         "points": "72"
       },
       {
@@ -673,7 +769,8 @@
         "type": "radio",
         "name": "roof-covering",
         "answer": "The roof covering is clay or cement tile.",
-        "suggestion": "Your roof is well protected",
+        "cost" : "0",
+        "suggestion": "Your roof covering is well protected",
         "points": "80"
       }
     ]
@@ -691,6 +788,8 @@
         "type": "radio",
         "name": "chimney",
         "answer": "There is no chimney.",
+        "cost" : "0",
+        "suggestion": "You are well protected",
         "points": "0"
       },
       {
@@ -698,12 +797,16 @@
         "type": "radio",
         "name": "chimney",
         "answer": "Chimney exists but without a spark arrester.",
+        "cost" : "125",
+        "suggestion": "Install fire rated spark arrester",
         "points": "0"
       },
-            {
+        {
         "id": "roof-chimney-with",
         "type": "radio",
         "name": "chimney",
+        "cost" : "0",
+        "suggestion": "You are well protected",
         "answer": "There is a chimney with spark arrester",
         "points": "0"
       }
@@ -723,6 +826,8 @@
         "id": "roof-complexity-simple",
         "type": "radio",
         "name": "complexity",
+        "cost" : "0",
+        "suggestion": "No suggestions for roof complexity",
         "answer": "Simple roof with no valleys",
         "points": "1"
       },
@@ -730,6 +835,8 @@
         "id": "roof-complexity-low",
         "type": "radio",
         "name": "complexity",
+        "cost" : "0",
+        "suggestion": "No suggestions for roof complexity",
         "answer": "Low complexity roof",
         "points": "0.97"
       },
@@ -737,6 +844,8 @@
         "id": "roof-complexity-moderate",
         "type": "radio",
         "name": "complexity",
+        "cost" : "0",
+        "suggestion": "No suggestions for roof complexity",
         "answer": "Moderate complexity roof",
         "points": "0.94"
       },
@@ -744,6 +853,8 @@
         "id": "roof-complexity-high",
         "type": "radio",
         "name": "complexity",
+        "cost" : "0",
+        "suggestion": "No suggestions for roof complexity",
         "answer": "High complexity roof",
         "points": "0.9"
       }
@@ -763,6 +874,7 @@
         "id": "debris-none",
         "type": "radio",
         "name": "debris",
+        "cost" : "0",
         "answer": "No debris on roof.",
         "suggestion": "Your home is well protected from roof debris.",
         "points": "1"
@@ -771,6 +883,7 @@
         "id": "debris-low",
         "type": "radio",
         "name": "debris",
+        "cost" : "0",
         "answer": "Low debris on roof.",
         "suggestion": "Remove debris from roof.",
         "points": "0.9"
@@ -779,6 +892,7 @@
         "id": "debris-moderate",
         "type": "radio",
         "name": "debris",
+        "cost" : "0",
         "answer": "Moderate debris on roof.",
         "suggestion": "Remove debris from roof.",
         "points": "0.8"
@@ -787,6 +901,7 @@
         "id": "debris-high",
         "type": "radio",
         "name": "debris",
+        "cost" : "0",
         "answer": "High debris on roof.",
         "suggestion": "Remove debris from roof.",
         "points": "0.7"
@@ -805,6 +920,7 @@
         "id": "roof-vents-no",
         "type": "radio",
         "name": "vents",
+        "cost" : "0",
         "answer": "No roof vents",
         "suggestion": "Your vents are well protected.",
         "points": "60"
@@ -813,6 +929,7 @@
         "id": "roof-vents-mesh",
         "type": "radio",
         "name": "vents",
+        "cost" : "0",
         "answer": "Roof vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "suggestion": "Your vents are well protected.",
         "points": "60"
@@ -821,6 +938,7 @@
         "id": "roof-vents-open",
         "type": "radio",
         "name": "vents",
+        "cost" : "300",
         "answer": "Open roof vents",
         "suggestion": "Enclose vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "points": "30"

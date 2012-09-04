@@ -87,7 +87,7 @@
     </tr>
     <tr>
       <td>Appraised value of the home excluding land</td>
-      <td id="value"></td>
+      <td id="replacementValue"></td>
     </tr>
   </table>
 
@@ -102,11 +102,24 @@
       $("#doors").html(info.doors);
       $("#windows").html(info.windows);
       $("#pitch").html(info.pitch);
-      $("#value").html("$" + RESCU.addCommas(info.replacementValue));
+      $("#replacementValue").html("$" + RESCU.addCommas(info.replacementValue));
     }());
   </script>
+<ul>
+    <li>* Please note these values are used to calculate the estimated costs of the hardening options.</li>
+      
+      </ul>
 
-<table id="suggestions-table">
+<ul>
+    <li>
+      <h3>Hardening Options</h3>
+      <ul>
+        <li>The following hardening options are available to increase your homes protection from embers.  Additional information will need to be put here introducing the variables in this table and how they are used by the homeowner.</li>
+      </ul>
+    </li>
+   </ul>
+
+<table id="suggestions-table" border="1">
     <tr>
       <th>Answer</th>
       <th>Suggestions</th>
@@ -123,6 +136,11 @@
       // Parse INTS for values, for easy access:
       var perimeter = parseInt(RESCU.user().perimeter, 10),
           levels = parseInt(RESCU.user().levels, 10),
+          windows = parseInt(RESCU.user().windows, 10),
+          doors = parseInt(RESCU.user().doors, 10),
+          pitch = parseInt(RESCU.user().pitch, 10),
+          footage = parseInt(RESCU.user().footage, 10),
+          homevalue = parseInt(RESCU.user().replacementValue, 10),
           demoCost = 750,
           laborCost = 1000;
 
@@ -131,62 +149,63 @@
       _.each(q.answers, function(a){
 
         if (answerID === a.id){
-
-          // Calculate ESTIMATE here:
-          estimate = (perimeter * levels * 10) * (5) + demoCost + laborCost;
-
+          if (q.id == "foundation-construction-id") {
+            estimate = Math.round((a.cost * footage));
+          } else if (q.id == "wall-attachments-id") {
+            estimate = "N/A";
+          } else if (q.id == "wall-materials-id") {
+            estimate = Math.round((a.cost * perimeter * levels * 10));
+          } else if (q.id == "window-glazing-id") {
+            estimate = Math.round((a.cost * windows));
+          } else if (q.id == "window-screen-id") {
+            estimate = Math.round((a.cost * windows));
+          } else if (q.id == "eaves-id") {
+            estimate = Math.round((a.cost * perimeter));
+          } else if (q.id == "roof-covering-id") {
+            estimate = Math.round((a.cost * footage * pitch));
+          } else if (q.id == "roof-chimney-id") {
+            estimate = Math.round((a.cost));
+          } else if (q.id == "roof-complexity-id") {
+            estimate = "N/A";
+          } else if (q.id == "debris-id") {
+            estimate = "N/A";
+          } else if (q.id == "roof-vents-id") {
+            estimate = Math.round((a.cost * perimeter));
+          } else {
+            estimate = "N/A"
+          }
           // Calculate ROI here:
-          roi = 2000;
-
-          $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>$" + RESCU.addCommas(roi) + "</td></tr>");
+          if (estimate == "N/A") {
+            roi = "N/A"
+          } else {
+            roi = Math.round((homevalue - estimate)/estimate);
+            //(parseInt(q.vulnerability)/100)
+            //roi = roi + "%"
+          }
+          if (q.view != "threshold"){
+            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>X" + RESCU.addCommas(roi) + "</td></tr>");
+          }
         }
       });
     });
   }());
 </script>
 
-  <ul>
-    <li>
-      <h3>To reduce your ReScU Threat Level:</h3>
-      <ul>
-        <li>Move all ignitable materials as far away as possible or to the nearest 100 feet.</li>
-        <li>Trim or prune dead material from trees, shrubs and other landscaping.</li>
-        <li>Replace landscaping ground cover made of combustible materials with non combustible materails. (For example: Replace pine straw ground covering with rock). </li>
-        <li>Move gas tanks, wood piles and any other fuels away from the home.</li>
-      </ul>
-    </li>
+<ul>
+    <li>Info: This report has been generated using the most up to data information available. All cost information
+has been generated using RS Means(1). All scoring and weighting has been validated through a wildfire
+expert panel. A report on these experiments may be found at (#fnqovnawF).
+</li>
   </ul>
 
   <ul>
-    <li>
-      <h3>To improve your Building Score:</h3>
-      <ul>
-        <li>Enclose foundation members with at least a 1 hour fire resistive barrier if exposed. </li>
-        <li>Enclose vents with vents with openings not exceeding 1/4 inch.</li>
-        <li>Replace any attachchments including decks, fences, and patios with non combustible materials. or with 1 hour resistive rating. </li>
-        <li>Replace siding with non combustible materials or materials rated for fire resistance.</li>
-        <li>Replace windows with tempered panes and metal screens.</li>
-        <li>Cover eaves in aluminum or fire rated material.</li>
-        <li>Replace roof with non combustible materails or fire rated materials.</li>
-        <li>If a chimney exists, cover opening with an approved spark arrester.</li>
-        <li>Remove any debris from roof valleys, gutters and any other areas where debris collects.</li>
-      </ul>
-    </li>
-   </ul>
-
-  <ul>
-    <li>
-      <h3>In order for you to accurately determine the “total cost” of hardening your home against embers from a wildfire.  The following information is provided for calculating a “Return on Investment” , assuming the disaster occurs, for each hardening option:</h3>
-      <ul>
-        <li>Explanation: House Element that you are hardening, Percent of time the house is a total loss if the house element ignites, Return on Investment calculation.</li>
-        <li>Roof Covering, 80% total loss, ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
-        <li>Vents, 80% total loss, ROI = (0.8)*(cost of option)/(replacement cost of home)</li>
-        <li>Windows, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-        <li>Wall Covering, 70% total loss, ROI = (0.7)*(cost of option)/(replacement cost of home)</li>
-        <li>Open Foundation, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-        <li>Open Foundation, 90% total loss, ROI = (0.9)*(cost of option)/(replacement cost of home)</li>
-      </ul>
-    </li>
+    <li>Disclaimer: This tool is not intended to be used as a primary means of determining whether your home will survive a
+natural disaster. This tool is intended to help you determine where hardening techniques may increase
+your home’s chance for survival during a natural disaster. It is highly recommended that a professional
+opinion be sought prior to implementing any of the hardening techniques recommended by the tool.
+</li>
+<li>Conclusion</li>
+<li>Asssumptions</li>
   </ul>
 
 </div>
@@ -224,7 +243,7 @@
           // At this point, you are looking at what the user said for the given question.
           // For instance, q.question will tell you the question text, line 3, 32, etc of questions.json
           // Also, a.answer will tell you the answer text, line 12, 19, 26, etc of questions.json
-          $("#questions-table").append("<tr><td>" + q.question + "</td><td>" + a.answer + "</td></tr>");
+            $("#questions-table").append("<tr><td>" + q.question + "</td><td>" + a.answer + "</td></tr>");
 
           // At this point, you can view any piece of data you add to questions.json for the given question.
           // Consider adding another field "suggestion" to each answer that has a suggestion.

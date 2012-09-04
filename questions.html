@@ -44,7 +44,7 @@
 
     <script>
 
-      var calculateScore = function(){
+     var calculateScore = function(){
         RESCU.scores[RESCU.currPage] = 0;
 
         $.each($("input:checked"), function(idx, val){
@@ -56,7 +56,8 @@
             RESCU.scores[RESCU.currPage] -= parseFloat($multiplier.val(), 10);
 
             // Now re-Add the new score (with multiplier)
-            RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10) * parseFloat($multiplier.val(), 10);
+            RESCU.scores[RESCU.currPage] += parseFloat($(val).val(),
+              10) * parseFloat($multiplier.val(), 10);
           } else {
             RESCU.scores[RESCU.currPage] += parseFloat($(val).val(), 10);
           }

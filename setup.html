@@ -38,7 +38,7 @@
             </div>
             <div class="right">
               <fieldset>
-                <input id="value" type="text" placeholder="Replacement value (excluding land)" />
+                <input id="homevalue" type="text" placeholder="Replacement value (excluding land)" />
               </fieldset>
               <fieldset>
                 <input id="perimeter" type="text" placeholder="Perimeter of the foundation (ft)" />
@@ -125,24 +125,18 @@
               <fieldset>
                 <label>Approximate Roof Pitch</label>
                 <select id="pitch">
-                  <option value="1">12/1</option>
-                  <option value="2">12/2</option>
-                  <option value="3">12/3</option>
-                  <option value="4">12/4</option>
-                  <option value="5">12/5</option>
-                  <option value="6">12/6</option>
-                  <option value="7">12/7</option>
-                  <option value="8">12/8</option>
-                  <option value="9">12/9</option>
-                  <option value="10">12/10</option>
-                  <option value="11">12/11</option>
-                  <option value="12">12/12</option>
-                  <option value="13">12/13</option>
-                  <option value="14">12/14</option>
-                  <option value="15">12/15</option>
-                  <option value="16">12/16</option>
-                  <option value="17">12/17</option>
-                  <option value="18">12/18</option>
+                  <option value="1.00">12/1</option>
+                  <option value="1.01">12/2</option>
+                  <option value="1.03">12/3</option>
+                  <option value="1.05">12/4</option>
+                  <option value="1.08">12/5</option>
+                  <option value="1.12">12/6</option>
+                  <option value="1.16">12/7</option>
+                  <option value="1.20">12/8</option>
+                  <option value="1.25">12/9</option>
+                  <option value="1.30">12/10</option>
+                  <option value="1.36">12/11</option>
+                  <option value="1.41">12/12</option>
                 </select>
               </fieldset>
             </div>
@@ -182,7 +176,7 @@
             "year": $("#year").val().replace(/\D/g,''),
             "footage": $("#footage").val().replace(/\D/g,''),
             "perimeter": $("#perimeter").val().replace(/\D/g,''),
-            "replacementValue": $("#value").val().replace(/\D/g,''),
+            "replacementValue": $("#homevalue").val().replace(/\D/g,''),
             "levels": $("#levels").val(),
             "windows": $("#windows").val(),
             "doors": $("#doors").val(),
