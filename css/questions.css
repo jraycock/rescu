@@ -239,3 +239,9 @@ ul#structure-buttons li.current {
   text-align: center;
   
 }
+@media print {
+
+ #main-wrapper #main {width:auto;height:auto;margin:0;padding:0;background:inherit;border:0;overflow:visible;}
+ #main-wrapper #questions {overflow-x:visible;overflow-y:visible;height:auto;}
+ footer {display:none;}
+}

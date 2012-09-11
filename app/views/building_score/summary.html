@@ -3,6 +3,7 @@
 </header>
 
 <div id="summary">
+<input id="print-button" type="button" value="Print" onClick="window.print();" />
 <p>This Report has been generated for:</p>
   <div class="personal">
     <p id="personal-information"></p>
@@ -123,11 +124,28 @@
     <tr>
       <th>Answer</th>
       <th>Suggestions</th>
+      <th>Current ReScU Score</th>
+      <th>Potential Point Improvement</th>
       <th>Estimate ($USD)</th>
       <th>Adjustment Factor</th>
       <th>Adjusted Return on Investment</th>
       </tr>
   </table>
+
+<script>
+  (function(){
+    var threshold, building, rescu;
+
+    threshold = ((RESCU.scores.threshold + 37.95)/(7.08)).toFixed(1);
+    building = ((RESCU.scores.total - 51)/439 * 100).toFixed(1);
+    testVar = (building - threshold).toFixed(1);
+
+    $("#threshold-score span").html(threshold);
+    $("#building-score span").html(building);
+    $("#rescu-score span").html(testVar);
+  }());
+
+</script>
 
 <script>
   (function(){
@@ -159,6 +177,7 @@
             estimate = Math.round((a.cost * windows));
           } else if (q.id == "window-screen-id") {
             estimate = Math.round((a.cost * windows));
+            
           } else if (q.id == "eaves-id") {
             estimate = Math.round((a.cost * perimeter));
           } else if (q.id == "roof-covering-id") {
@@ -175,7 +194,7 @@
             estimate = "0"
           }
           // Calculate ROI here:
-          if (estimate == "N/A") {
+          if (estimate == 0) {
             roi = "N/A"
           } else {
             roi = Math.round((parseInt(q.vulnerability)/100)*(homevalue - estimate)/estimate);
@@ -183,7 +202,11 @@
             //roi = roi + "%"
           }
           if (q.view != "threshold"){
-            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>" + q.vulnerability + "</td><td>" + RESCU.addCommas(roi) + "</td></tr>");
+            testVar2 = parseFloat(testVar);
+            newPoints = (parseFloat(a.optimumScore))-(parseFloat(a.points));
+            testVar3 = ((newPoints)/4.39);
+            //testVar4 = testVar3 - testVar2;
+            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + testVar2.toFixed(1) + "</td><td>" + testVar3.toFixed(1) + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>" + q.vulnerability + "</td><td>" + RESCU.addCommas(roi) + "</td></tr>");
           //"</td><td>" + q.vulnerability +
           }
         }
@@ -214,21 +237,6 @@ opinion be sought prior to implementing any of the hardening techniques recommen
   </ul>
 
 </div>
-
-<script>
-  (function(){
-    var threshold, building, rescu;
-
-    threshold = ((RESCU.scores.threshold + 37.95)/(7.08)).toFixed(1);
-    building = ((RESCU.scores.total - 51)/439 * 100).toFixed(1);
-    rescu = (building - threshold).toFixed(1);
-
-    $("#threshold-score span").html(threshold);
-    $("#building-score span").html(building);
-    $("#rescu-score span").html(rescu);
-  }());
-
-</script>
 
 <script>
   (function(){

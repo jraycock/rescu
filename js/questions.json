@@ -400,8 +400,9 @@
         "cost": "3.80",
         "answer": "The foundation is an open pier or pile foundation, the floor framing is not fire rated and is exposed to the outside of the house.",
         "suggestion": "Completely enclose foundation with fire rated material",
+        "optimumScore"  : "70",
         "points": "0"
-      },
+        },
       {
         "id": "foundation-construction-closed",
         "type": "radio",
@@ -409,6 +410,7 @@
         "cost": "0.10",
         "answer": "The foundation is closed and continuous with open vents not protected by screens.",
         "suggestion": "Enclose vents with screens with openings not exceeding 1/4 inches.",
+        "optimumScore"  : "70",
         "points": "21"
       },
       {
@@ -418,6 +420,7 @@
         "cost": "0",
         "suggestion": "Your foundation is well protected",
         "answer": "The foundation is a closed pier or pile foundation with a 1-hour fire resistive barrier.",
+        "optimumScore"  : "70",
         "points": "49"
       },
       {
@@ -427,6 +430,7 @@
         "cost": "0",
         "suggestion": "Your foundation is well protected",
         "answer": "Completely closed foundation or with non corrosive vents with openings not exceeding 1/4 inch mesh or slab on grade foundation.",
+        "optimumScore" : "70",
         "points": "70"
       }
     ]
@@ -446,6 +450,7 @@
         "cost": "0",
         "suggestion": "You are well protected",             
         "answer": "There are no attachments, decks, patios or fences.",
+        "optimumScore" : "70",
         "points": "70"
         
       },
@@ -456,6 +461,7 @@
         "cost": "14",
         "suggestion": "Replace fence material with non combustible materials",
         "answer": "Deck(s) is/are not built for a 1-hour fire resitive rating.",
+        "optimumScore" : "70",
         "points": "56"
       },
       {
@@ -465,6 +471,7 @@
         "cost": "13",
         "suggestion": "Replace fence material with non combustible materials",
         "answer": "Fence(s) is/are not built for a 1-hour fire resitive rating.",
+        "optimumScore" : "70",
         "points": "21"
 
       },
@@ -475,6 +482,7 @@
         "cost": "0",
         "suggestion": "You are well protected",
         "answer": "Attachment(s) is/are built with non-combustible materials.",
+        "optimumScore" : "70",
         "points": "56"
       }
     ]
@@ -494,6 +502,7 @@
         "answer": "Siding is not fire rated.",
         "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
+        "optimumScore"  : "60",
         "points": "0"
       },
       {
@@ -503,6 +512,7 @@
         "answer": "Siding is vinyl.",
         "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
+        "optimumScore"  : "60",
         "points": "30"
       },
       {
@@ -512,6 +522,7 @@
         "answer": "Siding is a wood or wood-based composite product.",
         "cost" : "10",
         "suggestion": "Replace existing siding with fire rated material.",
+        "optimumScore"  : "60",
         "points": "30"
       },
       {
@@ -521,6 +532,7 @@
         "answer": "Siding is a fiber-cement board product.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -530,6 +542,7 @@
         "answer": "Siding is aluminum.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -539,6 +552,7 @@
         "answer": "Siding is steel.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -548,6 +562,7 @@
         "answer": "Siding is Fire Retardant Treated wood.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "54"
       },
       {
@@ -557,6 +572,7 @@
         "answer": "Exterior wall construction is 1-hour fire resistive rated with a noncombustible exterior finish.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -566,6 +582,7 @@
         "answer": "The exterior wall surface is log or heavy timber, thicker than 4 inches.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -575,6 +592,7 @@
         "answer": "The siding is brick.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -584,6 +602,7 @@
         "answer": "The siding is concrete.",
         "cost" : "0",
         "suggestion": "Your siding is well protected",
+        "optimumScore"  : "60",
         "points": "60"
       }
     ]
@@ -603,6 +622,7 @@
         "answer": "Single pane windows",
         "cost" : "455",
         "suggestion": "Replace window(s) with multiple panes containing at least one tempered pane.",
+        "optimumScore"  : "80",
         "points": "0"
       },
       {
@@ -612,6 +632,7 @@
         "answer": "Multi pane windows",
         "cost" : "455",
         "suggestion": "Replace with windows containing at least one tempered pane.",
+        "optimumScore"  : "80",
         "points": "56"
       },
       {
@@ -622,6 +643,7 @@
         "answer": "Windows have at least one tempered pane.",
         "cost" : "0",
         "suggestion": "Your windows are well protected.",
+        "optimumScore"  : "80",
         "points": "80"
       }
     ]
@@ -643,6 +665,7 @@
         "answer": "Windows have no screens.",
         "cost" : "66",
         "suggestion": "Install fire rated corrsion resistant screens",
+        "optimumScore"  : "1",
         "points": ".9"
       },
       {
@@ -652,6 +675,7 @@
         "answer": "Windows have vinyl screens",
         "cost" : "66",
         "suggestion": "Install fire rated corrsion resistant metal screens",
+        "optimumScore"  : "1",
         "points": ".95"
       },
       {
@@ -661,6 +685,7 @@
         "answer": "Windows have corrosion resistant metal screen",
         "cost" : "0",
         "suggestion": "Your screens are protected.",
+        "optimumScore"  : "1",
         "points": "1"
       }
     ]
@@ -680,6 +705,7 @@
         "answer": "The eave covering is wood, less than 3/4 inch thick.",
         "cost" : "12",
         "suggestion": "Replace eave covering with fire rated material.",
+        "optimumScore"  : "70",
         "points": "0"
       },
       {
@@ -689,6 +715,7 @@
         "answer": "The eave covering is vinyl.",
         "cost" : "12",
         "suggestion": "Replace eave covering with fire rated material.",
+        "optimumScore"  : "70",
         "points": "21"
       },
       {
@@ -698,6 +725,7 @@
         "answer": "The eave covering is aluminum.",
         "cost" : "12",
         "suggestion": "Replace eave covering with fire rated material.",
+        "optimumScore"  : "70",
         "points": "49"
       },
       {
@@ -726,6 +754,7 @@
         "answer": "The roof covering is wood shake.",
         "cost" : "4.00",
         "suggestion": "Replace roof covering with fire rated material.",
+        "optimumScore"  : "80",
         "points": "0"
       },
       {
@@ -735,6 +764,7 @@
         "answer": "The roof covering is organic felt asphalt shingles, not fire rated.",
         "cost" : "4.00",
         "suggestion": "Replace roof covering with fire rated material.",
+        "optimumScore"  : "80",
         "points": "24"
       },
       {
@@ -744,6 +774,7 @@
         "answer": "The roof covering is inorganic felt asphalt shingles, fire rated.",
         "cost" : "0",
         "suggestion": "Your roof covering is well protected",
+        "optimumScore"  : "80",
         "points": "72"
       },
       {
@@ -753,6 +784,7 @@
         "answer": "The roof covering is aluminum shingle.",
         "cost" : "0",
         "suggestion": "Your roof covering is well protected",
+        "optimumScore"  : "80",
         "points": "72"
       },
       {
@@ -762,6 +794,7 @@
         "answer": "The roof covering is steel shingle or standing seam panel.",
         "cost" : "0",
         "suggestion": "Your roof covering is well protected",
+        "optimumScore"  : "80",
         "points": "72"
       },
       {
@@ -771,6 +804,7 @@
         "answer": "The roof covering is clay or cement tile.",
         "cost" : "0",
         "suggestion": "Your roof covering is well protected",
+        "optimumScore"  : "80",
         "points": "80"
       }
     ]
@@ -790,6 +824,7 @@
         "answer": "There is no chimney.",
         "cost" : "0",
         "suggestion": "You are well protected",
+        "optimumScore"  : "0",
         "points": "0"
       },
       {
@@ -799,6 +834,7 @@
         "answer": "Chimney exists but without a spark arrester.",
         "cost" : "125",
         "suggestion": "Install fire rated spark arrester",
+        "optimumScore"  : "0",
         "points": "0"
       },
         {
@@ -808,6 +844,7 @@
         "cost" : "0",
         "suggestion": "You are well protected",
         "answer": "There is a chimney with spark arrester",
+        "optimumScore"  : "0",
         "points": "0"
       }
     ]
@@ -829,6 +866,7 @@
         "cost" : "0",
         "suggestion": "No suggestions for roof complexity",
         "answer": "Simple roof with no valleys",
+        "optimumScore"  : "1",
         "points": "1"
       },
       {
@@ -838,6 +876,7 @@
         "cost" : "0",
         "suggestion": "No suggestions for roof complexity",
         "answer": "Low complexity roof",
+        "optimumScore"  : "1",
         "points": "0.97"
       },
       {
@@ -847,6 +886,7 @@
         "cost" : "0",
         "suggestion": "No suggestions for roof complexity",
         "answer": "Moderate complexity roof",
+        "optimumScore"  : "1",
         "points": "0.94"
       },
       {
@@ -856,6 +896,7 @@
         "cost" : "0",
         "suggestion": "No suggestions for roof complexity",
         "answer": "High complexity roof",
+        "optimumScore"  : "1",
         "points": "0.9"
       }
     ]
@@ -869,6 +910,7 @@
     "view": "roof",
     "category" : "Roof",
     "vulnerability" : "80%",
+    "optimumScore"  : "1",
     "answers": [
       {
         "id": "debris-none",
@@ -886,6 +928,7 @@
         "cost" : "0",
         "answer": "Low debris on roof.",
         "suggestion": "Remove debris from roof.",
+        "optimumScore"  : "1",
         "points": "0.9"
       },
       {
@@ -895,6 +938,7 @@
         "cost" : "0",
         "answer": "Moderate debris on roof.",
         "suggestion": "Remove debris from roof.",
+        "optimumScore"  : "1",
         "points": "0.8"
       },
       {
@@ -904,6 +948,7 @@
         "cost" : "0",
         "answer": "High debris on roof.",
         "suggestion": "Remove debris from roof.",
+        "optimumScore"  : "1",
         "points": "0.7"
       }
     ]
@@ -923,6 +968,7 @@
         "cost" : "0",
         "answer": "No roof vents",
         "suggestion": "Your vents are well protected.",
+        "optimumScore"  : "60",
         "points": "60"
       },
       {
@@ -932,6 +978,7 @@
         "cost" : "0",
         "answer": "Roof vents with corrosion resistant mesh not exceeding 1/4 inch.",
         "suggestion": "Your vents are well protected.",
+        "optimumScore"  : "60",
         "points": "60"
       },
             {
@@ -941,6 +988,7 @@
         "cost" : "100",
         "answer": "Open roof vents",
         "suggestion": "Enclose vents with corrosion resistant mesh not exceeding 1/4 inch.",
+        "optimumScore"  : "60",
         "points": "30"
       }
     ]
