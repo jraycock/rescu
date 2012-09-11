@@ -123,7 +123,7 @@ ul#structure-buttons li.current {
 }
 
 #summary #personal-information {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #summary .scores {
@@ -171,8 +171,8 @@ ul#structure-buttons li.current {
 }
 
 #summary table, #summary table th, #summary table tr, #summary table td {
-  padding: 5px;
-  border: 1px solid #fff;
+  padding: 7px;
+  border: 3px solid #C0C0C0;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
 
@@ -182,7 +182,7 @@ ul#structure-buttons li.current {
 }
 
 #summary table th:first-child, #summary table td:first-child {
-  width: 50%;
+  width: 45%;
   text-align: left;
 }
 
@@ -237,5 +237,5 @@ ul#structure-buttons li.current {
 #summary h1 {
   font-size: 24px;
   text-align: center;
-  text-transform: uppercase;
+  
 }

@@ -1,18 +1,18 @@
 <header>
-  <h1>Summary</h1>
+  <h1>Summary Report</h1>
 </header>
 
 <div id="summary">
-
+<p>This Report has been generated for:</p>
   <div class="personal">
     <p id="personal-information"></p>
   </div>
 
-  <p>The Resilient Scroing Utility (ReScU) is intended to help you determine where hardening techniques may increase your home's chance for survival during a natural disaster. The scores indicated for your threat level and home's hardness within this report do not relate to any other systems or metrics available.</p>
+  <p>The Resilient Scoring Utility (ReScU) is intended to help you determine where hardening techniques may increase your home's chance for survival during a natural disaster. The scores indicated for your threat level and home's hardness within this report do not relate to any other systems or metrics available.</p>
 
   <div class="scores group">
     <div id="threshold-score" class="score">
-      <h1>ReScU Threat Level</h1>
+      <h1>Threat Level</h1>
       <span></span>
     </div>
     <div id="building-score" class="score">
@@ -22,7 +22,7 @@
   </div>
 
   <div id="rescu-score" class="score">
-    <h1>RESCU SCORE</h1>
+    <h1>ReScU Score</h1>
     <span></span>
   </div>
 
@@ -123,9 +123,9 @@
     <tr>
       <th>Answer</th>
       <th>Suggestions</th>
-      <th>Vulnerability</th>
-      <th>Estimate</th>
-      <th>Return on Investment</th>
+      <th>Estimate ($USD)</th>
+      <th>Adjustment Factor</th>
+      <th>Adjusted Return on Investment</th>
       </tr>
   </table>
 
@@ -152,7 +152,7 @@
           if (q.id == "foundation-construction-id") {
             estimate = Math.round((a.cost * footage));
           } else if (q.id == "wall-attachments-id") {
-            estimate = "N/A";
+            estimate = "0";
           } else if (q.id == "wall-materials-id") {
             estimate = Math.round((a.cost * perimeter * levels * 10));
           } else if (q.id == "window-glazing-id") {
@@ -166,24 +166,25 @@
           } else if (q.id == "roof-chimney-id") {
             estimate = Math.round((a.cost));
           } else if (q.id == "roof-complexity-id") {
-            estimate = "N/A";
+            estimate = "0";
           } else if (q.id == "debris-id") {
-            estimate = "N/A";
+            estimate = "0";
           } else if (q.id == "roof-vents-id") {
-            estimate = Math.round((a.cost * 5));
+            estimate = Math.round((a.cost * 3));
           } else {
-            estimate = "N/A"
+            estimate = "0"
           }
           // Calculate ROI here:
           if (estimate == "N/A") {
             roi = "N/A"
           } else {
-            roi = Math.round((homevalue - estimate)/estimate);
-            //(parseInt(q.vulnerability)/100)
+            roi = Math.round((parseInt(q.vulnerability)/100)*(homevalue - estimate)/estimate);
+            //(parseInt(q.vulnerability)
             //roi = roi + "%"
           }
           if (q.view != "threshold"){
-            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>" + q.vulnerability + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>" + RESCU.addCommas(roi) + "</td></tr>");
+            $("#suggestions-table").append("<tr><td>" + a.answer + "</td><td>" + a.suggestion + "</td><td>$" + RESCU.addCommas(estimate) + "</td><td>" + q.vulnerability + "</td><td>" + RESCU.addCommas(roi) + "</td></tr>");
+          //"</td><td>" + q.vulnerability +
           }
         }
       });
@@ -194,7 +195,7 @@
 <ul>
     <li>Info: This report has been generated using the most up to data information available. All cost information
 has been generated using RS Means(1). All scoring and weighting has been validated through a wildfire
-expert panel. A report on these experiments may be found at (#fnqovnawF).
+expert panel. 
 </li>
   </ul>
 
@@ -204,8 +205,12 @@ natural disaster. This tool is intended to help you determine where hardening te
 your home’s chance for survival during a natural disaster. It is highly recommended that a professional
 opinion be sought prior to implementing any of the hardening techniques recommended by the tool.
 </li>
-<li>Conclusion</li>
-<li>Asssumptions</li>
+<p></p>
+<li>Asssumptions: The following assumtion are made to help generalize house construction and cost estimation.</li>
+<li>Each level of the home is estimated to be 10 feet. </li>
+<li>Each window is assumed to be a unifor size of 3feet by 5 feet.</li>
+<li>Custom made accesories such as custom trimwork, doors and custom windows are not calculated into the estimate.</li>
+<li>All costs are estimated using the national average price per unit, square foot and linear foot.</li>
   </ul>
 
 </div>

@@ -1,6 +1,6 @@
 [
   {
-    "question": "Choose the level that best describes the history of wildfire occurrences or warnings in your area?",
+    "question": "Choose the option that best describes the history of wildfire occurrences or warnings in your area?",
     "id" : "threshold-history-risk-id" ,
     "code": "wf",
     "view": "threshold",
@@ -35,7 +35,7 @@
     ]
   },
     {
-    "question": "Choose the answer that best represents the topography of your area?",
+    "question": "Choose the option that best represents the topography of your area?",
     "id" : "topography-id",
     "code": "wf",
     "view": "threshold",
@@ -79,7 +79,7 @@
     ]
   },
   {
-    "question": "The house is setback _ feet from the slope?",
+    "question": "How far is the house set back from the slope?",
     "id" : "house-setback-id",
     "code": "wf",
     "view": "threshold",
@@ -90,7 +90,7 @@
         "name": "house-setback",
         "cost": "0",
         "suggestion" : "No suggestion for setback",
-        "answer": "House setback is flat land/no setback",
+        "answer": "Flat land/no setback",
         "points": "0"
       },
       {
@@ -99,7 +99,7 @@
         "name": "house-setback",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "House setback is less than 30 feet",
+        "answer": "Setback is less than 30 feet",
         "points": "70"
       },
       {
@@ -108,7 +108,7 @@
         "name": "house-setback",
         "cost": "0",
         "suggestion" : "No suggestion",
-        "answer": "House setback is more than 30 feet",
+        "answer": "Setback is more than 30 feet",
         "points": "35"
               }
     ]
@@ -135,6 +135,32 @@
         "cost": "0",
         "suggestion" : "No suggestion",
         "answer": "No, there are not dry/windy conditions",
+        "points": "0"
+      }
+    ]
+  },
+  {
+    "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
+    "id" : "unusual-weather-id",
+    "code": "wf",
+    "view": "threshold",
+    "answers": [
+      {
+        "id": "unusual-weather-yes",
+        "type": "radio",
+        "name": "proximity-options",
+        "cost": "0",
+        "suggestion" : "No suggestion",
+        "answer": "Yes, unusual weather does exist.",
+        "points": "70"
+      },
+      {
+        "id": "unusual-weather-no",
+        "type": "radio",
+        "name": "proximity-options",
+        "cost": "0",
+        "suggestion" : "No suggestion",
+        "answer": "No unusual weather",
         "points": "0"
       }
     ]
@@ -178,13 +204,13 @@
         "name": "structure-proximity",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "Ignitable structures greater than 100 feet",
+        "answer": "No ignitable structures or greater than 100 feet",
         "points": "7"
       }
     ]
   },
   {
-    "question": "What is the proximity of your house to grass fields or other light fuel types?",
+    "question": "What is the proximity of your house to grass fields and/or other light fuel types?",
     "id" : "grass-proximity-id",
     "code": "wf",
     "view": "threshold",
@@ -222,13 +248,13 @@
         "name": "grass-proximity",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "Grass or light fuel greater than 100 feet",
+        "answer": "No grass or light fuel or greater than 100 feet",
         "points": "6"
       }
     ]
   },
   {
-    "question": "What is the proximity of your house to brush, small trees or other medium fuel types?",
+    "question": "What is the proximity of your house to light brush, small trees and/or other medium fuel types?",
     "id" : "brush-proximity-id",
     "code": "wf",
     "view": "threshold",
@@ -266,13 +292,13 @@
         "name": "small-tree-proximity",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "Medium fuel greater than 100 feet",
+        "answer": "No medium fuel greater or than 100 feet",
         "points": "7"
       }
     ]
   },
   {
-    "question": "What is the proximity of your house to brush, large trees or other large fuel types?",
+    "question": "What is the proximity of your house to dense brush, large trees and/or other large fuel types?",
     "id" : "large-tree-proximity-id",
     "code": "wf",
     "view": "threshold",
@@ -310,7 +336,7 @@
         "name": "large-tree-proximity",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "Large fuel greater than 100 feet",
+        "answer": "No large fuel or greater than 100 feet",
         "points": "7"
       }
     ]
@@ -354,34 +380,8 @@
         "name": "slash-proximity",
         "cost": "0",
         "suggestion" : "You are well protected",
-        "answer": "Slash timber residue greater than 100 feet",
+        "answer": "No slash timber residue or greater than 100 feet",
         "points": "6"
-      }
-    ]
-  },
-  {
-    "question": "Does your area experience unusual weather patterns that could include high winds, no or low rainfall, etc.?",
-    "id" : "unusual-weather-id",
-    "code": "wf",
-    "view": "threshold",
-    "answers": [
-      {
-        "id": "unusual-weather-yes",
-        "type": "radio",
-        "name": "proximity-options",
-        "cost": "0",
-        "suggestion" : "No suggestion",
-        "answer": "Yes, unusual weather does exist.",
-        "points": "70"
-      },
-      {
-        "id": "unusual-weather-no",
-        "type": "radio",
-        "name": "proximity-options",
-        "cost": "0",
-        "suggestion" : "No suggestion",
-        "answer": "No unusual weather",
-        "points": "0"
       }
     ]
   },
@@ -627,7 +627,7 @@
     ]
   },
   {
-    "question": "Do the windows have screens? If so choose the answer that best describes the screen. ",
+    "question": "Do the windows have screens? If so, choose the answer that best describes the screen. ",
     "id" : "window-screen-id",
     "multiplicative": true,
     "multiplier-id" : "window-glazing-id",
@@ -666,7 +666,7 @@
     ]
   },
   {
-    "question": "What material best describes the outside covering on the eaves?",
+    "question": "What material best describes the eave covering?",
     "id" : "eaves-id",
     "code": "wf",
     "view": "roof",
@@ -712,7 +712,7 @@
     ]
   },
   {
-    "question": "What material best describes the roof covering of the home?",
+    "question": "What material best describes the roof covering?",
     "id" : "roof-covering-id",
     "code": "wf",
     "view": "roof",
@@ -776,7 +776,7 @@
     ]
   },
       {
-    "question": "Does the chimney have a spark arrester with 1/4 inch mesh or smaller?",
+    "question": "Do you have a chimney? If so, does it have a spark arrester with 1/4 inch mesh or smaller?",
     "id" : "roof-chimney-id",
     "code": "wf",
     "view": "roof",
@@ -813,7 +813,7 @@
     ]
   },
   {
-    "question": "Examine the complexity of the roof, eaves, valleys and areas where embers could be trapped. Rate the roof based on its complexity. Hint: a hip roof is the least complex.",
+    "question": "Examine the complexity of the roof, eaves, valleys and areas where embers could be trapped. How complex is it? Hint: A hip roof is the least complex.",
     "id" : "roof-complexity-id",
     "multiplicative": true,
     "multiplier-id" : "roof-covering-id",
@@ -861,7 +861,7 @@
     ]
   },
      {
-    "question": "Describe the amount of debris on the roof by carefully examining all gutters, corners, valleys, etc.",
+    "question": "Carefully examine the roof (gutters, corners, valleys, etc.) for debris. How much is there?",
     "id" : "debris-id",
     "multiplicative": true,
     "multiplier-id" : "roof-covering-id",
